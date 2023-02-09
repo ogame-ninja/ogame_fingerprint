@@ -1045,83 +1045,83 @@ const a0_0x5b052d = Object['keys']({
     });
 const a0_0x182687 = () => {
     try {
-        const offlineAudioCtxClass = window['OfflineAudioContext'] || window['webkitOfflineAudioContext'];
-        if (!offlineAudioCtxClass) return -2;
-        const _0x41d32d = 4500,
-            _0x193449 = 5000,
-            offlineAudioCtx = new offlineAudioCtxClass(1, _0x193449, 0xac44),
-            oscillator = offlineAudioCtx['createOscillator']();
-        oscillator['type'] = 'triangle',
-        oscillator['frequency']['value'] = 10000;
-        const compressor = offlineAudioCtx['createDynamicsCompressor']();
-        compressor['threshold']['value'] = -0x32,
-        compressor['knee']['value'] = 40,
-        compressor['ratio']['value'] = 12,
-        compressor['attack']['value'] = 0,
-        compressor['release']['value'] = 0.25,
-        oscillator['connect'](compressor),
-        compressor['connect'](offlineAudioCtx['destination']),
-        oscillator['start'](0);
-        const [_0xe5334b, _0x5a7f02] = a0_0x27c8e4(offlineAudioCtx),
-        _0xc0f674 = _0xe5334b['then'](_0x49fc29 => a0_0x2e3f1d(_0x49fc29['getChannelData'](0)['subarray'](_0x41d32d)), _0x16b95d => {
-            if (_0x16b95d['name'] === 'timeout' || _0x16b95d['name'] === 'suspended') return 'timeout';
-            throw _0x16b95d;
+        const offlineAudioCtxClass = window.OfflineAudioContext || window['webkitOfflineAudioContext'];
+        if (!offlineAudioCtxClass) {
+            return -2;
+        }
+        const offlineAudioCtx = new offlineAudioCtxClass(1, 5000, 44100),
+            oscillator = offlineAudioCtx.createOscillator();
+        oscillator.type = 'triangle',
+        oscillator.frequency.value = 10000;
+        const compressor = offlineAudioCtx.createDynamicsCompressor();
+        compressor.threshold.value = -50;
+        compressor.knee.value = 40;
+        compressor.ratio.value = 12;
+        compressor.attack.value = 0;
+        compressor.release.value = 0.25;
+        oscillator.connect(compressor);
+        compressor.connect(offlineAudioCtx.destination);
+        oscillator.start(0);
+        const [_0xe5334b, _0x5a7f02] = a0_0x27c8e4(offlineAudioCtx);
+        const _0xc0f674 = _0xe5334b.then(audioBuffer => sumAbs(audioBuffer.getChannelData(0).subarray(4500)), reason => {
+            if (reason.name === 'timeout' || reason.name === 'suspended') {
+                return 'timeout';
+            }
+            throw reason;
         });
-        return _0xc0f674['catch'](() => undefined), _0x5a7f02(), _0xc0f674;
+        return _0xc0f674.catch(() => undefined), _0x5a7f02(), _0xc0f674;
     } catch (e) {
         return -1;
     }
 };
 
-function a0_0x27c8e4(_0x24f1a9) {
-    const _0x3b4ef3 = 0x3,
-        _0x4c5ea6 = 0x1f4,
-        _0x4da1da = 0x1f4,
-        _0x384dae = 0x1388;
+function a0_0x27c8e4(offlineAudioCtx) {
     let _0x5d654a = () => undefined;
-    const _0x54264f = new Promise((_0x5a9d0b, _0x5cc822) => {
+    const _0x54264f = new Promise((resolveClb, rejectClb) => {
         let _0x45539e = false,
-            _0x3e10e8 = 0x0,
-            _0x3e5d9c = 0x0;
-        _0x24f1a9['oncomplete'] = _0xa5e9ba => _0x5a9d0b(_0xa5e9ba['renderedBuffer']);
+            _0x3e10e8 = 0,
+            _0x3e5d9c = 0;
+        offlineAudioCtx.oncomplete = offlineAudioCompletionEvent => resolveClb(offlineAudioCompletionEvent.renderedBuffer);
         const _0x2a7c3c = () => {
-                setTimeout(() => _0x5cc822(a0_0x5c64fb('timeout')), Math['min'](_0x4da1da, _0x3e5d9c + _0x384dae - Date['now']()));
-            },
-            _0x2cb726 = () => {
-                try {
-                    _0x24f1a9['startRendering']();
-                    switch (_0x24f1a9['state']) {
-                        case 'running':
-                            _0x3e5d9c = Date['now']();
-                            _0x45539e && _0x2a7c3c();
-                            break;
-                        case 'suspended':
-                            !document['hidden'] && _0x3e10e8++;
-                            _0x45539e && _0x3e10e8 >= _0x3b4ef3 ? _0x5cc822(a0_0x5c64fb('suspended')) : setTimeout(_0x2cb726, _0x4c5ea6);
-                            break;
-                    }
-                } catch (_0x4b2470) {
-                    _0x5cc822(_0x4b2470);
+            setTimeout(() => rejectClb(newErrorFromStr('timeout')), Math.min(500, _0x3e5d9c + 5000 - Date.now()));
+        };
+        const _0x2cb726 = () => {
+            try {
+                offlineAudioCtx.startRendering();
+                switch (offlineAudioCtx.state) {
+                    case 'running':
+                        _0x3e5d9c = Date.now();
+                        _0x45539e && _0x2a7c3c();
+                        break;
+                    case 'suspended':
+                        !document.hidden && _0x3e10e8++;
+                        _0x45539e && _0x3e10e8 >= 3 ? rejectClb(newErrorFromStr('suspended')) : setTimeout(_0x2cb726, 500);
+                        break;
                 }
-            };
-        _0x2cb726(), _0x5d654a = () => {
-            !_0x45539e && (_0x45539e = true, _0x3e5d9c > 0x0 && _0x2a7c3c());
+            } catch (e) {
+                rejectClb(e);
+            }
+        };
+        _0x2cb726();
+        _0x5d654a = () => {
+            !_0x45539e && (_0x45539e = true, _0x3e5d9c > 0 && _0x2a7c3c());
         };
     });
     return [_0x54264f, _0x5d654a];
 }
 
-function a0_0x2e3f1d(arg1) {
+function sumAbs(float32Arr) {
     let out = 0;
-    for (let i = 0; i < arg1.length; ++i) {
-        out += Math.abs(arg1[i]);
+    for (let i = 0; i < float32Arr.length; ++i) {
+        out += Math.abs(float32Arr[i]);
     }
     return out;
 }
 
-function a0_0x5c64fb(_0x595897) {
-    const _0x467ea1 = new Error(_0x595897);
-    return _0x467ea1['name'] = _0x595897, _0x467ea1;
+function newErrorFromStr(errStr) {
+    const err = new Error(errStr);
+    err.name = errStr;
+    return err;
 }
 const getBrowserRenderingEngine = uaName => {
         try {
@@ -1240,7 +1240,7 @@ const a0_0x5c162a = () => {
             'name': _0x5e8ac4,
             'version': _0x120cdc
         };
-    } catch (_0x4d0942) {
+    } catch (e) {
         return {
             'name': 'Unknown',
             'version': 'Unknown'
@@ -1305,8 +1305,8 @@ const a0_0x17d8f4 = () => {
             }, {
                 'name': 'Safari',
                 'getInfo': arg1 => {
-                        _0x281dce = userAgent['indexOf']('Version');
-                    if (_0x281dce !== -0x1) return {
+                    const _0x281dce = userAgent.indexOf('Version');
+                    if (_0x281dce !== -1) return {
                         'name': 'Safari',
                         'version': userAgent['substring'](arg1 + 8)
                     };
@@ -1347,28 +1347,29 @@ const a0_0x17d8f4 = () => {
 };
 const a0_0x1cf60c = () => {
     try {
-        const canvas = document['createElement']('canvas'),
-            ctx = canvas['getContext']('2d'),
+        const canvas = document.createElement('canvas'),
+            ctx = canvas.getContext('2d'),
             txt = 'i9asdm..$#po((^@KbXrww!~cz';
-        ctx['textBaseline'] = 'top',
-        ctx['font'] = "16px 'Arial'",
-        ctx['textBaseline'] = 'alphabetic',
-        ctx['rotate'](0.05),
-        ctx['fillStyle'] = '#f60',
-        ctx['fillRect'](0x7d, 0x1, 0x3e, 0x14),
-        ctx['fillStyle'] = '#069',
-        ctx['fillText'](txt, 0x2, 0xf),
-        ctx['fillStyle'] = 'rgba(102, 200, 0, 0.7)',
-        ctx['fillText'](txt, 0x4, 0x11),
-        ctx['shadowBlur'] = 0xa,
-        ctx['shadowColor'] = 'blue',
-        ctx['fillRect'](-0x14, 0xa, 0xea, 0x5);
-        const canvasDataURL = canvas['toDataURL']();
+        ctx.textBaseline = 'top';
+        ctx.font = "16px 'Arial'";
+        ctx.textBaseline = 'alphabetic';
+        ctx.rotate(0.05);
+        ctx.fillStyle = '#f60';
+        ctx.fillRect(125, 1, 62, 20);
+        ctx.fillStyle = '#069';
+        ctx.fillText(txt, 2, 15);
+        ctx.fillStyle = 'rgba(102, 200, 0, 0.7)';
+        ctx.fillText(txt, 4, 17);
+        ctx.shadowBlur = 10;
+        ctx.shadowColor = 'blue';
+        ctx.fillRect(-20, 10, 234, 5);
+        const canvasDataURL = canvas.toDataURL();
         let out = 0;
-        if (canvasDataURL['length'] === 0) return 'nothing!';
-        for (let i = 0; i < canvasDataURL['length']; i++) {
-            const chr = canvasDataURL['charCodeAt'](i);
-            out = (out << 0x5) - out + chr, out = out & out;
+        if (canvasDataURL.length === 0) return 'nothing!';
+        for (let i = 0; i < canvasDataURL.length; i++) {
+            const chr = canvasDataURL.charCodeAt(i);
+            out = (out << 5) - out + chr;
+            out = out & out;
         }
         return out;
     } catch(e) {
@@ -1379,43 +1380,44 @@ const a0_0xf4e1f8 = () => {
     try {
         const canvasWidth = 256,
             canvasHeight = 128,
-            canvas = document['createElement']('canvas');
-        canvas['width'] = canvasWidth,
-        canvas['height'] = canvasHeight;
-        const webglCtx = canvas['getContext']('webgl2') ||
-        	canvas['getContext']('experimental-webgl2') ||
-        	canvas['getContext']('webgl') ||
-        	canvas['getContext']('experimental-webgl') ||
-        	canvas['getContext']('moz-webgl');
+            canvas = document.createElement('canvas');
+        canvas.width = canvasWidth;
+        canvas.height = canvasHeight;
+        const webglCtx = canvas.getContext('webgl2') ||
+        	canvas.getContext('experimental-webgl2') ||
+        	canvas.getContext('webgl') ||
+        	canvas.getContext('experimental-webgl') ||
+        	canvas.getContext('moz-webgl');
         try {
             const attrStr = 'attribute vec2 attrVertex;varying vec2 varyinTexCoordinate;uniform vec2 uniformOffset;void main(){varyinTexCoordinate=attrVertex+uniformOffset;gl_Position=vec4(attrVertex,0,1);}',
                 precisionStr = 'precision mediump float;varying vec2 varyinTexCoordinate;void main() {gl_FragColor=vec4(varyinTexCoordinate,0,1);}',
-                glBuf = webglCtx['createBuffer']();
-            webglCtx['bindBuffer'](webglCtx['ARRAY_BUFFER'], glBuf);
+                glBuf = webglCtx.createBuffer();
+            webglCtx.bindBuffer(webglCtx.ARRAY_BUFFER, glBuf);
             const floatsArr = new Float32Array([-0.2, -0.9, 0x0, 0.4, -0.26, 0x0, 0x0, 0.7321, 0x0]);
-            webglCtx['bufferData'](webglCtx['ARRAY_BUFFER'], floatsArr, webglCtx['STATIC_DRAW']),
-            glBuf['itemSize'] = 3,
-            glBuf['numItems'] = 3;
-            const prog = webglCtx['createProgram'](),
-                vertexShader = webglCtx['createShader'](webglCtx['VERTEX_SHADER']);
-            webglCtx['shaderSource'](vertexShader, attrStr), webglCtx['compileShader'](vertexShader);
-            const fragmentShader = webglCtx['createShader'](webglCtx['FRAGMENT_SHADER']);
-            webglCtx['shaderSource'](fragmentShader, precisionStr),
-            webglCtx['compileShader'](fragmentShader),
-            webglCtx['attachShader'](prog, vertexShader),
-            webglCtx['attachShader'](prog, fragmentShader),
-            webglCtx['linkProgram'](prog),
-            webglCtx['useProgram'](prog),
-            prog['vertexPosAttrib'] = webglCtx['getAttribLocation'](prog, 'attrVertex'),
-            prog['offsetUniform'] = webglCtx['getUniformLocation'](prog, 'uniformOffset'),
-            webglCtx['enableVertexAttribArray'](prog['vertexPosArray']),
-            webglCtx['vertexAttribPointer'](prog['vertexPosAttrib'], glBuf['itemSize'], webglCtx['FLOAT'], !0x1, 0x0, 0x0),
-            webglCtx['uniform2f'](prog['offsetUniform'], 0x1, 0x1),
-            webglCtx['drawArrays'](webglCtx['TRIANGLE_STRIP'], 0x0, glBuf['numItems']);
-        } catch (_0x3682bd) {}
+            webglCtx.bufferData(webglCtx.ARRAY_BUFFER, floatsArr, webglCtx.STATIC_DRAW),
+            glBuf.itemSize = 3,
+            glBuf.numItems = 3;
+            const prog = webglCtx.createProgram(),
+                vertexShader = webglCtx.createShader(webglCtx.VERTEX_SHADER);
+            webglCtx.shaderSource(vertexShader, attrStr), webglCtx.compileShader(vertexShader);
+            const fragmentShader = webglCtx.createShader(webglCtx.FRAGMENT_SHADER);
+            webglCtx.shaderSource(fragmentShader, precisionStr),
+            webglCtx.compileShader(fragmentShader),
+            webglCtx.attachShader(prog, vertexShader),
+            webglCtx.attachShader(prog, fragmentShader),
+            webglCtx.linkProgram(prog),
+            webglCtx.useProgram(prog),
+            prog.vertexPosAttrib = webglCtx.getAttribLocation(prog, 'attrVertex'),
+            prog.offsetUniform = webglCtx.getUniformLocation(prog, 'uniformOffset'),
+            webglCtx.enableVertexAttribArray(prog.vertexPosArray),
+            webglCtx.vertexAttribPointer(prog.vertexPosAttrib, glBuf.itemSize, webglCtx.FLOAT, false, 0, 0),
+            webglCtx.uniform2f(prog.offsetUniform, 1, 1),
+            webglCtx.drawArrays(webglCtx.TRIANGLE_STRIP, 0x0, glBuf.numItems);
+        } catch (e) {
+        }
         const _0x3b32d0 = new Uint8Array(canvasWidth * canvasHeight * 4);
-        webglCtx['readPixels'](0x0, 0x0, canvasWidth, canvasHeight, webglCtx['RGBA'], webglCtx['UNSIGNED_BYTE'], _0x3b32d0);
-        let jsonStr = JSON['stringify'](_0x3b32d0)['replace'](/,?\"[0-9]+\":/g, '');
+        webglCtx.readPixels(0, 0, canvasWidth, canvasHeight, webglCtx.RGBA, webglCtx.UNSIGNED_BYTE, _0x3b32d0);
+        let jsonStr = JSON.stringify(_0x3b32d0).replace(/,?\"[0-9]+\":/g, '');
         return a0_0x19fec7(jsonStr);
     } catch (e) {
         return '-1';
@@ -1424,52 +1426,58 @@ const a0_0xf4e1f8 = () => {
 const a0_0x19fec7 = (function() {
     let a = 1,
         i,
-        _0x5d4a33 = [],
-        _0x3b5e92 = [];
+        arr1 = [],
+        arr2 = [];
     while (++a < 18) {
         for (i = a * a; i < 312; i += a) {
-            _0x5d4a33[i] = 1;
+            arr1[i] = 1;
         }
     }
 
-    function _0x2fb1c7(_0x46354c, _0x4f6270) {
-        return Math['pow'](_0x46354c, 1 / _0x4f6270) % 1 * 0x100000000 | 0;
+    function _0x2fb1c7(arg1, arg2) {
+        return Math.pow(arg1, 1 / arg2) % 1 * 0x100000000 | 0;
     }
     for (a = 1, i = 0; a < 313;) {
-        !_0x5d4a33[++a] && (_0x3b5e92[i] = _0x2fb1c7(a, 2), _0x5d4a33[i++] = _0x2fb1c7(a, 3));
+        !arr1[++a] && (arr2[i] = _0x2fb1c7(a, 2), arr1[i++] = _0x2fb1c7(a, 3));
     }
 
-    function _0x18082b(_0x193972, _0x1240f5) {
-        return _0x193972 >>> _0x1240f5 | _0x193972 << 32 - _0x1240f5;
+    function _0x18082b(arg1, arg2) {
+        return arg1 >>> arg2 | arg1 << 32 - arg2;
     }
 
     function _0x16f142(_0x421863) {
-        let _0xb8c1fb = _0x3b5e92['slice'](a = 0),
+        let _0xb8c1fb = arr2.slice(a = 0),
             _0x31d2b5 = unescape(encodeURI(_0x421863)),
             _0x5ec952 = [],
-            _0x56ff9e = _0x31d2b5['length'],
+            _0x56ff9e = _0x31d2b5.length,
             _0x22e175 = [],
             _0x1558fb, _0x2e7183, _0x487300;
-        for (; a < _0x56ff9e;) _0x22e175[a >> 2] |= (_0x31d2b5['charCodeAt'](a) & 255) << 8 * (3 - a++ % 4);
+        for (; a < _0x56ff9e;) {
+            _0x22e175[a >> 2] |= (_0x31d2b5.charCodeAt(a) & 255) << 8 * (3 - a++ % 4);
+        }
         _0x56ff9e *= 8, _0x22e175[_0x56ff9e >> 5] |= 0x80 << 24 - _0x56ff9e % 32, _0x22e175[_0x487300 = _0x56ff9e + 64 >> 5 | 15] = _0x56ff9e;
         for (a = 0; a < _0x487300; a += 16) {
-            _0x1558fb = _0xb8c1fb['slice'](i = 0, 8);
+            _0x1558fb = _0xb8c1fb.slice(i = 0, 8);
             for (; i < 64; _0x1558fb[4] += _0x2e7183) {
                 i < 16 ? _0x5ec952[i] = _0x22e175[i + a] : _0x5ec952[i] = (_0x18082b(_0x2e7183 = _0x5ec952[i - 2], 0x11) ^ _0x18082b(_0x2e7183, 19) ^ _0x2e7183 >>> 10) +
                 (_0x5ec952[i - 7] | 0) + (_0x18082b(_0x2e7183 = _0x5ec952[i - 15], 7) ^ _0x18082b(_0x2e7183, 18) ^ _0x2e7183 >>> 3) +
-                (_0x5ec952[i - 16] | 0), _0x1558fb['unshift']((_0x2e7183 = (_0x1558fb['pop']() + (_0x18082b(_0x421863 = _0x1558fb[4], 6) ^
-                _0x18082b(_0x421863, 11) ^ _0x18082b(_0x421863, 25)) + ((_0x421863 & _0x1558fb[5] ^ ~_0x421863 & _0x1558fb[6]) + _0x5d4a33[i]) | 0) +
+                (_0x5ec952[i - 16] | 0), _0x1558fb.unshift((_0x2e7183 = (_0x1558fb.pop() + (_0x18082b(_0x421863 = _0x1558fb[4], 6) ^
+                _0x18082b(_0x421863, 11) ^ _0x18082b(_0x421863, 25)) + ((_0x421863 & _0x1558fb[5] ^ ~_0x421863 & _0x1558fb[6]) + arr1[i]) | 0) +
                 (_0x5ec952[i++] | 0)) + (_0x18082b(_0x56ff9e = _0x1558fb[0], 2) ^ _0x18082b(_0x56ff9e, 0xd) ^ _0x18082b(_0x56ff9e, 0x16)) + (_0x56ff9e & _0x1558fb[0x1] ^
                 _0x1558fb[0x1] & _0x1558fb[2] ^ _0x1558fb[2] & _0x56ff9e));
             }
-            for (i = 8; i--;) _0xb8c1fb[i] = _0x1558fb[i] + _0xb8c1fb[i];
+            for (i = 8; i--;) {
+                _0xb8c1fb[i] = _0x1558fb[i] + _0xb8c1fb[i];
+            }
         }
-        for (_0x31d2b5 = ''; i < 63;) _0x31d2b5 += (_0xb8c1fb[++i >> 3] >> 4 * (7 - i % 8) & 15)['toString'](16);
+        for (_0x31d2b5 = ''; i < 63;) {
+            _0x31d2b5 += (_0xb8c1fb[++i >> 3] >> 4 * (7 - i % 8) & 15).toString(16);
+        }
         return _0x31d2b5;
     }
     return _0x16f142;
 }());
-const a0_0x4bbe90 = _0x170a97 => a0_0x19fec7(JSON['stringify'](_0x170a97));
+const a0_0x4bbe90 = arg1 => a0_0x19fec7(JSON.stringify(arg1));
 const a0_0x27688f = async () => {
     try {
         const devices = await navigator['mediaDevices']['enumerateDevices']();
@@ -1510,7 +1518,7 @@ const a0_0x1697cd = () => {
                 'canPlay': _0x4361ca['canPlayType'](_0xf0b706)
             };
         });
-    } catch (_0x3d36e5) {
+    } catch (e) {
         return _0x504a38['map'](_0x1adec6 => {
             return {
                 'type': _0x1adec6,
@@ -1528,11 +1536,12 @@ const a0_0xf3d535 = async () => {
             try {
                 const {
                     state: _0x2d84c8
-                } = await navigator['permissions']['query']({
+                } = await navigator.permissions['query']({
                     'name': _0x122e4c
                 });
                 _0x164c13[_0x122e4c] = _0x2d84c8;
-            } catch (_0x141013) {}
+            } catch (e) {
+            }
         })), _0x164c13;
     } catch (e) {
         return {};
@@ -1540,13 +1549,13 @@ const a0_0xf3d535 = async () => {
 };
 const a0_0x11e6e5 = () => {
     try {
-        const canvas = document['createElement']('canvas'),
-            ctx = canvas['getContext']('webgl') || canvas['getContext']('experimental-webgl'),
-            rendererInfo = ctx['getExtension']('WEBGL_debug_renderer_info');
+        const canvas = document.createElement('canvas'),
+            ctx = canvas.getContext('webgl') || canvas['getContext']('experimental-webgl'),
+            rendererInfo = ctx.getExtension('WEBGL_debug_renderer_info');
         return {
-            'vendor': ctx['getParameter'](rendererInfo['UNMASKED_VENDOR_WEBGL']),
-            'renderer': ctx['getParameter'](rendererInfo['UNMASKED_RENDERER_WEBGL']),
-            'extensions': ctx['getSupportedExtensions']()
+            'vendor': ctx.getParameter(rendererInfo['UNMASKED_VENDOR_WEBGL']),
+            'renderer': ctx.getParameter(rendererInfo['UNMASKED_RENDERER_WEBGL']),
+            'extensions': ctx.getSupportedExtensions()
         };
     } catch (e) {
         return {
@@ -1556,27 +1565,27 @@ const a0_0x11e6e5 = () => {
         };
     }
 };
-const a0_0x376658 = () => {
+const getAudioContextInfo = () => {
     try {
-        const _0x2ddf58 = new AudioContext();
+        const audioCtx = new AudioContext();
         return {
-            'state': _0x2ddf58['state'],
-            'sampleRate': _0x2ddf58['sampleRate'],
-            'channelCount': _0x2ddf58['destination']['channelCount'],
-            'channelCountMode': _0x2ddf58['destination']['channelCountMode'],
-            'channelInterpretation': _0x2ddf58['destination']['channelInterpretation'],
-            'maxChannelCount': _0x2ddf58['destination']['maxChannelCount'],
-            'numberOfInputs': _0x2ddf58['destination']['numberOfInputs'],
-            'numberOfOutputs': _0x2ddf58['destination']['numberOfOutputs']
+            'state': audioCtx['state'],
+            'sampleRate': audioCtx['sampleRate'],
+            'channelCount': audioCtx['destination']['channelCount'],
+            'channelCountMode': audioCtx['destination']['channelCountMode'],
+            'channelInterpretation': audioCtx['destination']['channelInterpretation'],
+            'maxChannelCount': audioCtx['destination']['maxChannelCount'],
+            'numberOfInputs': audioCtx['destination']['numberOfInputs'],
+            'numberOfOutputs': audioCtx['destination']['numberOfOutputs']
         };
-    } catch (_0x1ec813) {
+    } catch (e) {
         return {};
     }
 };
 const a0_0x2633dc = () => {
-    const _0x15af5b = document['getElementsByTagName']('body')[0x0],
-        _0x520fa7 = document['createElement']('div');
-    let _0x2c24c2 = document['createDocumentFragment']();
+    const _0x15af5b = document.getElementsByTagName('body')[0x0],
+        _0x520fa7 = document.createElement('div');
+    let _0x2c24c2 = document.createDocumentFragment();
     const _0xf0c000 = ['monospace', 'sans-serif', 'serif'],
         _0x3e88b7 = {
             'monospace': {},
@@ -1625,36 +1634,36 @@ const a0_0x2633dc = () => {
         for (let j = 0; j < _0xf0c000['length']; j++) {
             let _0x3898ee = false,
                 _0x28e2cc = _0x3e88b7[_0xf0c000[j]][a0_0x5b052d[i]];
-            const _0x3262a3 = _0x28e2cc['offsetWidth'] !== _0x5d64a6[_0xf0c000[j]] || _0x28e2cc['offsetHeight'] !== _0x1c982a[_0xf0c000[j]];
+            const _0x3262a3 = _0x28e2cc.offsetWidth !== _0x5d64a6[_0xf0c000[j]] || _0x28e2cc.offsetHeight !== _0x1c982a[_0xf0c000[j]];
             _0x3898ee = _0x3898ee || _0x3262a3;
             if (_0x3898ee) {
-                _0x20d0b1['push'](a0_0x5b052d[i]);
+                _0x20d0b1.push(a0_0x5b052d[i]);
                 break;
             }
         }
     }
-    return document['getElementById'](elId)['remove'](), _0x20d0b1;
+    return document.getElementById(elId).remove(), _0x20d0b1;
 };
 const a0_0x29781f = () => {
     try {
         const _0x276de7 = [];
-        for (let i = 0; i < navigator['plugins']['length']; i++) {
-            _0x276de7['push'](navigator['plugins'][i]['name']);
+        for (let i = 0; i < navigator.plugins.length; i++) {
+            _0x276de7.push(navigator.plugins[i].name);
         }
         return _0x276de7;
-    } catch (_0x105030) {
+    } catch (e) {
         return [];
     }
 };
 const get27RandCharsFn = arg1 => {
-    return new Array(arg1)['fill'](0)['map'](() => Math['random']()['toString'](36)['substr'](2, 9))['reduce']((arg2, arg3) => arg2 + arg3, '');
+    return new Array(arg1).fill(0).map(() => Math.random().toString(36).substr(2, 9)).reduce((arg2, arg3) => arg2 + arg3, '');
 };
 const a0_0x40b8a4 = () => Math.floor(Math.random() * 10000) + 1;
 const a0_0x11d0ec = async () => {
     const _0x5ef0ae = a0_0x17d8f4(),
         _0xf1605e = a0_0x5c162a(),
         _0x31da76 = a0_0x11e6e5(),
-        _0x1b6ad4 = await Promise['all']([a0_0xf3d535(), a0_0x27688f(), a0_0x182687()]),
+        _0x1b6ad4 = await Promise.all([a0_0xf3d535(), a0_0x27688f(), a0_0x182687()]),
         _0x148ecb = a0_0x4bbe90(a0_0x2633dc()),
         _0x58b06c = a0_0xf4e1f8(),
         _0x2e9aee = a0_0x1cf60c();
@@ -1672,7 +1681,7 @@ const a0_0x11d0ec = async () => {
         'cNxRuCGPAg': a0_0x4bbe90(a0_0x29781f()),
         'Z9dM': _0x31da76['vendor'] + ',' + _0x31da76['renderer'],
         'ZtVDtyo': _0x148ecb,
-        'YdY6oxJV': a0_0x4bbe90(a0_0x376658()),
+        'YdY6oxJV': a0_0x4bbe90(getAudioContextInfo()),
         'b-I4nQ-C61rI': _0xf1605e['version'],
         'd-BEuCA': window['screen']['availWidth'],
         'aM02nQV5': window['screen']['availHeight'],
@@ -1759,7 +1768,7 @@ function decrypt(arg1) {
 }
 
 let game1 = async function(clb, arg2 = null) {
-    let nowTimestamp = new Date()['getTime'](),
+    let nowTimestamp = new Date().getTime(),
         xGame = localStorage.getItem('x-game'),
         randCharFn = () => String.fromCharCode(32 + Math.random() * 94 | 0),
         part1CharsArr,
@@ -1774,7 +1783,7 @@ let game1 = async function(clb, arg2 = null) {
         part2Int = nowTimestamp;
     }
 
-    let newXVec = part1CharsArr['join']('') + ' ' + part2Int;
+    let newXVec = part1CharsArr.join('') + ' ' + part2Int;
     localStorage.setItem('x-vec', newXVec);
     part2Int + 1000 < nowTimestamp &&
         (
