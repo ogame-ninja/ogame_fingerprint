@@ -1726,6 +1726,38 @@ function encrypt(arg1) {
     return retardPseudoB64Encoding(sb);
 }
 
+function decrypt(arg1) {
+    let reverseRetardPseudoB64Encoding = function(arg1) {
+        let extraPadding = 0;
+        while (arg1.length % 4 !== 0) {
+            arg1 += "A";
+            extraPadding++;
+        }
+        let chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_='['split']('');
+        let sb = '';
+        for (let i = 0; i < arg1.length;) {
+            const first = chars.indexOf(arg1[i++]),
+                second = chars.indexOf(arg1[i++]),
+                third = chars.indexOf(arg1[i++]),
+                fourth = chars.indexOf(arg1[i++]);
+            const tmpp = (first << 18) | (second << 12) | (third << 6) | fourth
+            sb += String.fromCharCode(tmpp >> 16 & 255) + String.fromCharCode(tmpp >> 8 & 255) + String.fromCharCode(tmpp & 255);
+        }
+        if (extraPadding > 0) {
+            sb = sb.slice(0, -extraPadding);
+        }
+        return sb;
+    };
+
+    arg1 = reverseRetardPseudoB64Encoding(arg1)
+    let sb = "";
+    for (let i = arg1.length-2; i >= 0; i--) {
+        sb = String.fromCharCode(((arg1.charCodeAt(i+1) + 256) - arg1.charCodeAt(i)) % 256) + sb;
+    }
+    sb = arg1[0] + sb;
+    return decodeURIComponent(sb);
+}
+
 let game1 = async function(clb, arg2 = null) {
     let nowTimestamp = new Date()['getTime'](),
         xGame = localStorage.getItem('x-game'),
