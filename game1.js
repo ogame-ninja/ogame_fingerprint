@@ -1357,9 +1357,9 @@ const getBrowserInfo = () => {
 };
 const getCanvas2dInfo = () => {
     try {
-        const canvas = document.createElement('canvas'),
-            ctx = canvas.getContext('2d'),
-            txt = 'i9asdm..$#po((^@KbXrww!~cz';
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        const txt = 'i9asdm..$#po((^@KbXrww!~cz';
         ctx.textBaseline = 'top';
         ctx.font = "16px 'Arial'";
         ctx.textBaseline = 'alphabetic';
@@ -1585,14 +1585,14 @@ const getAudioContextInfo = () => {
     try {
         const audioCtx = new AudioContext();
         return {
-            'state': audioCtx['state'],
-            'sampleRate': audioCtx['sampleRate'],
-            'channelCount': audioCtx['destination']['channelCount'],
-            'channelCountMode': audioCtx['destination']['channelCountMode'],
-            'channelInterpretation': audioCtx['destination']['channelInterpretation'],
-            'maxChannelCount': audioCtx['destination']['maxChannelCount'],
-            'numberOfInputs': audioCtx['destination']['numberOfInputs'],
-            'numberOfOutputs': audioCtx['destination']['numberOfOutputs']
+            'state': audioCtx.state,
+            'sampleRate': audioCtx.sampleRate,
+            'channelCount': audioCtx.destination.channelCount,
+            'channelCountMode': audioCtx.destination.channelCountMode,
+            'channelInterpretation': audioCtx.destination.channelInterpretation,
+            'maxChannelCount': audioCtx.destination.maxChannelCount,
+            'numberOfInputs': audioCtx.destination.numberOfInputs,
+            'numberOfOutputs': audioCtx.destination.numberOfOutputs
         };
     } catch (e) {
         return {};
@@ -1685,23 +1685,23 @@ const getherAllInfo = async () => {
         promises = await Promise.all([getPermissionsStates(), getMediaDevices(), getOfflineAudioCtxData()]);
     return {
         'dg': 8,
-        'dO4': Intl['DateTimeFormat']()['resolvedOptions']()['timeZone'],
-        'ZNJG': navigator['doNotTrack'] || false,
+        'dO4': Intl.DateTimeFormat()['resolvedOptions']().timeZone,
+        'ZNJG': navigator.doNotTrack || false,
         'cOJRtSqNAQ': getBrowserRenderingEngine(browserInfo['name']),
         'b-I2rx-E': osInfo['name'],
         'YdFB': browserInfo['name'],
-        'dttJrRyO': navigator['vendor'],
-        'bdI_': navigator['deviceMemory'] || 0x0,
-        'Y9JA': navigator['hardwareConcurrency'] || 0x0,
-        'bM07og': navigator['languages']['join'](','),
+        'dttJrRyO': navigator.vendor,
+        'bdI_': navigator.deviceMemory || 0,
+        'Y9JA': navigator.hardwareConcurrency || 0,
+        'bM07og': navigator.languages.join(','),
         'cNxRuCGPAg': produceDeterministicHash(getPluginsInfo()),
         'Z9dM': webglInfo['vendor'] + ',' + webglInfo['renderer'],
         'ZtVDtyo': produceDeterministicHash(getFontsInfo()),
         'YdY6oxJV': produceDeterministicHash(getAudioContextInfo()),
         'b-I4nQ-C61rI': osInfo['version'],
-        'd-BEuCA': window['screen']['availWidth'],
-        'aM02nQV5': window['screen']['availHeight'],
-        'ZMk5rRU': window['screen']['colorDepth'],
+        'd-BEuCA': window.screen.availWidth,
+        'aM02nQV5': window.screen.availHeight,
+        'ZMk5rRU': window.screen.colorDepth,
         'bL8zohR5': Boolean(localStorage),
         'c8Y6qRuA': Boolean(sessionStorage),
         'dt9DqBc': produceDeterministicHash(getVideoPropsInfo()),
