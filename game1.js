@@ -1,4 +1,4 @@
-const a0_0x5b052d = Object['keys']({
+const fontsMap = Object['keys']({
         '.Aqua Kana': false,
         '.Helvetica LT MM': false,
         '.Times LT MM': false,
@@ -1043,7 +1043,7 @@ const a0_0x5b052d = Object['keys']({
         'mry_KacstQurn': false,
         'ori1Uni': false
     });
-const a0_0x182687 = () => {
+const getOfflineAudioCtxData = () => {
     try {
         const offlineAudioCtxClass = window.OfflineAudioContext || window['webkitOfflineAudioContext'];
         if (!offlineAudioCtxClass) {
@@ -1051,7 +1051,7 @@ const a0_0x182687 = () => {
         }
         const offlineAudioCtx = new offlineAudioCtxClass(1, 5000, 44100),
             oscillator = offlineAudioCtx.createOscillator();
-        oscillator.type = 'triangle',
+        oscillator.type = 'triangle';
         oscillator.frequency.value = 10000;
         const compressor = offlineAudioCtx.createDynamicsCompressor();
         compressor.threshold.value = -50;
@@ -1062,52 +1062,57 @@ const a0_0x182687 = () => {
         oscillator.connect(compressor);
         compressor.connect(offlineAudioCtx.destination);
         oscillator.start(0);
-        const [_0xe5334b, _0x5a7f02] = a0_0x27c8e4(offlineAudioCtx);
-        const _0xc0f674 = _0xe5334b.then(audioBuffer => sumAbs(audioBuffer.getChannelData(0).subarray(4500)), reason => {
+        const [promise, cancelClb] = startOfflineAudioCtx(offlineAudioCtx);
+        const promise1 = promise.then(audioBuffer => sumAbs(audioBuffer.getChannelData(0).subarray(4500)), reason => {
             if (reason.name === 'timeout' || reason.name === 'suspended') {
                 return 'timeout';
             }
             throw reason;
         });
-        return _0xc0f674.catch(() => undefined), _0x5a7f02(), _0xc0f674;
+        promise1.catch(() => undefined);
+        cancelClb();
+        return promise1;
     } catch (e) {
         return -1;
     }
 };
 
-function a0_0x27c8e4(offlineAudioCtx) {
-    let _0x5d654a = () => undefined;
-    const _0x54264f = new Promise((resolveClb, rejectClb) => {
-        let _0x45539e = false,
-            _0x3e10e8 = 0,
-            _0x3e5d9c = 0;
+function startOfflineAudioCtx(offlineAudioCtx) {
+    let cancelClb = () => undefined;
+    const promise = new Promise((resolveClb, rejectClb) => {
+        let flag = false,
+            suspendedCount = 0,
+            startTime = 0;
         offlineAudioCtx.oncomplete = offlineAudioCompletionEvent => resolveClb(offlineAudioCompletionEvent.renderedBuffer);
-        const _0x2a7c3c = () => {
-            setTimeout(() => rejectClb(newErrorFromStr('timeout')), Math.min(500, _0x3e5d9c + 5000 - Date.now()));
+        const startTimeout = () => {
+            setTimeout(() => rejectClb(newErrorFromStr('timeout')), Math.min(500, startTime + 5000 - Date.now()));
         };
-        const _0x2cb726 = () => {
+        const render = () => {
             try {
                 offlineAudioCtx.startRendering();
                 switch (offlineAudioCtx.state) {
                     case 'running':
-                        _0x3e5d9c = Date.now();
-                        _0x45539e && _0x2a7c3c();
+                        startTime = Date.now();
+                        flag && startTimeout();
                         break;
                     case 'suspended':
-                        !document.hidden && _0x3e10e8++;
-                        _0x45539e && _0x3e10e8 >= 3 ? rejectClb(newErrorFromStr('suspended')) : setTimeout(_0x2cb726, 500);
+                        !document.hidden && suspendedCount++;
+                        flag && suspendedCount >= 3 ? rejectClb(newErrorFromStr('suspended')) : setTimeout(render, 500);
                         break;
                 }
             } catch (e) {
                 rejectClb(e);
             }
         };
-        _0x2cb726();
-        _0x5d654a = () => {
-            !_0x45539e && (_0x45539e = true, _0x3e5d9c > 0 && _0x2a7c3c());
+        render();
+        cancelClb = () => {
+            if (!flag) {
+                flag = true;
+                startTime > 0 && startTimeout();
+            }
         };
     });
-    return [_0x54264f, _0x5d654a];
+    return [promise, cancelClb];
 }
 
 function sumAbs(float32Arr) {
@@ -1140,9 +1145,9 @@ const getBrowserRenderingEngine = uaName => {
         }
     };
 
-const a0_0x5c162a = () => {
+const getOSInfo = () => {
         try {
-            const _0x21db71 = [{
+            const osArr = [{
                     's': 'Windows 10',
                     'r': /(Windows 10.0|Windows NT 10.0)/
                 }, {
@@ -1224,16 +1229,21 @@ const a0_0x5c162a = () => {
                     's': 'Search Bot',
                     'r': /(nuhk|Googlebot|Yammybot|Openbot|Slurp|MSNBot|Ask Jeeves\/Teoma | ia_archiver) /
             }];
-        let _0x120cdc, _0x5e8ac4 = _0x21db71['filter'](_0x473d5e => _0x473d5e['r']['test'](navigator['userAgent']))[0x0]['s'];
-        /Windows/ ['test'](_0x5e8ac4) && (_0x120cdc = /Windows (.*)/ ['exec'](_0x5e8ac4)[0x1], _0x5e8ac4 = 'Windows');
+        let _0x120cdc;
+        let _0x5e8ac4 = osArr.filter(osItem => osItem['r']['test'](navigator.userAgent))[0]['s'];
+        if (/Windows/ ['test'](_0x5e8ac4)) {
+            _0x120cdc = /Windows (.*)/ ['exec'](_0x5e8ac4)[1];
+            _0x5e8ac4 = 'Windows';
+        }
         switch (_0x5e8ac4) {
             case 'Mac OS':
             case 'Mac OS X':
             case 'Android':
-                _0x120cdc = /(?:Android|Mac OS|Mac OS X|MacPPC|MacIntel|Mac_PowerPC|Macintosh) ([._\d]+)/ ['exec'](navigator['userAgent'])[0x1];
+                _0x120cdc = /(?:Android|Mac OS|Mac OS X|MacPPC|MacIntel|Mac_PowerPC|Macintosh) ([._\d]+)/ ['exec'](navigator.userAgent)[1];
                 break;
             case 'iOS':
-                _0x120cdc = /OS (\d+)_(\d+)_?(\d+)?/ ['exec'](navigator['appVersion']), _0x120cdc = _0x120cdc[0x1] + '.' + _0x120cdc[0x2] + '.' + (_0x120cdc[0x3] | 0x0);
+                _0x120cdc = /OS (\d+)_(\d+)_?(\d+)?/ ['exec'](navigator.appVersion);
+                _0x120cdc = _0x120cdc[1] + '.' + _0x120cdc[2] + '.' + (_0x120cdc[3] | 0);
                 break;
         }
         return {
@@ -1247,19 +1257,19 @@ const a0_0x5c162a = () => {
         };
     }
 };
-const a0_0x17d8f4 = () => {
+const getBrowserInfo = () => {
     try {
         const userAgent = navigator['userAgent'],
             infoArr = [{
                 'name': 'Opera',
                 'getInfo': arg1 => {
-                    if (userAgent['indexOf']('Version') !== -1) return {
+                    if (userAgent.indexOf('Version') !== -1) return {
                         'name': 'Opera',
-                        'version': userAgent['substring'](arg1 + 8)
+                        'version': userAgent.substring(arg1 + 8)
                     };
                     return {
                         'name': 'Opera',
-                        'version': userAgent['substring'](arg1 + 6)
+                        'version': userAgent.substring(arg1 + 6)
                     };
                 }
             }, {
@@ -1267,7 +1277,7 @@ const a0_0x17d8f4 = () => {
                 'getInfo': arg1 => {
                     return {
                         'name': 'Opera',
-                        'version': userAgent['substring'](arg1 + 4)
+                        'version': userAgent.substring(arg1 + 4)
                     };
                 }
             }, {
@@ -1275,7 +1285,7 @@ const a0_0x17d8f4 = () => {
                 'getInfo': arg1 => {
                     return {
                         'name':'Edge',
-                        'version': userAgent['substring'](arg1 + 5)
+                        'version': userAgent.substring(arg1 + 5)
                     };
                 }
             }, {
@@ -1283,7 +1293,7 @@ const a0_0x17d8f4 = () => {
                 'getInfo': arg1 => {
                     return {
                         'name': 'Edge',
-                        'version': userAgent['substring'](arg1 + 4)
+                        'version': userAgent.substring(arg1 + 4)
                     };
                 }
             }, {
@@ -1291,7 +1301,7 @@ const a0_0x17d8f4 = () => {
                 'getInfo': arg1 => {
                     return {
                         'name': 'Internet Explorer',
-                        'version': userAgent['substring'](arg1 + 5)
+                        'version': userAgent.substring(arg1 + 5)
                     };
                 }
             }, {
@@ -1299,7 +1309,7 @@ const a0_0x17d8f4 = () => {
                 'getInfo': arg1 => {
                     return {
                         'name': 'Chrome',
-                        'version': userAgent['substring'](arg1 + 7)
+                        'version': userAgent.substring(arg1 + 7)
                     };
                 }
             }, {
@@ -1308,11 +1318,11 @@ const a0_0x17d8f4 = () => {
                     const _0x281dce = userAgent.indexOf('Version');
                     if (_0x281dce !== -1) return {
                         'name': 'Safari',
-                        'version': userAgent['substring'](arg1 + 8)
+                        'version': userAgent.substring(arg1 + 8)
                     };
                     return {
                         'name': 'Safari',
-                        'version': userAgent['substring'](arg1 + 7)
+                        'version': userAgent.substring(arg1 + 7)
                     };
                 }
             }, {
@@ -1320,7 +1330,7 @@ const a0_0x17d8f4 = () => {
                 'getInfo': arg1 => {
                     return {
                         'name': 'Firefox',
-                        'version': userAgent['substring'](arg1 + 8)
+                        'version': userAgent.substring(arg1 + 8)
                     };
                 }
             }, {
@@ -1328,16 +1338,16 @@ const a0_0x17d8f4 = () => {
                 'getInfo': () => {
                     return {
                         'name': 'Internet Explorer',
-                        'version': userAgent['substring'](userAgent['indexOf']('rv:') + 3)
+                        'version': userAgent.substring(userAgent.indexOf('rv:') + 3)
                     };
                 }
             }];
         return infoArr['filter'](({
             name: _0x57d66a
-        }) => userAgent['indexOf'](_0x57d66a) !== -1)['map'](({
+        }) => userAgent.indexOf(_0x57d66a) !== -1).map(({
             getInfo: _0x376925,
             name: _0x1d7da5
-        }) => _0x376925(userAgent['indexOf'](_0x1d7da5)))[0];
+        }) => _0x376925(userAgent.indexOf(_0x1d7da5)))[0];
     } catch (e) {
         return {
             'name': 'Unknown',
@@ -1345,7 +1355,7 @@ const a0_0x17d8f4 = () => {
         };
     }
 };
-const a0_0x1cf60c = () => {
+const getCanvas2dInfo = () => {
     try {
         const canvas = document.createElement('canvas'),
             ctx = canvas.getContext('2d'),
@@ -1376,7 +1386,7 @@ const a0_0x1cf60c = () => {
         return -1;
     }
 };
-const a0_0xf4e1f8 = () => {
+const getWebglRenderInfoHash = () => {
     try {
         const canvasWidth = 256,
             canvasHeight = 128,
@@ -1394,40 +1404,42 @@ const a0_0xf4e1f8 = () => {
                 glBuf = webglCtx.createBuffer();
             webglCtx.bindBuffer(webglCtx.ARRAY_BUFFER, glBuf);
             const floatsArr = new Float32Array([-0.2, -0.9, 0x0, 0.4, -0.26, 0x0, 0x0, 0.7321, 0x0]);
-            webglCtx.bufferData(webglCtx.ARRAY_BUFFER, floatsArr, webglCtx.STATIC_DRAW),
-            glBuf.itemSize = 3,
+            webglCtx.bufferData(webglCtx.ARRAY_BUFFER, floatsArr, webglCtx.STATIC_DRAW);
+            glBuf.itemSize = 3;
             glBuf.numItems = 3;
-            const prog = webglCtx.createProgram(),
-                vertexShader = webglCtx.createShader(webglCtx.VERTEX_SHADER);
-            webglCtx.shaderSource(vertexShader, attrStr), webglCtx.compileShader(vertexShader);
+            const prog = webglCtx.createProgram();
+            const vertexShader = webglCtx.createShader(webglCtx.VERTEX_SHADER);
+            webglCtx.shaderSource(vertexShader, attrStr);
+            webglCtx.compileShader(vertexShader);
             const fragmentShader = webglCtx.createShader(webglCtx.FRAGMENT_SHADER);
-            webglCtx.shaderSource(fragmentShader, precisionStr),
-            webglCtx.compileShader(fragmentShader),
-            webglCtx.attachShader(prog, vertexShader),
-            webglCtx.attachShader(prog, fragmentShader),
-            webglCtx.linkProgram(prog),
-            webglCtx.useProgram(prog),
-            prog.vertexPosAttrib = webglCtx.getAttribLocation(prog, 'attrVertex'),
-            prog.offsetUniform = webglCtx.getUniformLocation(prog, 'uniformOffset'),
-            webglCtx.enableVertexAttribArray(prog.vertexPosArray),
-            webglCtx.vertexAttribPointer(prog.vertexPosAttrib, glBuf.itemSize, webglCtx.FLOAT, false, 0, 0),
-            webglCtx.uniform2f(prog.offsetUniform, 1, 1),
+            webglCtx.shaderSource(fragmentShader, precisionStr);
+            webglCtx.compileShader(fragmentShader);
+            webglCtx.attachShader(prog, vertexShader);
+            webglCtx.attachShader(prog, fragmentShader);
+            webglCtx.linkProgram(prog);
+            webglCtx.useProgram(prog);
+            prog.vertexPosAttrib = webglCtx.getAttribLocation(prog, 'attrVertex');
+            prog.offsetUniform = webglCtx.getUniformLocation(prog, 'uniformOffset');
+            webglCtx.enableVertexAttribArray(prog.vertexPosArray);
+            webglCtx.vertexAttribPointer(prog.vertexPosAttrib, glBuf.itemSize, webglCtx.FLOAT, false, 0, 0);
+            webglCtx.uniform2f(prog.offsetUniform, 1, 1);
             webglCtx.drawArrays(webglCtx.TRIANGLE_STRIP, 0x0, glBuf.numItems);
         } catch (e) {
         }
         const _0x3b32d0 = new Uint8Array(canvasWidth * canvasHeight * 4);
         webglCtx.readPixels(0, 0, canvasWidth, canvasHeight, webglCtx.RGBA, webglCtx.UNSIGNED_BYTE, _0x3b32d0);
-        let jsonStr = JSON.stringify(_0x3b32d0).replace(/,?\"[0-9]+\":/g, '');
-        return a0_0x19fec7(jsonStr);
+        let jsonStr = JSON.stringify(_0x3b32d0).replace(/,?"[0-9]+":/g, '');
+        return produceDeterministicHashFromJson(jsonStr);
     } catch (e) {
         return '-1';
     }
 };
-const a0_0x19fec7 = (function() {
+const produceDeterministicHashFromJson = (function() {
     let a = 1,
         i,
         arr1 = [],
         arr2 = [];
+
     while (++a < 18) {
         for (i = a * a; i < 312; i += a) {
             arr1[i] = 1;
@@ -1437,17 +1449,21 @@ const a0_0x19fec7 = (function() {
     function _0x2fb1c7(arg1, arg2) {
         return Math.pow(arg1, 1 / arg2) % 1 * 0x100000000 | 0;
     }
+
     for (a = 1, i = 0; a < 313;) {
-        !arr1[++a] && (arr2[i] = _0x2fb1c7(a, 2), arr1[i++] = _0x2fb1c7(a, 3));
+        if (!arr1[++a]) {
+            arr2[i] = _0x2fb1c7(a, 2);
+            arr1[i++] = _0x2fb1c7(a, 3)
+        }
     }
 
     function _0x18082b(arg1, arg2) {
         return arg1 >>> arg2 | arg1 << 32 - arg2;
     }
 
-    function _0x16f142(_0x421863) {
+    function produceResultFn(jsonStr) {
         let _0xb8c1fb = arr2.slice(a = 0),
-            _0x31d2b5 = unescape(encodeURI(_0x421863)),
+            _0x31d2b5 = unescape(encodeURI(jsonStr)),
             _0x5ec952 = [],
             _0x56ff9e = _0x31d2b5.length,
             _0x22e175 = [],
@@ -1455,14 +1471,16 @@ const a0_0x19fec7 = (function() {
         for (; a < _0x56ff9e;) {
             _0x22e175[a >> 2] |= (_0x31d2b5.charCodeAt(a) & 255) << 8 * (3 - a++ % 4);
         }
-        _0x56ff9e *= 8, _0x22e175[_0x56ff9e >> 5] |= 0x80 << 24 - _0x56ff9e % 32, _0x22e175[_0x487300 = _0x56ff9e + 64 >> 5 | 15] = _0x56ff9e;
+        _0x56ff9e *= 8;
+        _0x22e175[_0x56ff9e >> 5] |= 0x80 << 24 - _0x56ff9e % 32;
+        _0x22e175[_0x487300 = _0x56ff9e + 64 >> 5 | 15] = _0x56ff9e;
         for (a = 0; a < _0x487300; a += 16) {
             _0x1558fb = _0xb8c1fb.slice(i = 0, 8);
             for (; i < 64; _0x1558fb[4] += _0x2e7183) {
                 i < 16 ? _0x5ec952[i] = _0x22e175[i + a] : _0x5ec952[i] = (_0x18082b(_0x2e7183 = _0x5ec952[i - 2], 0x11) ^ _0x18082b(_0x2e7183, 19) ^ _0x2e7183 >>> 10) +
-                (_0x5ec952[i - 7] | 0) + (_0x18082b(_0x2e7183 = _0x5ec952[i - 15], 7) ^ _0x18082b(_0x2e7183, 18) ^ _0x2e7183 >>> 3) +
-                (_0x5ec952[i - 16] | 0), _0x1558fb.unshift((_0x2e7183 = (_0x1558fb.pop() + (_0x18082b(_0x421863 = _0x1558fb[4], 6) ^
-                _0x18082b(_0x421863, 11) ^ _0x18082b(_0x421863, 25)) + ((_0x421863 & _0x1558fb[5] ^ ~_0x421863 & _0x1558fb[6]) + arr1[i]) | 0) +
+                (_0x5ec952[i - 7] | 0) + (_0x18082b(_0x2e7183 = _0x5ec952[i - 15], 7) ^ _0x18082b(_0x2e7183, 18) ^ _0x2e7183 >>> 3) + (_0x5ec952[i - 16] | 0);
+                _0x1558fb.unshift((_0x2e7183 = (_0x1558fb.pop() + (_0x18082b(jsonStr = _0x1558fb[4], 6) ^
+                _0x18082b(jsonStr, 11) ^ _0x18082b(jsonStr, 25)) + ((jsonStr & _0x1558fb[5] ^ ~jsonStr & _0x1558fb[6]) + arr1[i]) | 0) +
                 (_0x5ec952[i++] | 0)) + (_0x18082b(_0x56ff9e = _0x1558fb[0], 2) ^ _0x18082b(_0x56ff9e, 0xd) ^ _0x18082b(_0x56ff9e, 0x16)) + (_0x56ff9e & _0x1558fb[0x1] ^
                 _0x1558fb[0x1] & _0x1558fb[2] ^ _0x1558fb[2] & _0x56ff9e));
             }
@@ -1475,31 +1493,32 @@ const a0_0x19fec7 = (function() {
         }
         return _0x31d2b5;
     }
-    return _0x16f142;
+
+    return produceResultFn;
 }());
-const a0_0x4bbe90 = arg1 => a0_0x19fec7(JSON.stringify(arg1));
-const a0_0x27688f = async () => {
+const produceDeterministicHash = serializable => produceDeterministicHashFromJson(JSON.stringify(serializable));
+const getMediaDevices = async () => {
     try {
-        const devices = await navigator['mediaDevices']['enumerateDevices']();
-        return devices['map'](device => device['kind'])['sort']();
+        const devices = await navigator.mediaDevices.enumerateDevices();
+        return devices.map(device => device.kind).sort();
     } catch (e) {
         return [];
     }
 };
-const a0_0x40e245 = () => {
-    const audioStrs = ['audio/aac', 'audio/flac', 'audio/mpeg', 'audio/mp4; codecs="mp4a.40.2"',
+const getAudioPropsInfo = () => {
+    const audioProps = ['audio/aac', 'audio/flac', 'audio/mpeg', 'audio/mp4; codecs="mp4a.40.2"',
     	'audio/ogg; codecs="flac"', 'audio/ogg; codecs="vorbis"', 'audio/ogg; codecs="opus"',
     	'audio/wav; codecs="1"', 'audio/webm; codecs="vorbis"', 'audio/webm; codecs="opus"'];
     try {
-        const audioEl = document['createElement']('audio');
-        return audioStrs['map'](audioStr => {
+        const audioEl = document.createElement('audio');
+        return audioProps.map(audioStr => {
             return {
                 'type': audioStr,
-                'canPlay': audioEl['canPlayType'](audioStr)
+                'canPlay': audioEl.canPlayType(audioStr)
             };
         });
     } catch (e) {
-        return audioStrs['map'](audioStr => {
+        return audioProps.map(audioStr => {
             return {
                 'type': audioStr,
                 'canPlay': 'no info'
@@ -1507,50 +1526,47 @@ const a0_0x40e245 = () => {
         });
     }
 };
-const a0_0x1697cd = () => {
-    const _0x504a38 = ['video/ogg; codecs="theora"', 'video/ogg; codecs="opus"', 'video/mp4; codecs="avc1.42E01E"', 'video/mp4; codecs="flac"',
+const getVideoPropsInfo = () => {
+    const videoProps = ['video/ogg; codecs="theora"', 'video/ogg; codecs="opus"', 'video/mp4; codecs="avc1.42E01E"', 'video/mp4; codecs="flac"',
     	'video/webm; codecs="vp8, vorbis"', 'video/webm; codecs="vp9"', 'application/x-mpegURL; codecs="avc1.42E01E"'];
     try {
-        const _0x4361ca = document['createElement']('video');
-        return _0x504a38['map'](_0xf0b706 => {
+        const videoEl = document.createElement('video');
+        return videoProps.map(prop => {
             return {
-                'type': _0xf0b706,
-                'canPlay': _0x4361ca['canPlayType'](_0xf0b706)
+                'type': prop,
+                'canPlay': videoEl.canPlayType(prop)
             };
         });
     } catch (e) {
-        return _0x504a38['map'](_0x1adec6 => {
+        return videoProps.map(prop => {
             return {
-                'type': _0x1adec6,
+                'type': prop,
                 'canPlay': 'no info'
             };
         });
     }
 };
-const a0_0xf3d535 = async () => {
+const getPermissionsStates = async () => {
     try {
-        const _0x134b6c = ['accelerometer', 'camera', 'clipboard-read', 'clipboard-write',
-        	'geolocation', 'background-sync', 'magnetometer', 'microphone', 'midi', 'notifications', 'payment-handler', 'persistent-storage'],
-            _0x164c13 = {};
-        return await Promise['all'](_0x134b6c['map'](async _0x122e4c => {
+        const props = ['accelerometer', 'camera', 'clipboard-read', 'clipboard-write',
+        	'geolocation', 'background-sync', 'magnetometer', 'microphone', 'midi', 'notifications', 'payment-handler', 'persistent-storage'];
+        const out = {};
+        await Promise.all(props.map(async propName => {
             try {
-                const {
-                    state: _0x2d84c8
-                } = await navigator.permissions['query']({
-                    'name': _0x122e4c
-                });
-                _0x164c13[_0x122e4c] = _0x2d84c8;
+                const { state: permissionState } = await navigator.permissions.query({ 'name': propName });
+                out[propName] = permissionState;
             } catch (e) {
             }
-        })), _0x164c13;
+        }));
+        return out;
     } catch (e) {
         return {};
     }
 };
-const a0_0x11e6e5 = () => {
+const getWebglInfo = () => {
     try {
         const canvas = document.createElement('canvas'),
-            ctx = canvas.getContext('webgl') || canvas['getContext']('experimental-webgl'),
+            ctx = canvas.getContext('webgl') || canvas.getContext('experimental-webgl'),
             rendererInfo = ctx.getExtension('WEBGL_debug_renderer_info');
         return {
             'vendor': ctx.getParameter(rendererInfo['UNMASKED_VENDOR_WEBGL']),
@@ -1582,75 +1598,78 @@ const getAudioContextInfo = () => {
         return {};
     }
 };
-const a0_0x2633dc = () => {
-    const _0x15af5b = document.getElementsByTagName('body')[0x0],
-        _0x520fa7 = document.createElement('div');
-    let _0x2c24c2 = document.createDocumentFragment();
-    const _0xf0c000 = ['monospace', 'sans-serif', 'serif'],
-        _0x3e88b7 = {
+const getFontsInfo = () => {
+    const bodyEl = document.getElementsByTagName('body')[0x0],
+        divEl = document.createElement('div');
+    let fragmentEl = document.createDocumentFragment();
+    const fontTypes = ['monospace', 'sans-serif', 'serif'];
+    const fontTypesMaps = {
             'monospace': {},
             'sans-serif': {},
             'serif': {}
-        },
-        className = 'fp-check-runtime-0.0.1',
-        elId = 'fp-div-check-runtime-0.0.1',
-        _0x5d64a6 = {},
-        _0x1c982a = {};
-    _0x520fa7['id'] = elId,
-    _0x15af5b['appendChild'](_0x520fa7),
-    _0xf0c000['forEach']((_0x2080a7, _0xa6ebb4) => {
-        const _0x2ab923 = document['createElement']('span');
-        _0x2ab923['style']['fontSize'] = '72px', _0x2ab923['innerHTML'] = 'mmmmmmmmmmlli',
-        _0x2ab923['style']['fontFamily'] = _0xf0c000[_0xa6ebb4], _0x2ab923['style']['position'] = 'fixed',
-        _0x2ab923['style']['visibility'] = 'hidden',
-        _0x2ab923['classList']['add'](className),
-        _0x2c24c2['appendChild'](_0x2ab923);
-    }),
-    a0_0x5b052d['forEach'](_0x177b70 => {
-        _0xf0c000['forEach'](_0x5a65a1 => {
-            const
-            _0x2a4f32 = document['createElement']('span');
-            _0x2a4f32['style']['fontSize'] = '72px',
-            _0x2a4f32['innerHTML'] = 'mmmmmmmmmmlli',
-            _0x2a4f32['style']['fontFamily'] = _0x177b70 + ',' + _0x5a65a1,
-            _0x2a4f32['style']['position'] = 'fixed',
-            _0x2a4f32['style']['visibility'] = 'hidden',
-            _0x2a4f32['id'] = _0x177b70 + '&' + _0x5a65a1,
-            _0x2a4f32['classList']['add'](className),
-            _0x2c24c2['appendChild'](_0x2a4f32);
-        });
-    }),
-    _0x520fa7['appendChild'](_0x2c24c2);
-    const _0x2ac2b1 = _0x520fa7['children'];
-    _0xf0c000['forEach']((_0x162338, _0x26eb42) => {
-        _0x5d64a6[_0xf0c000[_0x26eb42]] = _0x2ac2b1[_0x26eb42]['offsetWidth'], _0x1c982a[_0xf0c000[_0x26eb42]] = _0x2ac2b1[_0x26eb42]['offsetHeight'];
+        };
+    const className = 'fp-check-runtime-0.0.1';
+    const elId = 'fp-div-check-runtime-0.0.1';
+    const fontTypesOffsetWidthMap = {};
+    const fontTypesOffsetHeightMap = {};
+    divEl.id = elId;
+    bodyEl.appendChild(divEl);
+    fontTypes.forEach((fontType, fontIdx) => {
+        const spanEl = document.createElement('span');
+        spanEl.style.fontSize = '72px';
+        spanEl.innerHTML = 'mmmmmmmmmmlli';
+        spanEl.style.fontFamily = fontTypes[fontIdx];
+        spanEl.style.position = 'fixed';
+        spanEl.style.visibility = 'hidden';
+        spanEl.classList.add(className);
+        fragmentEl.appendChild(spanEl);
     });
-    for (let _0x49ba29 = 0; _0x49ba29 < _0x2ac2b1['length']; _0x49ba29++) {
-        const [_0xe7ee07, _0x548333] = _0x2ac2b1[_0x49ba29]['id']['split']('&');
-        _0x548333 && (_0x3e88b7[_0x548333][_0xe7ee07] = _0x2ac2b1[_0x49ba29]);
+    fontsMap.forEach(fontEl => {
+        fontTypes.forEach(fontType => {
+            const spanEl = document.createElement('span');
+            spanEl.style.fontSize = '72px';
+            spanEl.innerHTML = 'mmmmmmmmmmlli';
+            spanEl.style.fontFamily = fontEl + ',' + fontType;
+            spanEl.style.position = 'fixed';
+            spanEl.style.visibility = 'hidden';
+            spanEl.id = fontEl + '&' + fontType;
+            spanEl.classList.add(className);
+            fragmentEl.appendChild(spanEl);
+        });
+    });
+    divEl.appendChild(fragmentEl);
+    const divChildren = divEl.children;
+    fontTypes.forEach((fontType, idx) => {
+        fontTypesOffsetWidthMap[fontTypes[idx]] = divChildren[idx].offsetWidth;
+        fontTypesOffsetHeightMap[fontTypes[idx]] = divChildren[idx].offsetHeight;
+    });
+    for (let i = 0; i < divChildren.length; i++) {
+        const [splitPart1, splitPart2] = divChildren[i].id.split('&');
+        splitPart2 && (fontTypesMaps[splitPart2][splitPart1] = divChildren[i]);
     }
-    const _0x20d0b1 = [];
-    for (let i = 0; i < a0_0x5b052d['length']; i++) {
-        for (let j = 0; j < _0xf0c000['length']; j++) {
-            let _0x3898ee = false,
-                _0x28e2cc = _0x3e88b7[_0xf0c000[j]][a0_0x5b052d[i]];
-            const _0x3262a3 = _0x28e2cc.offsetWidth !== _0x5d64a6[_0xf0c000[j]] || _0x28e2cc.offsetHeight !== _0x1c982a[_0xf0c000[j]];
-            _0x3898ee = _0x3898ee || _0x3262a3;
-            if (_0x3898ee) {
-                _0x20d0b1.push(a0_0x5b052d[i]);
+    const out = [];
+    for (let i = 0; i < fontsMap.length; i++) {
+        for (let j = 0; j < fontTypes.length; j++) {
+            let _0x28e2cc = fontTypesMaps[fontTypes[j]][fontsMap[i]];
+            const isValid =
+                _0x28e2cc.offsetWidth !== fontTypesOffsetWidthMap[fontTypes[j]] ||
+                _0x28e2cc.offsetHeight !== fontTypesOffsetHeightMap[fontTypes[j]];
+            if (isValid) {
+                out.push(fontsMap[i]);
                 break;
             }
         }
     }
-    return document.getElementById(elId).remove(), _0x20d0b1;
+    document.getElementById(elId).remove();
+    return out;
 };
-const a0_0x29781f = () => {
+const getPluginsInfo = () => {
     try {
-        const _0x276de7 = [];
+        const pluginsArr = [];
         for (let i = 0; i < navigator.plugins.length; i++) {
-            _0x276de7.push(navigator.plugins[i].name);
+            pluginsArr.push(navigator.plugins[i].name);
         }
-        return _0x276de7;
+        return pluginsArr;
     } catch (e) {
         return [];
     }
@@ -1659,42 +1678,39 @@ const get27RandCharsFn = arg1 => {
     return new Array(arg1).fill(0).map(() => Math.random().toString(36).substr(2, 9)).reduce((arg2, arg3) => arg2 + arg3, '');
 };
 const a0_0x40b8a4 = () => Math.floor(Math.random() * 10000) + 1;
-const a0_0x11d0ec = async () => {
-    const _0x5ef0ae = a0_0x17d8f4(),
-        _0xf1605e = a0_0x5c162a(),
-        _0x31da76 = a0_0x11e6e5(),
-        _0x1b6ad4 = await Promise.all([a0_0xf3d535(), a0_0x27688f(), a0_0x182687()]),
-        _0x148ecb = a0_0x4bbe90(a0_0x2633dc()),
-        _0x58b06c = a0_0xf4e1f8(),
-        _0x2e9aee = a0_0x1cf60c();
+const getherAllInfo = async () => {
+    const browserInfo = getBrowserInfo(),
+        osInfo = getOSInfo(),
+        webglInfo = getWebglInfo(),
+        promises = await Promise.all([getPermissionsStates(), getMediaDevices(), getOfflineAudioCtxData()]);
     return {
         'dg': 8,
         'dO4': Intl['DateTimeFormat']()['resolvedOptions']()['timeZone'],
         'ZNJG': navigator['doNotTrack'] || false,
-        'cOJRtSqNAQ': getBrowserRenderingEngine(_0x5ef0ae['name']),
-        'b-I2rx-E': _0xf1605e['name'],
-        'YdFB': _0x5ef0ae['name'],
+        'cOJRtSqNAQ': getBrowserRenderingEngine(browserInfo['name']),
+        'b-I2rx-E': osInfo['name'],
+        'YdFB': browserInfo['name'],
         'dttJrRyO': navigator['vendor'],
         'bdI_': navigator['deviceMemory'] || 0x0,
         'Y9JA': navigator['hardwareConcurrency'] || 0x0,
         'bM07og': navigator['languages']['join'](','),
-        'cNxRuCGPAg': a0_0x4bbe90(a0_0x29781f()),
-        'Z9dM': _0x31da76['vendor'] + ',' + _0x31da76['renderer'],
-        'ZtVDtyo': _0x148ecb,
-        'YdY6oxJV': a0_0x4bbe90(getAudioContextInfo()),
-        'b-I4nQ-C61rI': _0xf1605e['version'],
+        'cNxRuCGPAg': produceDeterministicHash(getPluginsInfo()),
+        'Z9dM': webglInfo['vendor'] + ',' + webglInfo['renderer'],
+        'ZtVDtyo': produceDeterministicHash(getFontsInfo()),
+        'YdY6oxJV': produceDeterministicHash(getAudioContextInfo()),
+        'b-I4nQ-C61rI': osInfo['version'],
         'd-BEuCA': window['screen']['availWidth'],
         'aM02nQV5': window['screen']['availHeight'],
         'ZMk5rRU': window['screen']['colorDepth'],
         'bL8zohR5': Boolean(localStorage),
         'c8Y6qRuA': Boolean(sessionStorage),
-        'dt9DqBc': a0_0x4bbe90(a0_0x1697cd()),
-        'YdY6oxI': a0_0x4bbe90(a0_0x40e245()),
-        'bdI2nwA': a0_0x4bbe90(_0x1b6ad4[0x1]),
-        'cNVHtB2QA2zbSbw': a0_0x4bbe90(_0x1b6ad4[0]),
-        'YdY6oxJYqA': _0x1b6ad4[0x2],
-        'd9w-pRFXpw': _0x58b06c,
-        'Y8QyqAl8whI': _0x2e9aee,
+        'dt9DqBc': produceDeterministicHash(getVideoPropsInfo()),
+        'YdY6oxI': produceDeterministicHash(getAudioPropsInfo()),
+        'bdI2nwA': produceDeterministicHash(promises[1]),
+        'cNVHtB2QA2zbSbw': produceDeterministicHash(promises[0]),
+        'YdY6oxJYqA': promises[2],
+        'd9w-pRFXpw': getWebglRenderInfoHash(),
+        'Y8QyqAl8whI': getCanvas2dInfo(),
     };
 };
 
@@ -1785,15 +1801,17 @@ let game1 = async function(clb, arg2 = null) {
 
     let newXVec = part1CharsArr.join('') + ' ' + part2Int;
     localStorage.setItem('x-vec', newXVec);
-    part2Int + 1000 < nowTimestamp &&
-        (
-            part1CharsArr.shift(),
-                part1CharsArr.push(randCharFn()),
-	            newXVec = part1CharsArr.join('') + ' ' + nowTimestamp,
-	            localStorage.setItem("x-vec", newXVec)
-        );
-    !xGame && (xGame = get27RandCharsFn(3), localStorage.setItem('x-game', xGame));
-    let objToEncrypt = await a0_0x11d0ec();
+    if (part2Int + 1000 < nowTimestamp) {
+        part1CharsArr.shift();
+        part1CharsArr.push(randCharFn());
+        newXVec = part1CharsArr.join('') + ' ' + nowTimestamp;
+        localStorage.setItem("x-vec", newXVec);
+    }
+    if (!xGame) {
+        xGame = get27RandCharsFn(3);
+        localStorage.setItem('x-game', xGame)
+    }
+    let objToEncrypt = await getherAllInfo();
     objToEncrypt['Y9U6mw9451U'] = new Date().toISOString();
     objToEncrypt['depTtw'] = xGame;
     objToEncrypt['dts-siGT'] = window.btoa(newXVec);
