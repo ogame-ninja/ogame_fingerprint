@@ -1,1744 +1,1776 @@
-const a0_0x27d44e = a0_0x4c8d;
-
-function a0_0x4c8d(_0x45fb7d, _0x59e608) {
-        const _0x35e959 = a0_0x35e9();
-        return a0_0x4c8d = function(_0x4c8d7e, _0x1e28cd) {
-                _0x4c8d7e = _0x4c8d7e - 0x199;
-                let _0x5ac9e5 = _0x35e959[_0x4c8d7e];
-                return _0x5ac9e5;
-        }, a0_0x4c8d(_0x45fb7d, _0x59e608);
-}(function(_0x2e6fff, _0x9959aa) {
-        const _0x5fe53a = a0_0x4c8d,
-            _0x551a55 = _0x2e6fff();
-        while (!![]) {
-                try {
-                        const _0x334701 = parseInt(_0x5fe53a(0x287)) / 0x1 + parseInt(_0x5fe53a(0x244)) / 0x2 * (-parseInt(_0x5fe53a(0x22a)) / 0x3) + parseInt(_0x5fe53a(0x210)) / 0x4 * (parseInt(_0x5fe53a(0x245)) / 0x5) + parseInt(_0x5fe53a(0x226)) / 0x6 + parseInt(_0x5fe53a(0x1f5)) / 0x7 * (-parseInt(_0x5fe53a(0x248)) / 0x8) + parseInt(_0x5fe53a(0x207)) / 0x9 + parseInt(_0x5fe53a(0x1e2)) / 0xa * (-parseInt(_0x5fe53a(0x28c)) / 0xb);
-                        if (_0x334701 === _0x9959aa) break;
-                        else _0x551a55['push'](_0x551a55['shift']());
-                } catch (_0x48594d) {
-                        _0x551a55['push'](_0x551a55['shift']());
-                }
-        }
-}(a0_0x35e9, 0x99735));
-const a0_0x4cc609 = 0x8,
-    a0_0x1e16d8 = 0x64,
-    a0_0x5dc8ba = ['dg', a0_0x27d44e(0x250), a0_0x27d44e(0x26d), a0_0x27d44e(0x20c), 'b-I2rx-E', a0_0x27d44e(0x1a3), 'dttJrRyO', a0_0x27d44e(0x1f4), a0_0x27d44e(0x1f7), a0_0x27d44e(0x27f), a0_0x27d44e(0x21f), a0_0x27d44e(0x273), a0_0x27d44e(0x1d7), a0_0x27d44e(0x254), 'd-BEuCA', 'aM02nQV5', a0_0x27d44e(0x233), a0_0x27d44e(0x264), a0_0x27d44e(0x1d8), a0_0x27d44e(0x1dd), a0_0x27d44e(0x269), 'bdI2nwA', a0_0x27d44e(0x218), 'YdY6oxJYqA', a0_0x27d44e(0x1bf), a0_0x27d44e(0x201), a0_0x27d44e(0x27c), 'depTtw', 'ZA', 'b-I4nQ-C61rI', 'dts-siGT', 'dehNvwBnzDqu', a0_0x27d44e(0x297), a0_0x27d44e(0x282)],
-    a0_0x2a983b = a0_0x27d44e(0x263),
-    a0_0x5b052d = Object[a0_0x27d44e(0x283)]({
-            '.Aqua\\x20Kana': ![],
-            '.Helvetica\\x20LT\\x20MM': ![],
-            '.Times\\x20LT\\x20MM': ![],
-            '18thCentury': ![],
-            '8514oem': ![],
-            'AR\\x20BERKLEY': ![],
-            'AR\\x20JULIAN': ![],
-            'AR\\x20PL\\x20UKai\\x20CN': ![],
-            'AR\\x20PL\\x20UMing\\x20CN': ![],
-            'AR\\x20PL\\x20UMing\\x20HK': ![],
-            'AR\\x20PL\\x20UMing\\x20TW': ![],
-            'AR\\x20PL\\x20UMing\\x20TW\\x20MBE': ![],
-            'Aakar': ![],
-            'Abadi\\x20MT\\x20Condensed\\x20Extra\\x20Bold': ![],
-            'Abadi\\x20MT\\x20Condensed\\x20Light': ![],
-            'Abyssinica\\x20SIL': ![],
-            'AcmeFont': ![],
-            'Adobe\\x20Arabic': ![],
-            'Agency\\x20FB': ![],
-            'Aharoni': ![],
-            'Aharoni\\x20Bold': ![],
-            'Al\\x20Bayan': ![],
-            'Al\\x20Bayan\\x20Bold': ![],
-            'Al\\x20Bayan\\x20Plain': ![],
-            'Al\\x20Nile': ![],
-            'Al\\x20Tarikh': ![],
-            'Aldhabi': ![],
-            'Alfredo': ![],
-            'Algerian': ![],
-            'Alien\\x20Encounters': ![],
-            'Almonte\\x20Snow': ![],
-            'American\\x20Typewriter': ![],
-            'American\\x20Typewriter\\x20Bold': ![],
-            'American\\x20Typewriter\\x20Condensed': ![],
-            'American\\x20Typewriter\\x20Light': ![],
-            'Amethyst': ![],
-            'Andale\\x20Mono': ![],
-            'Andale\\x20Mono\\x20Version': ![],
-            'Andalus': ![],
-            'Angsana\\x20New': ![],
-            'AngsanaUPC': ![],
-            'Ani': ![],
-            'AnjaliOldLipi': ![],
-            'Aparajita': ![],
-            'Apple\\x20Braille': ![],
-            'Apple\\x20Braille\\x20Outline\\x206\\x20Dot': ![],
-            'Apple\\x20Braille\\x20Outline\\x208\\x20Dot': ![],
-            'Apple\\x20Braille\\x20Pinpoint\\x206\\x20Dot': ![],
-            'Apple\\x20Braille\\x20Pinpoint\\x208\\x20Dot': ![],
-            'Apple\\x20Chancery': ![],
-            'Apple\\x20Color\\x20Emoji': ![],
-            'Apple\\x20LiGothic\\x20Medium': ![],
-            'Apple\\x20LiSung\\x20Light': ![],
-            'Apple\\x20SD\\x20Gothic\\x20Neo': ![],
-            'Apple\\x20SD\\x20Gothic\\x20Neo\\x20Regular': ![],
-            'Apple\\x20SD\\x20GothicNeo\\x20ExtraBold': ![],
-            'Apple\\x20Symbols': ![],
-            'AppleGothic': ![],
-            'AppleGothic\\x20Regular': ![],
-            'AppleMyungjo': ![],
-            'AppleMyungjo\\x20Regular': ![],
-            'AquaKana': ![],
-            'Arabic\\x20Transparent': ![],
-            'Arabic\\x20Typesetting': ![],
-            'Arial': !![],
-            'Arial\\x20Baltic': ![],
-            'Arial\\x20Black': !![],
-            'Arial\\x20Bold': ![],
-            'Arial\\x20Bold\\x20Italic': ![],
-            'Arial\\x20CE': ![],
-            'Arial\\x20CYR': ![],
-            'Arial\\x20Greek': ![],
-            'Arial\\x20Hebrew': ![],
-            'Arial\\x20Hebrew\\x20Bold': ![],
-            'Arial\\x20Italic': ![],
-            'Arial\\x20Narrow': !![],
-            'Arial\\x20Narrow\\x20Bold': ![],
-            'Arial\\x20Narrow\\x20Bold\\x20Italic': ![],
-            'Arial\\x20Narrow\\x20Italic': ![],
-            'Arial\\x20Rounded\\x20Bold': ![],
-            'Arial\\x20Rounded\\x20MT\\x20Bold': ![],
-            'Arial\\x20TUR': ![],
-            'Arial\\x20Unicode\\x20MS': ![],
-            'ArialHB': ![],
-            'Arimo': ![],
-            'Asimov': ![],
-            'Autumn': ![],
-            'Avenir': ![],
-            'Avenir\\x20Black': ![],
-            'Avenir\\x20Book': ![],
-            'Avenir\\x20Next': ![],
-            'Avenir\\x20Next\\x20Bold': ![],
-            'Avenir\\x20Next\\x20Condensed': ![],
-            'Avenir\\x20Next\\x20Condensed\\x20Bold': ![],
-            'Avenir\\x20Next\\x20Demi\\x20Bold': ![],
-            'Avenir\\x20Next\\x20Heavy': ![],
-            'Avenir\\x20Next\\x20Regular': ![],
-            'Avenir\\x20Roman': ![],
-            'Ayuthaya': ![],
-            'BN\\x20Jinx': ![],
-            'BN\\x20Machine': ![],
-            'BOUTON\\x20International\\x20Symbols': ![],
-            'Baby\\x20Kruffy': ![],
-            'Baghdad': ![],
-            'Bahnschrift': !![],
-            'Balthazar': ![],
-            'Bangla\\x20MN': ![],
-            'Bangla\\x20MN\\x20Bold': ![],
-            'Bangla\\x20Sangam\\x20MN': ![],
-            'Bangla\\x20Sangam\\x20MN\\x20Bold': ![],
-            'Baskerville': ![],
-            'Baskerville\\x20Bold': ![],
-            'Baskerville\\x20Bold\\x20Italic': ![],
-            'Baskerville\\x20Old\\x20Face': ![],
-            'Baskerville\\x20SemiBold': ![],
-            'Baskerville\\x20SemiBold\\x20Italic': ![],
-            'Bastion': ![],
-            'Batang': ![],
-            'BatangChe': ![],
-            'Bauhaus\\x2093': ![],
-            'Beirut': ![],
-            'Bell\\x20MT': ![],
-            'Bell\\x20MT\\x20Bold': ![],
-            'Bell\\x20MT\\x20Italic': ![],
-            'Bellerose': ![],
-            'Berlin\\x20Sans\\x20FB': ![],
-            'Berlin\\x20Sans\\x20FB\\x20Demi': ![],
-            'Bernard\\x20MT\\x20Condensed': ![],
-            'BiauKai': ![],
-            'Big\\x20Caslon': ![],
-            'Big\\x20Caslon\\x20Medium': ![],
-            'Birch\\x20Std': ![],
-            'Bitstream\\x20Charter': ![],
-            'Bitstream\\x20Vera\\x20Sans': ![],
-            'Blackadder\\x20ITC': ![],
-            'Blackoak\\x20Std': ![],
-            'Bobcat': ![],
-            'Bodoni\\x2072': ![],
-            'Bodoni\\x20MT': ![],
-            'Bodoni\\x20MT\\x20Black': ![],
-            'Bodoni\\x20MT\\x20Poster\\x20Compressed': ![],
-            'Bodoni\\x20Ornaments': ![],
-            'BolsterBold': ![],
-            'Book\\x20Antiqua': ![],
-            'Book\\x20Antiqua\\x20Bold': ![],
-            'Bookman\\x20Old\\x20Style': ![],
-            'Bookman\\x20Old\\x20Style\\x20Bold': ![],
-            'Bookshelf\\x20Symbol\\x207': ![],
-            'Borealis': ![],
-            'Bradley\\x20Hand': ![],
-            'Bradley\\x20Hand\\x20ITC': ![],
-            'Braggadocio': ![],
-            'Brandish': ![],
-            'Britannic\\x20Bold': ![],
-            'Broadway': ![],
-            'Browallia\\x20New': ![],
-            'BrowalliaUPC': ![],
-            'Brush\\x20Script': ![],
-            'Brush\\x20Script\\x20MT': ![],
-            'Brush\\x20Script\\x20MT\\x20Italic': ![],
-            'Brush\\x20Script\\x20Std': ![],
-            'Brussels': ![],
-            'Calibri': !![],
-            'Calibri\\x20Bold': ![],
-            'Calibri\\x20Light': !![],
-            'Californian\\x20FB': ![],
-            'Calisto\\x20MT': ![],
-            'Calisto\\x20MT\\x20Bold': ![],
-            'Calligraphic': ![],
-            'Calvin': ![],
-            'Cambria': !![],
-            'Cambria\\x20Bold': ![],
-            'Cambria\\x20Math': !![],
-            'Candara': !![],
-            'Candara\\x20Bold': ![],
-            'Candles': ![],
-            'Carrois\\x20Gothic\\x20SC': ![],
-            'Castellar': ![],
-            'Centaur': ![],
-            'Century': ![],
-            'Century\\x20Gothic': ![],
-            'Century\\x20Gothic\\x20Bold': ![],
-            'Century\\x20Schoolbook': ![],
-            'Century\\x20Schoolbook\\x20Bold': ![],
-            'Century\\x20Schoolbook\\x20L': ![],
-            'Chalkboard': ![],
-            'Chalkboard\\x20Bold': ![],
-            'Chalkboard\\x20SE': ![],
-            'Chalkboard\\x20SE\\x20Bold': ![],
-            'ChalkboardBold': ![],
-            'Chalkduster': ![],
-            'Chandas': ![],
-            'Chaparral\\x20Pro': ![],
-            'Chaparral\\x20Pro\\x20Light': ![],
-            'Charlemagne\\x20Std': ![],
-            'Charter': ![],
-            'Chilanka': ![],
-            'Chiller': ![],
-            'Chinyen': ![],
-            'Clarendon': ![],
-            'Cochin': ![],
-            'Cochin\\x20Bold': ![],
-            'Colbert': ![],
-            'Colonna\\x20MT': ![],
-            'Comic\\x20Sans\\x20MS': !![],
-            'Comic\\x20Sans\\x20MS\\x20Bold': ![],
-            'Commons': ![],
-            'Consolas': !![],
-            'Consolas\\x20Bold': ![],
-            'Constantia': !![],
-            'Constantia\\x20Bold': ![],
-            'Coolsville': ![],
-            'Cooper\\x20Black': ![],
-            'Cooper\\x20Std\\x20Black': ![],
-            'Copperplate': ![],
-            'Copperplate\\x20Bold': ![],
-            'Copperplate\\x20Gothic\\x20Bold': ![],
-            'Copperplate\\x20Light': ![],
-            'Corbel': !![],
-            'Corbel\\x20Bold': ![],
-            'Cordia\\x20New': ![],
-            'CordiaUPC': ![],
-            'Corporate': ![],
-            'Corsiva': ![],
-            'Corsiva\\x20Hebrew': ![],
-            'Corsiva\\x20Hebrew\\x20Bold': ![],
-            'Courier': !![],
-            'Courier\\x2010\\x20Pitch': ![],
-            'Courier\\x20Bold': ![],
-            'Courier\\x20New': !![],
-            'Courier\\x20New\\x20Baltic': ![],
-            'Courier\\x20New\\x20Bold': ![],
-            'Courier\\x20New\\x20CE': ![],
-            'Courier\\x20New\\x20Italic': ![],
-            'Courier\\x20Oblique': ![],
-            'Cracked\\x20Johnnie': ![],
-            'Creepygirl': ![],
-            'Curlz\\x20MT': ![],
-            'Cursor': ![],
-            'Cutive\\x20Mono': ![],
-            'DFKai-SB': ![],
-            'DIN\\x20Alternate': ![],
-            'DIN\\x20Condensed': ![],
-            'Damascus': ![],
-            'Damascus\\x20Bold': ![],
-            'Dancing\\x20Script': ![],
-            'DaunPenh': ![],
-            'David': ![],
-            'Dayton': ![],
-            'DecoType\\x20Naskh': ![],
-            'Deja\\x20Vu': ![],
-            'DejaVu\\x20LGC\\x20Sans': ![],
-            'DejaVu\\x20Sans': ![],
-            'DejaVu\\x20Sans\\x20Mono': ![],
-            'DejaVu\\x20Serif': ![],
-            'Deneane': ![],
-            'Desdemona': ![],
-            'Detente': ![],
-            'Devanagari\\x20MT': ![],
-            'Devanagari\\x20MT\\x20Bold': ![],
-            'Devanagari\\x20Sangam\\x20MN': ![],
-            'Didot': ![],
-            'Didot\\x20Bold': ![],
-            'Digifit': ![],
-            'DilleniaUPC': ![],
-            'Dingbats': ![],
-            'Distant\\x20Galaxy': ![],
-            'Diwan\\x20Kufi': ![],
-            'Diwan\\x20Kufi\\x20Regular': ![],
-            'Diwan\\x20Thuluth': ![],
-            'Diwan\\x20Thuluth\\x20Regular': ![],
-            'DokChampa': ![],
-            'Dominican': ![],
-            'Dotum': ![],
-            'DotumChe': ![],
-            'Droid\\x20Sans': ![],
-            'Droid\\x20Sans\\x20Fallback': ![],
-            'Droid\\x20Sans\\x20Mono': ![],
-            'Dyuthi': ![],
-            'Ebrima': !![],
-            'Edwardian\\x20Script\\x20ITC': ![],
-            'Elephant': ![],
-            'Emmett': ![],
-            'Engravers\\x20MT': ![],
-            'Engravers\\x20MT\\x20Bold': ![],
-            'Enliven': ![],
-            'Eras\\x20Bold\\x20ITC': ![],
-            'Estrangelo\\x20Edessa': ![],
-            'Ethnocentric': ![],
-            'EucrosiaUPC': ![],
-            'Euphemia': ![],
-            'Euphemia\\x20UCAS': ![],
-            'Euphemia\\x20UCAS\\x20Bold': ![],
-            'Eurostile': ![],
-            'Eurostile\\x20Bold': ![],
-            'Expressway\\x20Rg': ![],
-            'FangSong': ![],
-            'Farah': ![],
-            'Farisi': ![],
-            'Felix\\x20Titling': ![],
-            'Fingerpop': ![],
-            'Fixedsys': ![],
-            'Flubber': ![],
-            'Footlight\\x20MT\\x20Light': ![],
-            'Forte': ![],
-            'FrankRuehl': ![],
-            'Frankfurter\\x20Venetian\\x20TT': ![],
-            'Franklin\\x20Gothic\\x20Book': ![],
-            'Franklin\\x20Gothic\\x20Book\\x20Italic': ![],
-            'Franklin\\x20Gothic\\x20Medium': !![],
-            'Franklin\\x20Gothic\\x20Medium\\x20Cond': ![],
-            'Franklin\\x20Gothic\\x20Medium\\x20Italic': ![],
-            'FreeMono': ![],
-            'FreeSans': ![],
-            'FreeSerif': ![],
-            'FreesiaUPC': ![],
-            'Freestyle\\x20Script': ![],
-            'French\\x20Script\\x20MT': ![],
-            'Futura': ![],
-            'Futura\\x20Condensed\\x20ExtraBold': ![],
-            'Futura\\x20Medium': ![],
-            'GB18030\\x20Bitmap': ![],
-            'Gabriola': !![],
-            'Gadugi': !![],
-            'Garamond': ![],
-            'Garamond\\x20Bold': ![],
-            'Gargi': ![],
-            'Garuda': ![],
-            'Gautami': ![],
-            'Gazzarelli': ![],
-            'Geeza\\x20Pro': ![],
-            'Geeza\\x20Pro\\x20Bold': ![],
-            'Geneva': ![],
-            'GenevaCY': ![],
-            'Gentium': ![],
-            'Gentium\\x20Basic': ![],
-            'Gentium\\x20Book\\x20Basic': ![],
-            'GentiumAlt': ![],
-            'Georgia': !![],
-            'Georgia\\x20Bold': ![],
-            'Geotype\\x20TT': ![],
-            'Giddyup\\x20Std': ![],
-            'Gigi': ![],
-            'Gill': ![],
-            'Gill\\x20Sans': ![],
-            'Gill\\x20Sans\\x20Bold': ![],
-            'Gill\\x20Sans\\x20MT': ![],
-            'Gill\\x20Sans\\x20MT\\x20Bold': ![],
-            'Gill\\x20Sans\\x20MT\\x20Condensed': ![],
-            'Gill\\x20Sans\\x20MT\\x20Ext\\x20Condensed\\x20Bold': ![],
-            'Gill\\x20Sans\\x20MT\\x20Italic': ![],
-            'Gill\\x20Sans\\x20Ultra\\x20Bold': ![],
-            'Gill\\x20Sans\\x20Ultra\\x20Bold\\x20Condensed': ![],
-            'Gisha': ![],
-            'Glockenspiel': ![],
-            'Gloucester\\x20MT\\x20Extra\\x20Condensed': ![],
-            'Good\\x20Times': ![],
-            'Goudy': ![],
-            'Goudy\\x20Old\\x20Style': ![],
-            'Goudy\\x20Old\\x20Style\\x20Bold': ![],
-            'Goudy\\x20Stout': ![],
-            'Greek\\x20Diner\\x20Inline\\x20TT': ![],
-            'Gubbi': ![],
-            'Gujarati\\x20MT': ![],
-            'Gujarati\\x20MT\\x20Bold': ![],
-            'Gujarati\\x20Sangam\\x20MN': ![],
-            'Gujarati\\x20Sangam\\x20MN\\x20Bold': ![],
-            'Gulim': ![],
-            'GulimChe': ![],
-            'GungSeo\\x20Regular': ![],
-            'Gungseouche': ![],
-            'Gungsuh': ![],
-            'GungsuhChe': ![],
-            'Gurmukhi': ![],
-            'Gurmukhi\\x20MN': ![],
-            'Gurmukhi\\x20MN\\x20Bold': ![],
-            'Gurmukhi\\x20MT': ![],
-            'Gurmukhi\\x20Sangam\\x20MN': ![],
-            'Gurmukhi\\x20Sangam\\x20MN\\x20Bold': ![],
-            'Haettenschweiler': ![],
-            'Hand\\x20Me\\x20Down\\x20S\\x20(BRK)': ![],
-            'Hansen': ![],
-            'Harlow\\x20Solid\\x20Italic': ![],
-            'Harrington': ![],
-            'Harvest': ![],
-            'HarvestItal': ![],
-            'Haxton\\x20Logos\\x20TT': ![],
-            'HeadLineA\\x20Regular': ![],
-            'HeadlineA': ![],
-            'Heavy\\x20Heap': ![],
-            'Hei': ![],
-            'Hei\\x20Regular': ![],
-            'Heiti\\x20SC': ![],
-            'Heiti\\x20SC\\x20Light': ![],
-            'Heiti\\x20SC\\x20Medium': ![],
-            'Heiti\\x20TC': ![],
-            'Heiti\\x20TC\\x20Light': ![],
-            'Heiti\\x20TC\\x20Medium': ![],
-            'Helvetica': !![],
-            'Helvetica\\x20Bold': ![],
-            'Helvetica\\x20CY\\x20Bold': ![],
-            'Helvetica\\x20CY\\x20Plain': ![],
-            'Helvetica\\x20LT\\x20Std': ![],
-            'Helvetica\\x20Light': ![],
-            'Helvetica\\x20Neue': ![],
-            'Helvetica\\x20Neue\\x20Bold': ![],
-            'Helvetica\\x20Neue\\x20Medium': ![],
-            'Helvetica\\x20Oblique': ![],
-            'HelveticaCY': ![],
-            'HelveticaNeueLT\\x20Com\\x20107\\x20XBlkCn': ![],
-            'Herculanum': ![],
-            'High\\x20Tower\\x20Text': ![],
-            'Highboot': ![],
-            'Hiragino\\x20Kaku\\x20Gothic\\x20Pro\\x20W3': ![],
-            'Hiragino\\x20Kaku\\x20Gothic\\x20Pro\\x20W6': ![],
-            'Hiragino\\x20Kaku\\x20Gothic\\x20ProN\\x20W3': ![],
-            'Hiragino\\x20Kaku\\x20Gothic\\x20ProN\\x20W6': ![],
-            'Hiragino\\x20Kaku\\x20Gothic\\x20Std\\x20W8': ![],
-            'Hiragino\\x20Kaku\\x20Gothic\\x20StdN\\x20W8': ![],
-            'Hiragino\\x20Maru\\x20Gothic\\x20Pro\\x20W4': ![],
-            'Hiragino\\x20Maru\\x20Gothic\\x20ProN\\x20W4': ![],
-            'Hiragino\\x20Mincho\\x20Pro\\x20W3': ![],
-            'Hiragino\\x20Mincho\\x20Pro\\x20W6': ![],
-            'Hiragino\\x20Mincho\\x20ProN\\x20W3': ![],
-            'Hiragino\\x20Mincho\\x20ProN\\x20W6': ![],
-            'Hiragino\\x20Sans\\x20GB\\x20W3': ![],
-            'Hiragino\\x20Sans\\x20GB\\x20W6': ![],
-            'Hiragino\\x20Sans\\x20W0': ![],
-            'Hiragino\\x20Sans\\x20W1': ![],
-            'Hiragino\\x20Sans\\x20W2': ![],
-            'Hiragino\\x20Sans\\x20W3': ![],
-            'Hiragino\\x20Sans\\x20W4': ![],
-            'Hiragino\\x20Sans\\x20W5': ![],
-            'Hiragino\\x20Sans\\x20W6': ![],
-            'Hiragino\\x20Sans\\x20W7': ![],
-            'Hiragino\\x20Sans\\x20W8': ![],
-            'Hiragino\\x20Sans\\x20W9': ![],
-            'Hobo\\x20Std': ![],
-            'Hoefler\\x20Text': ![],
-            'Hoefler\\x20Text\\x20Black': ![],
-            'Hoefler\\x20Text\\x20Ornaments': ![],
-            'Hollywood\\x20Hills': ![],
-            'Hombre': ![],
-            'Huxley\\x20Titling': ![],
-            'ITC\\x20Stone\\x20Serif': ![],
-            'ITF\\x20Devanagari': ![],
-            'ITF\\x20Devanagari\\x20Marathi': ![],
-            'ITF\\x20Devanagari\\x20Medium': ![],
-            'Impact': !![],
-            'Imprint\\x20MT\\x20Shadow': ![],
-            'InaiMathi': ![],
-            'Induction': ![],
-            'Informal\\x20Roman': ![],
-            'Ink\\x20Free': !![],
-            'IrisUPC': ![],
-            'Iskoola\\x20Pota': ![],
-            'Italianate': ![],
-            'Jamrul': ![],
-            'JasmineUPC': ![],
-            'Javanese\\x20Text': !![],
-            'Jokerman': ![],
-            'Juice\\x20ITC': ![],
-            'KacstArt': ![],
-            'KacstBook': ![],
-            'KacstDecorative': ![],
-            'KacstDigital': ![],
-            'KacstFarsi': ![],
-            'KacstLetter': ![],
-            'KacstNaskh': ![],
-            'KacstOffice': ![],
-            'KacstOne': ![],
-            'KacstPen': ![],
-            'KacstPoster': ![],
-            'KacstQurn': ![],
-            'KacstScreen': ![],
-            'KacstTitle': ![],
-            'KacstTitleL': ![],
-            'Kai': ![],
-            'Kai\\x20Regular': ![],
-            'KaiTi': ![],
-            'Kailasa': ![],
-            'Kailasa\\x20Regular': ![],
-            'Kaiti\\x20SC': ![],
-            'Kaiti\\x20SC\\x20Black': ![],
-            'Kalapi': ![],
-            'Kalimati': ![],
-            'Kalinga': ![],
-            'Kannada\\x20MN': ![],
-            'Kannada\\x20MN\\x20Bold': ![],
-            'Kannada\\x20Sangam\\x20MN': ![],
-            'Kannada\\x20Sangam\\x20MN\\x20Bold': ![],
-            'Kartika': ![],
-            'Karumbi': ![],
-            'Kedage': ![],
-            'Kefa': ![],
-            'Kefa\\x20Bold': ![],
-            'Keraleeyam': ![],
-            'Keyboard': ![],
-            'Khmer\\x20MN': ![],
-            'Khmer\\x20MN\\x20Bold': ![],
-            'Khmer\\x20OS': ![],
-            'Khmer\\x20OS\\x20System': ![],
-            'Khmer\\x20Sangam\\x20MN': ![],
-            'Khmer\\x20UI': ![],
-            'Kinnari': ![],
-            'Kino\\x20MT': ![],
-            'KodchiangUPC': ![],
-            'Kohinoor\\x20Bangla': ![],
-            'Kohinoor\\x20Devanagari': ![],
-            'Kohinoor\\x20Telugu': ![],
-            'Kokila': ![],
-            'Kokonor': ![],
-            'Kokonor\\x20Regular': ![],
-            'Kozuka\\x20Gothic\\x20Pr6N\\x20B': ![],
-            'Kristen\\x20ITC': ![],
-            'Krungthep': ![],
-            'KufiStandardGK': ![],
-            'KufiStandardGK\\x20Regular': ![],
-            'Kunstler\\x20Script': ![],
-            'Laksaman': ![],
-            'Lao\\x20MN': ![],
-            'Lao\\x20Sangam\\x20MN': ![],
-            'Lao\\x20UI': ![],
-            'LastResort': ![],
-            'Latha': ![],
-            'Leelawadee': ![],
-            'Letter\\x20Gothic\\x20Std': ![],
-            'LetterOMatic!': ![],
-            'Levenim\\x20MT': ![],
-            'LiHei\\x20Pro': ![],
-            'LiSong\\x20Pro': ![],
-            'Liberation\\x20Mono': ![],
-            'Liberation\\x20Sans': ![],
-            'Liberation\\x20Sans\\x20Narrow': ![],
-            'Liberation\\x20Serif': ![],
-            'Likhan': ![],
-            'LilyUPC': ![],
-            'Limousine': ![],
-            'Lithos\\x20Pro\\x20Regular': ![],
-            'LittleLordFontleroy': ![],
-            'Lohit\\x20Assamese': ![],
-            'Lohit\\x20Bengali': ![],
-            'Lohit\\x20Devanagari': ![],
-            'Lohit\\x20Gujarati': ![],
-            'Lohit\\x20Gurmukhi': ![],
-            'Lohit\\x20Hindi': ![],
-            'Lohit\\x20Kannada': ![],
-            'Lohit\\x20Malayalam': ![],
-            'Lohit\\x20Odia': ![],
-            'Lohit\\x20Punjabi': ![],
-            'Lohit\\x20Tamil': ![],
-            'Lohit\\x20Tamil\\x20Classical': ![],
-            'Lohit\\x20Telugu': ![],
-            'Loma': ![],
-            'Lucida\\x20Blackletter': ![],
-            'Lucida\\x20Bright': ![],
-            'Lucida\\x20Bright\\x20Demibold': ![],
-            'Lucida\\x20Bright\\x20Demibold\\x20Italic': ![],
-            'Lucida\\x20Bright\\x20Italic': ![],
-            'Lucida\\x20Calligraphy': ![],
-            'Lucida\\x20Calligraphy\\x20Italic': ![],
-            'Lucida\\x20Console': !![],
-            'Lucida\\x20Fax': ![],
-            'Lucida\\x20Fax\\x20Demibold': ![],
-            'Lucida\\x20Fax\\x20Regular': ![],
-            'Lucida\\x20Grande': ![],
-            'Lucida\\x20Grande\\x20Bold': ![],
-            'Lucida\\x20Handwriting': ![],
-            'Lucida\\x20Handwriting\\x20Italic': ![],
-            'Lucida\\x20Sans': ![],
-            'Lucida\\x20Sans\\x20Demibold\\x20Italic': ![],
-            'Lucida\\x20Sans\\x20Typewriter': ![],
-            'Lucida\\x20Sans\\x20Typewriter\\x20Bold': ![],
-            'Lucida\\x20Sans\\x20Unicode': !![],
-            'Luminari': ![],
-            'Luxi\\x20Mono': ![],
-            'MS\\x20Gothic': !![],
-            'MS\\x20Mincho': ![],
-            'MS\\x20Outlook': ![],
-            'MS\\x20PGothic': !![],
-            'MS\\x20PMincho': ![],
-            'MS\\x20Reference\\x20Sans\\x20Serif': ![],
-            'MS\\x20Reference\\x20Specialty': ![],
-            'MS\\x20Sans\\x20Serif': !![],
-            'MS\\x20Serif': !![],
-            'MS\\x20UI\\x20Gothic': !![],
-            'MT\\x20Extra': ![],
-            'MV\\x20Boli': !![],
-            'Mael': ![],
-            'Magneto': ![],
-            'Maiandra\\x20GD': ![],
-            'Malayalam\\x20MN': ![],
-            'Malayalam\\x20MN\\x20Bold': ![],
-            'Malayalam\\x20Sangam\\x20MN': ![],
-            'Malayalam\\x20Sangam\\x20MN\\x20Bold': ![],
-            'Malgun\\x20Gothic': !![],
-            'Mallige': ![],
-            'Mangal': ![],
-            'Manorly': ![],
-            'Marion': ![],
-            'Marion\\x20Bold': ![],
-            'Marker\\x20Felt': ![],
-            'Marker\\x20Felt\\x20Thin': ![],
-            'Marlett': !![],
-            'Martina': ![],
-            'Matura\\x20MT\\x20Script\\x20Capitals': ![],
-            'Meera': ![],
-            'Meiryo': ![],
-            'Meiryo\\x20Bold': ![],
-            'Meiryo\\x20UI': ![],
-            'MelodBold': ![],
-            'Menlo': ![],
-            'Menlo\\x20Bold': ![],
-            'Mesquite\\x20Std': ![],
-            'Microsoft': ![],
-            'Microsoft\\x20Himalaya': !![],
-            'Microsoft\\x20JhengHei': !![],
-            'Microsoft\\x20JhengHei\\x20UI': !![],
-            'Microsoft\\x20New\\x20Tai\\x20Lue': !![],
-            'Microsoft\\x20PhagsPa': !![],
-            'Microsoft\\x20Sans\\x20Serif': !![],
-            'Microsoft\\x20Tai\\x20Le': !![],
-            'Microsoft\\x20Tai\\x20Le\\x20Bold': ![],
-            'Microsoft\\x20Uighur': ![],
-            'Microsoft\\x20YaHei': !![],
-            'Microsoft\\x20YaHei\\x20UI': !![],
-            'Microsoft\\x20Yi\\x20Baiti': !![],
-            'Minerva': ![],
-            'MingLiU': ![],
-            'MingLiU-ExtB': !![],
-            'MingLiU_HKSCS': ![],
-            'Minion\\x20Pro': ![],
-            'Miriam': ![],
-            'Mishafi': ![],
-            'Mishafi\\x20Gold': ![],
-            'Mistral': ![],
-            'Modern': ![],
-            'Modern\\x20No.\\x2020': ![],
-            'Monaco': ![],
-            'Mongolian\\x20Baiti': !![],
-            'Monospace': ![],
-            'Monotype\\x20Corsiva': ![],
-            'Monotype\\x20Sorts': ![],
-            'MoolBoran': ![],
-            'Moonbeam': ![],
-            'MotoyaLMaru': ![],
-            'Mshtakan': ![],
-            'Mshtakan\\x20Bold': ![],
-            'Mukti\\x20Narrow': ![],
-            'Muna': ![],
-            'Myanmar\\x20MN': ![],
-            'Myanmar\\x20MN\\x20Bold': ![],
-            'Myanmar\\x20Sangam\\x20MN': ![],
-            'Myanmar\\x20Text': !![],
-            'Mycalc': ![],
-            'Myriad\\x20Arabic': ![],
-            'Myriad\\x20Hebrew': ![],
-            'Myriad\\x20Pro': ![],
-            'NISC18030': ![],
-            'NSimSun': !![],
-            'Nadeem': ![],
-            'Nadeem\\x20Regular': ![],
-            'Nakula': ![],
-            'Nanum\\x20Barun\\x20Gothic': ![],
-            'Nanum\\x20Gothic': ![],
-            'Nanum\\x20Myeongjo': ![],
-            'NanumBarunGothic': ![],
-            'NanumGothic': ![],
-            'NanumGothic\\x20Bold': ![],
-            'NanumGothicCoding': ![],
-            'NanumMyeongjo': ![],
-            'NanumMyeongjo\\x20Bold': ![],
-            'Narkisim': ![],
-            'Nasalization': ![],
-            'Navilu': ![],
-            'Neon\\x20Lights': ![],
-            'New\\x20Peninim\\x20MT': ![],
-            'New\\x20Peninim\\x20MT\\x20Bold': ![],
-            'News\\x20Gothic\\x20MT': ![],
-            'News\\x20Gothic\\x20MT\\x20Bold': ![],
-            'Niagara\\x20Engraved': ![],
-            'Niagara\\x20Solid': ![],
-            'Nimbus\\x20Mono\\x20L': ![],
-            'Nimbus\\x20Roman\\x20No9\\x20L': ![],
-            'Nimbus\\x20Sans\\x20L': ![],
-            'Nimbus\\x20Sans\\x20L\\x20Condensed': ![],
-            'Nina': ![],
-            'Nirmala\\x20UI': !![],
-            'Nirmala.ttf': ![],
-            'Norasi': ![],
-            'Noteworthy': ![],
-            'Noteworthy\\x20Bold': ![],
-            'Noto\\x20Color\\x20Emoji': ![],
-            'Noto\\x20Emoji': ![],
-            'Noto\\x20Mono': ![],
-            'Noto\\x20Naskh\\x20Arabic': ![],
-            'Noto\\x20Nastaliq\\x20Urdu': ![],
-            'Noto\\x20Sans': ![],
-            'Noto\\x20Sans\\x20Armenian': ![],
-            'Noto\\x20Sans\\x20Bengali': ![],
-            'Noto\\x20Sans\\x20CJK': ![],
-            'Noto\\x20Sans\\x20Canadian\\x20Aboriginal': ![],
-            'Noto\\x20Sans\\x20Cherokee': ![],
-            'Noto\\x20Sans\\x20Devanagari': ![],
-            'Noto\\x20Sans\\x20Ethiopic': ![],
-            'Noto\\x20Sans\\x20Georgian': ![],
-            'Noto\\x20Sans\\x20Gujarati': ![],
-            'Noto\\x20Sans\\x20Gurmukhi': ![],
-            'Noto\\x20Sans\\x20Hebrew': ![],
-            'Noto\\x20Sans\\x20JP': ![],
-            'Noto\\x20Sans\\x20KR': ![],
-            'Noto\\x20Sans\\x20Kannada': ![],
-            'Noto\\x20Sans\\x20Khmer': ![],
-            'Noto\\x20Sans\\x20Lao': ![],
-            'Noto\\x20Sans\\x20Malayalam': ![],
-            'Noto\\x20Sans\\x20Myanmar': ![],
-            'Noto\\x20Sans\\x20Oriya': ![],
-            'Noto\\x20Sans\\x20SC': ![],
-            'Noto\\x20Sans\\x20Sinhala': ![],
-            'Noto\\x20Sans\\x20Symbols': ![],
-            'Noto\\x20Sans\\x20TC': ![],
-            'Noto\\x20Sans\\x20Tamil': ![],
-            'Noto\\x20Sans\\x20Telugu': ![],
-            'Noto\\x20Sans\\x20Thai': ![],
-            'Noto\\x20Sans\\x20Yi': ![],
-            'Noto\\x20Serif': ![],
-            'Notram': ![],
-            'November': ![],
-            'Nueva\\x20Std': ![],
-            'Nueva\\x20Std\\x20Cond': ![],
-            'Nyala': ![],
-            'OCR\\x20A\\x20Extended': ![],
-            'OCR\\x20A\\x20Std': ![],
-            'Old\\x20English\\x20Text\\x20MT': ![],
-            'OldeEnglish': ![],
-            'Onyx': ![],
-            'OpenSymbol': ![],
-            'OpineHeavy': ![],
-            'Optima': ![],
-            'Optima\\x20Bold': ![],
-            'Optima\\x20Regular': ![],
-            'Orator\\x20Std': ![],
-            'Oriya\\x20MN': ![],
-            'Oriya\\x20MN\\x20Bold': ![],
-            'Oriya\\x20Sangam\\x20MN': ![],
-            'Oriya\\x20Sangam\\x20MN\\x20Bold': ![],
-            'Osaka': ![],
-            'Osaka-Mono': ![],
-            'OsakaMono': ![],
-            'PCMyungjo\\x20Regular': ![],
-            'PCmyoungjo': ![],
-            'PMingLiU': ![],
-            'PMingLiU-ExtB': !![],
-            'PR\\x20Celtic\\x20Narrow': ![],
-            'PT\\x20Mono': ![],
-            'PT\\x20Sans': ![],
-            'PT\\x20Sans\\x20Bold': ![],
-            'PT\\x20Sans\\x20Caption\\x20Bold': ![],
-            'PT\\x20Sans\\x20Narrow\\x20Bold': ![],
-            'PT\\x20Serif': ![],
-            'Padauk': ![],
-            'Padauk\\x20Book': ![],
-            'Padmaa': ![],
-            'Pagul': ![],
-            'Palace\\x20Script\\x20MT': ![],
-            'Palatino': ![],
-            'Palatino\\x20Bold': ![],
-            'Palatino\\x20Linotype': !![],
-            'Palatino\\x20Linotype\\x20Bold': ![],
-            'Papyrus': ![],
-            'Papyrus\\x20Condensed': ![],
-            'Parchment': ![],
-            'Parry\\x20Hotter': ![],
-            'PenultimateLight': ![],
-            'Perpetua': ![],
-            'Perpetua\\x20Bold': ![],
-            'Perpetua\\x20Titling\\x20MT': ![],
-            'Perpetua\\x20Titling\\x20MT\\x20Bold': ![],
-            'Phetsarath\\x20OT': ![],
-            'Phosphate': ![],
-            'Phosphate\\x20Inline': ![],
-            'Phosphate\\x20Solid': ![],
-            'PhrasticMedium': ![],
-            'PilGi\\x20Regular': ![],
-            'Pilgiche': ![],
-            'PingFang\\x20HK': ![],
-            'PingFang\\x20SC': ![],
-            'PingFang\\x20TC': ![],
-            'Pirate': ![],
-            'Plantagenet\\x20Cherokee': ![],
-            'Playbill': ![],
-            'Poor\\x20Richard': ![],
-            'Poplar\\x20Std': ![],
-            'Pothana2000': ![],
-            'Prestige\\x20Elite\\x20Std': ![],
-            'Pristina': ![],
-            'Purisa': ![],
-            'QuiverItal': ![],
-            'Raanana': ![],
-            'Raanana\\x20Bold': ![],
-            'Raavi': ![],
-            'Rachana': ![],
-            'Rage\\x20Italic': ![],
-            'RaghuMalayalam': ![],
-            'Ravie': ![],
-            'Rekha': ![],
-            'Roboto': ![],
-            'Rockwell': ![],
-            'Rockwell\\x20Bold': ![],
-            'Rockwell\\x20Condensed': ![],
-            'Rockwell\\x20Extra\\x20Bold': ![],
-            'Rockwell\\x20Italic': ![],
-            'Rod': ![],
-            'Roland': ![],
-            'Rondalo': ![],
-            'Rosewood\\x20Std\\x20Regular': ![],
-            'RowdyHeavy': ![],
-            'Russel\\x20Write\\x20TT': ![],
-            'SF\\x20Movie\\x20Poster': ![],
-            'STFangsong': ![],
-            'STHeiti': ![],
-            'STIXGeneral': ![],
-            'STIXGeneral-Bold': ![],
-            'STIXGeneral-Regular': ![],
-            'STIXIntegralsD': ![],
-            'STIXIntegralsD-Bold': ![],
-            'STIXIntegralsSm': ![],
-            'STIXIntegralsSm-Bold': ![],
-            'STIXIntegralsUp': ![],
-            'STIXIntegralsUp-Bold': ![],
-            'STIXIntegralsUp-Regular': ![],
-            'STIXIntegralsUpD': ![],
-            'STIXIntegralsUpD-Bold': ![],
-            'STIXIntegralsUpD-Regular': ![],
-            'STIXIntegralsUpSm': ![],
-            'STIXIntegralsUpSm-Bold': ![],
-            'STIXNonUnicode': ![],
-            'STIXNonUnicode-Bold': ![],
-            'STIXSizeFiveSym': ![],
-            'STIXSizeFiveSym-Regular': ![],
-            'STIXSizeFourSym': ![],
-            'STIXSizeFourSym-Bold': ![],
-            'STIXSizeOneSym': ![],
-            'STIXSizeOneSym-Bold': ![],
-            'STIXSizeThreeSym': ![],
-            'STIXSizeThreeSym-Bold': ![],
-            'STIXSizeTwoSym': ![],
-            'STIXSizeTwoSym-Bold': ![],
-            'STIXVariants': ![],
-            'STIXVariants-Bold': ![],
-            'STKaiti': ![],
-            'STSong': ![],
-            'STXihei': ![],
-            'SWGamekeys\\x20MT': ![],
-            'Saab': ![],
-            'Sahadeva': ![],
-            'Sakkal\\x20Majalla': ![],
-            'Salina': ![],
-            'Samanata': ![],
-            'Samyak\\x20Devanagari': ![],
-            'Samyak\\x20Gujarati': ![],
-            'Samyak\\x20Malayalam': ![],
-            'Samyak\\x20Tamil': ![],
-            'Sana': ![],
-            'Sana\\x20Regular': ![],
-            'Sans': ![],
-            'Sarai': ![],
-            'Sathu': ![],
-            'Savoye\\x20LET\\x20Plain:1.0': ![],
-            'Sawasdee': ![],
-            'Script': ![],
-            'Script\\x20MT\\x20Bold': ![],
-            'Segoe\\x20MDL2\\x20Assets': !![],
-            'Segoe\\x20Print': !![],
-            'Segoe\\x20Pseudo': ![],
-            'Segoe\\x20Script': !![],
-            'Segoe\\x20UI': !![],
-            'Segoe\\x20UI\\x20Emoji': !![],
-            'Segoe\\x20UI\\x20Historic': !![],
-            'Segoe\\x20UI\\x20Semilight': ![],
-            'Segoe\\x20UI\\x20Symbol': !![],
-            'Serif': ![],
-            'Shonar\\x20Bangla': ![],
-            'Showcard\\x20Gothic': ![],
-            'Shree\\x20Devanagari\\x20714': ![],
-            'Shruti': ![],
-            'SignPainter-HouseScript': ![],
-            'Silom': ![],
-            'SimHei': ![],
-            'SimSun': !![],
-            'SimSun-ExtB': !![],
-            'Simplified\\x20Arabic': ![],
-            'Simplified\\x20Arabic\\x20Fixed': ![],
-            'Sinhala\\x20MN': ![],
-            'Sinhala\\x20MN\\x20Bold': ![],
-            'Sinhala\\x20Sangam\\x20MN': ![],
-            'Sinhala\\x20Sangam\\x20MN\\x20Bold': ![],
-            'Sitka': ![],
-            'Skia': ![],
-            'Skia\\x20Regular': ![],
-            'Skinny': ![],
-            'Small\\x20Fonts': ![],
-            'Snap\\x20ITC': ![],
-            'Snell\\x20Roundhand': ![],
-            'Snowdrift': ![],
-            'Songti\\x20SC': ![],
-            'Songti\\x20SC\\x20Black': ![],
-            'Songti\\x20TC': ![],
-            'Source\\x20Code\\x20Pro': ![],
-            'Splash': ![],
-            'Standard\\x20Symbols\\x20L': ![],
-            'Stencil': ![],
-            'Stencil\\x20Std': ![],
-            'Stephen': ![],
-            'Sukhumvit\\x20Set': ![],
-            'Suruma': ![],
-            'Sylfaen': !![],
-            'Symbol': !![],
-            'Symbole': ![],
-            'System': ![],
-            'System\\x20Font': ![],
-            'TAMu_Kadambri': ![],
-            'TAMu_Kalyani': ![],
-            'TAMu_Maduram': ![],
-            'TSCu_Comic': ![],
-            'TSCu_Paranar': ![],
-            'TSCu_Times': ![],
-            'Tahoma': !![],
-            'Tahoma\\x20Negreta': ![],
-            'TakaoExGothic': ![],
-            'TakaoExMincho': ![],
-            'TakaoGothic': ![],
-            'TakaoMincho': ![],
-            'TakaoPGothic': ![],
-            'TakaoPMincho': ![],
-            'Tamil\\x20MN': ![],
-            'Tamil\\x20MN\\x20Bold': ![],
-            'Tamil\\x20Sangam\\x20MN': ![],
-            'Tamil\\x20Sangam\\x20MN\\x20Bold': ![],
-            'Tarzan': ![],
-            'Tekton\\x20Pro': ![],
-            'Tekton\\x20Pro\\x20Cond': ![],
-            'Tekton\\x20Pro\\x20Ext': ![],
-            'Telugu\\x20MN': ![],
-            'Telugu\\x20MN\\x20Bold': ![],
-            'Telugu\\x20Sangam\\x20MN': ![],
-            'Telugu\\x20Sangam\\x20MN\\x20Bold': ![],
-            'Tempus\\x20Sans\\x20ITC': ![],
-            'Terminal': ![],
-            'Terminator\\x20Two': ![],
-            'Thonburi': ![],
-            'Thonburi\\x20Bold': ![],
-            'Tibetan\\x20Machine\\x20Uni': ![],
-            'Times': !![],
-            'Times\\x20Bold': ![],
-            'Times\\x20New\\x20Roman': !![],
-            'Times\\x20New\\x20Roman\\x20Baltic': ![],
-            'Times\\x20New\\x20Roman\\x20Bold': ![],
-            'Times\\x20New\\x20Roman\\x20Italic': ![],
-            'Times\\x20Roman': ![],
-            'Tlwg\\x20Mono': ![],
-            'Tlwg\\x20Typewriter': ![],
-            'Tlwg\\x20Typist': ![],
-            'Tlwg\\x20Typo': ![],
-            'TlwgMono': ![],
-            'TlwgTypewriter': ![],
-            'Toledo': ![],
-            'Traditional\\x20Arabic': ![],
-            'Trajan\\x20Pro': ![],
-            'Trattatello': ![],
-            'Trebuchet\\x20MS': !![],
-            'Trebuchet\\x20MS\\x20Bold': ![],
-            'Tunga': ![],
-            'Tw\\x20Cen\\x20MT': ![],
-            'Tw\\x20Cen\\x20MT\\x20Bold': ![],
-            'Tw\\x20Cen\\x20MT\\x20Italic': ![],
-            'URW\\x20Bookman\\x20L': ![],
-            'URW\\x20Chancery\\x20L': ![],
-            'URW\\x20Gothic\\x20L': ![],
-            'URW\\x20Palladio\\x20L': ![],
-            'Ubuntu': ![],
-            'Ubuntu\\x20Condensed': ![],
-            'Ubuntu\\x20Mono': ![],
-            'Ukai': ![],
-            'Ume\\x20Gothic': ![],
-            'Ume\\x20Mincho': ![],
-            'Ume\\x20P\\x20Gothic': ![],
-            'Ume\\x20P\\x20Mincho': ![],
-            'Ume\\x20UI\\x20Gothic': ![],
-            'Uming': ![],
-            'Umpush': ![],
-            'UnBatang': ![],
-            'UnDinaru': ![],
-            'UnDotum': ![],
-            'UnGraphic': ![],
-            'UnGungseo': ![],
-            'UnPilgi': ![],
-            'Untitled1': ![],
-            'Urdu\\x20Typesetting': ![],
-            'Uroob': ![],
-            'Utkal': ![],
-            'Utopia': ![],
-            'Utsaah': ![],
-            'Valken': ![],
-            'Vani': ![],
-            'Vemana2000': ![],
-            'Verdana': !![],
-            'Verdana\\x20Bold': ![],
-            'Vijaya': ![],
-            'Viner\\x20Hand\\x20ITC': ![],
-            'Vivaldi': ![],
-            'Vivian': ![],
-            'Vladimir\\x20Script': ![],
-            'Vrinda': ![],
-            'Waree': ![],
-            'Waseem': ![],
-            'Waverly': ![],
-            'Webdings': !![],
-            'WenQuanYi\\x20Bitmap\\x20Song': ![],
-            'WenQuanYi\\x20Micro\\x20Hei': ![],
-            'WenQuanYi\\x20Micro\\x20Hei\\x20Mono': ![],
-            'WenQuanYi\\x20Zen\\x20Hei': ![],
-            'Whimsy\\x20TT': ![],
-            'Wide\\x20Latin': ![],
-            'Wingdings': !![],
-            'Wingdings\\x202': ![],
-            'Wingdings\\x203': ![],
-            'Woodcut': ![],
-            'X-Files': ![],
-            'Year\\x20supply\\x20of\\x20fairy\\x20cakes': ![],
-            'Yu\\x20Gothic': !![],
-            'Yu\\x20Mincho': ![],
-            'Yuppy\\x20SC': ![],
-            'Yuppy\\x20SC\\x20Regular': ![],
-            'Yuppy\\x20TC': ![],
-            'Yuppy\\x20TC\\x20Regular': ![],
-            'Zapf\\x20Dingbats': ![],
-            'Zapfino': ![],
-            'Zawgyi-One': ![],
-            'gargi': ![],
-            'lklug': ![],
-            'mry_KacstQurn': ![],
-            'ori1Uni': ![]
-    }),
-    a0_0x182687 = () => {
-            const _0x2e7b73 = a0_0x27d44e;
-            try {
-                    const _0x9b639 = window['OfflineAudioContext'] || window[_0x2e7b73(0x288)];
-                    if (!_0x9b639) return -0x2;
-                    const _0x41d32d = 0x1194,
-                        _0x193449 = 0x1388,
-                        _0x3752b9 = new _0x9b639(0x1, _0x193449, 0xac44),
-                        _0x45ab3b = _0x3752b9[_0x2e7b73(0x1a6)]();
-                    _0x45ab3b[_0x2e7b73(0x29c)] = _0x2e7b73(0x1e5), _0x45ab3b[_0x2e7b73(0x229)]['value'] = 0x2710;
-                    const _0x4a13db = _0x3752b9[_0x2e7b73(0x200)]();
-                    _0x4a13db[_0x2e7b73(0x1c1)][_0x2e7b73(0x1cc)] = -0x32, _0x4a13db[_0x2e7b73(0x271)][_0x2e7b73(0x1cc)] = 0x28, _0x4a13db[_0x2e7b73(0x26f)][_0x2e7b73(0x1cc)] = 0xc, _0x4a13db[_0x2e7b73(0x216)]['value'] = 0x0, _0x4a13db[_0x2e7b73(0x1f2)][_0x2e7b73(0x1cc)] = 0.25, _0x45ab3b[_0x2e7b73(0x281)](_0x4a13db), _0x4a13db[_0x2e7b73(0x281)](_0x3752b9[_0x2e7b73(0x23e)]), _0x45ab3b[_0x2e7b73(0x1d3)](0x0);
-                    const [_0xe5334b, _0x5a7f02] = a0_0x27c8e4(_0x3752b9), _0xc0f674 = _0xe5334b['then'](_0x49fc29 => a0_0x2e3f1d(_0x49fc29['getChannelData'](0x0)[_0x2e7b73(0x224)](_0x41d32d)), _0x16b95d => {
-                            const _0x3148d9 = _0x2e7b73;
-                            if (_0x16b95d[_0x3148d9(0x1b6)] === _0x3148d9(0x295) || _0x16b95d['name'] === _0x3148d9(0x29a)) return _0x3148d9(0x295);
-                            throw _0x16b95d;
-                    });
-                    return _0xc0f674[_0x2e7b73(0x21e)](() => undefined), _0x5a7f02(), _0xc0f674;
-            } catch (_0x3b3266) {
-                    return -0x1;
-            }
-    };
+const a0_0x5b052d = Object['keys']({
+        '.Aqua Kana': false,
+        '.Helvetica LT MM': false,
+        '.Times LT MM': false,
+        '18thCentury': false,
+        '8514oem': false,
+        'AR BERKLEY': false,
+        'AR JULIAN': false,
+        'AR PL UKai CN': false,
+        'AR PL UMing CN': false,
+        'AR PL UMing HK': false,
+        'AR PL UMing TW': false,
+        'AR PL UMing TW MBE': false,
+        'Aakar': false,
+        'Abadi MT Condensed Extra Bold': false,
+        'Abadi MT Condensed Light': false,
+        'Abyssinica SIL': false,
+        'AcmeFont': false,
+        'Adobe Arabic': false,
+        'Agency FB': false,
+        'Aharoni': false,
+        'Aharoni Bold': false,
+        'Al Bayan': false,
+        'Al Bayan Bold': false,
+        'Al Bayan Plain': false,
+        'Al Nile': false,
+        'Al Tarikh': false,
+        'Aldhabi': false,
+        'Alfredo': false,
+        'Algerian': false,
+        'Alien Encounters': false,
+        'Almonte Snow': false,
+        'American Typewriter': false,
+        'American Typewriter Bold': false,
+        'American Typewriter Condensed': false,
+        'American Typewriter Light': false,
+        'Amethyst': false,
+        'Andale Mono': false,
+        'Andale Mono Version': false,
+        'Andalus': false,
+        'Angsana New': false,
+        'AngsanaUPC': false,
+        'Ani': false,
+        'AnjaliOldLipi': false,
+        'Aparajita': false,
+        'Apple Braille': false,
+        'Apple Braille Outline 6 Dot': false,
+        'Apple Braille Outline 8 Dot': false,
+        'Apple Braille Pinpoint 6 Dot': false,
+        'Apple Braille Pinpoint 8 Dot': false,
+        'Apple Chancery': false,
+        'Apple Color Emoji': false,
+        'Apple LiGothic Medium': false,
+        'Apple LiSung Light': false,
+        'Apple SD Gothic Neo': false,
+        'Apple SD Gothic Neo Regular': false,
+        'Apple SD GothicNeo ExtraBold': false,
+        'Apple Symbols': false,
+        'AppleGothic': false,
+        'AppleGothic Regular': false,
+        'AppleMyungjo': false,
+        'AppleMyungjo Regular': false,
+        'AquaKana': false,
+        'Arabic Transparent': false,
+        'Arabic Typesetting': false,
+        'Arial': true,
+        'Arial Baltic': false,
+        'Arial Black': true,
+        'Arial Bold': false,
+        'Arial Bold Italic': false,
+        'Arial CE': false,
+        'Arial CYR': false,
+        'Arial Greek': false,
+        'Arial Hebrew': false,
+        'Arial Hebrew Bold': false,
+        'Arial Italic': false,
+        'Arial Narrow': true,
+        'Arial Narrow Bold': false,
+        'Arial Narrow Bold Italic': false,
+        'Arial Narrow Italic': false,
+        'Arial Rounded Bold': false,
+        'Arial Rounded MT Bold': false,
+        'Arial TUR': false,
+        'Arial Unicode MS': false,
+        'ArialHB': false,
+        'Arimo': false,
+        'Asimov': false,
+        'Autumn': false,
+        'Avenir': false,
+        'Avenir Black': false,
+        'Avenir Book': false,
+        'Avenir Next': false,
+        'Avenir Next Bold': false,
+        'Avenir Next Condensed': false,
+        'Avenir Next Condensed Bold': false,
+        'Avenir Next Demi Bold': false,
+        'Avenir Next Heavy': false,
+        'Avenir Next Regular': false,
+        'Avenir Roman': false,
+        'Ayuthaya': false,
+        'BN Jinx': false,
+        'BN Machine': false,
+        'BOUTON International Symbols': false,
+        'Baby Kruffy': false,
+        'Baghdad': false,
+        'Bahnschrift': true,
+        'Balthazar': false,
+        'Bangla MN': false,
+        'Bangla MN Bold': false,
+        'Bangla Sangam MN': false,
+        'Bangla Sangam MN Bold': false,
+        'Baskerville': false,
+        'Baskerville Bold': false,
+        'Baskerville Bold Italic': false,
+        'Baskerville Old Face': false,
+        'Baskerville SemiBold': false,
+        'Baskerville SemiBold Italic': false,
+        'Bastion': false,
+        'Batang': false,
+        'BatangChe': false,
+        'Bauhaus 93': false,
+        'Beirut': false,
+        'Bell MT': false,
+        'Bell MT Bold': false,
+        'Bell MT Italic': false,
+        'Bellerose': false,
+        'Berlin Sans FB': false,
+        'Berlin Sans FB Demi': false,
+        'Bernard MT Condensed': false,
+        'BiauKai': false,
+        'Big Caslon': false,
+        'Big Caslon Medium': false,
+        'Birch Std': false,
+        'Bitstream Charter': false,
+        'Bitstream Vera Sans': false,
+        'Blackadder ITC': false,
+        'Blackoak Std': false,
+        'Bobcat': false,
+        'Bodoni 72': false,
+        'Bodoni MT': false,
+        'Bodoni MT Black': false,
+        'Bodoni MT Poster Compressed': false,
+        'Bodoni Ornaments': false,
+        'BolsterBold': false,
+        'Book Antiqua': false,
+        'Book Antiqua Bold': false,
+        'Bookman Old Style': false,
+        'Bookman Old Style Bold': false,
+        'Bookshelf Symbol 7': false,
+        'Borealis': false,
+        'Bradley Hand': false,
+        'Bradley Hand ITC': false,
+        'Braggadocio': false,
+        'Brandish': false,
+        'Britannic Bold': false,
+        'Broadway': false,
+        'Browallia New': false,
+        'BrowalliaUPC': false,
+        'Brush Script': false,
+        'Brush Script MT': false,
+        'Brush Script MT Italic': false,
+        'Brush Script Std': false,
+        'Brussels': false,
+        'Calibri': true,
+        'Calibri Bold': false,
+        'Calibri Light': true,
+        'Californian FB': false,
+        'Calisto MT': false,
+        'Calisto MT Bold': false,
+        'Calligraphic': false,
+        'Calvin': false,
+        'Cambria': true,
+        'Cambria Bold': false,
+        'Cambria Math': true,
+        'Candara': true,
+        'Candara Bold': false,
+        'Candles': false,
+        'Carrois Gothic SC': false,
+        'Castellar': false,
+        'Centaur': false,
+        'Century': false,
+        'Century Gothic': false,
+        'Century Gothic Bold': false,
+        'Century Schoolbook': false,
+        'Century Schoolbook Bold': false,
+        'Century Schoolbook L': false,
+        'Chalkboard': false,
+        'Chalkboard Bold': false,
+        'Chalkboard SE': false,
+        'Chalkboard SE Bold': false,
+        'ChalkboardBold': false,
+        'Chalkduster': false,
+        'Chandas': false,
+        'Chaparral Pro': false,
+        'Chaparral Pro Light': false,
+        'Charlemagne Std': false,
+        'Charter': false,
+        'Chilanka': false,
+        'Chiller': false,
+        'Chinyen': false,
+        'Clarendon': false,
+        'Cochin': false,
+        'Cochin Bold': false,
+        'Colbert': false,
+        'Colonna MT': false,
+        'Comic Sans MS': true,
+        'Comic Sans MS Bold': false,
+        'Commons': false,
+        'Consolas': true,
+        'Consolas Bold': false,
+        'Constantia': true,
+        'Constantia Bold': false,
+        'Coolsville': false,
+        'Cooper Black': false,
+        'Cooper Std Black': false,
+        'Copperplate': false,
+        'Copperplate Bold': false,
+        'Copperplate Gothic Bold': false,
+        'Copperplate Light': false,
+        'Corbel': true,
+        'Corbel Bold': false,
+        'Cordia New': false,
+        'CordiaUPC': false,
+        'Corporate': false,
+        'Corsiva': false,
+        'Corsiva Hebrew': false,
+        'Corsiva Hebrew Bold': false,
+        'Courier': true,
+        'Courier 10 Pitch': false,
+        'Courier Bold': false,
+        'Courier New': true,
+        'Courier New Baltic': false,
+        'Courier New Bold': false,
+        'Courier New CE': false,
+        'Courier New Italic': false,
+        'Courier Oblique': false,
+        'Cracked Johnnie': false,
+        'Creepygirl': false,
+        'Curlz MT': false,
+        'Cursor': false,
+        'Cutive Mono': false,
+        'DFKai-SB': false,
+        'DIN Alternate': false,
+        'DIN Condensed': false,
+        'Damascus': false,
+        'Damascus Bold': false,
+        'Dancing Script': false,
+        'DaunPenh': false,
+        'David': false,
+        'Dayton': false,
+        'DecoType Naskh': false,
+        'Deja Vu': false,
+        'DejaVu LGC Sans': false,
+        'DejaVu Sans': false,
+        'DejaVu Sans Mono': false,
+        'DejaVu Serif': false,
+        'Deneane': false,
+        'Desdemona': false,
+        'Detente': false,
+        'Devanagari MT': false,
+        'Devanagari MT Bold': false,
+        'Devanagari Sangam MN': false,
+        'Didot': false,
+        'Didot Bold': false,
+        'Digifit': false,
+        'DilleniaUPC': false,
+        'Dingbats': false,
+        'Distant Galaxy': false,
+        'Diwan Kufi': false,
+        'Diwan Kufi Regular': false,
+        'Diwan Thuluth': false,
+        'Diwan Thuluth Regular': false,
+        'DokChampa': false,
+        'Dominican': false,
+        'Dotum': false,
+        'DotumChe': false,
+        'Droid Sans': false,
+        'Droid Sans Fallback': false,
+        'Droid Sans Mono': false,
+        'Dyuthi': false,
+        'Ebrima': true,
+        'Edwardian Script ITC': false,
+        'Elephant': false,
+        'Emmett': false,
+        'Engravers MT': false,
+        'Engravers MT Bold': false,
+        'Enliven': false,
+        'Eras Bold ITC': false,
+        'Estrangelo Edessa': false,
+        'Ethnocentric': false,
+        'EucrosiaUPC': false,
+        'Euphemia': false,
+        'Euphemia UCAS': false,
+        'Euphemia UCAS Bold': false,
+        'Eurostile': false,
+        'Eurostile Bold': false,
+        'Expressway Rg': false,
+        'FangSong': false,
+        'Farah': false,
+        'Farisi': false,
+        'Felix Titling': false,
+        'Fingerpop': false,
+        'Fixedsys': false,
+        'Flubber': false,
+        'Footlight MT Light': false,
+        'Forte': false,
+        'FrankRuehl': false,
+        'Frankfurter Venetian TT': false,
+        'Franklin Gothic Book': false,
+        'Franklin Gothic Book Italic': false,
+        'Franklin Gothic Medium': true,
+        'Franklin Gothic Medium Cond': false,
+        'Franklin Gothic Medium Italic': false,
+        'FreeMono': false,
+        'FreeSans': false,
+        'FreeSerif': false,
+        'FreesiaUPC': false,
+        'Freestyle Script': false,
+        'French Script MT': false,
+        'Futura': false,
+        'Futura Condensed ExtraBold': false,
+        'Futura Medium': false,
+        'GB18030 Bitmap': false,
+        'Gabriola': true,
+        'Gadugi': true,
+        'Garamond': false,
+        'Garamond Bold': false,
+        'Gargi': false,
+        'Garuda': false,
+        'Gautami': false,
+        'Gazzarelli': false,
+        'Geeza Pro': false,
+        'Geeza Pro Bold': false,
+        'Geneva': false,
+        'GenevaCY': false,
+        'Gentium': false,
+        'Gentium Basic': false,
+        'Gentium Book Basic': false,
+        'GentiumAlt': false,
+        'Georgia': true,
+        'Georgia Bold': false,
+        'Geotype TT': false,
+        'Giddyup Std': false,
+        'Gigi': false,
+        'Gill': false,
+        'Gill Sans': false,
+        'Gill Sans Bold': false,
+        'Gill Sans MT': false,
+        'Gill Sans MT Bold': false,
+        'Gill Sans MT Condensed': false,
+        'Gill Sans MT Ext Condensed Bold': false,
+        'Gill Sans MT Italic': false,
+        'Gill Sans Ultra Bold': false,
+        'Gill Sans Ultra Bold Condensed': false,
+        'Gisha': false,
+        'Glockenspiel': false,
+        'Gloucester MT Extra Condensed': false,
+        'Good Times': false,
+        'Goudy': false,
+        'Goudy Old Style': false,
+        'Goudy Old Style Bold': false,
+        'Goudy Stout': false,
+        'Greek Diner Inline TT': false,
+        'Gubbi': false,
+        'Gujarati MT': false,
+        'Gujarati MT Bold': false,
+        'Gujarati Sangam MN': false,
+        'Gujarati Sangam MN Bold': false,
+        'Gulim': false,
+        'GulimChe': false,
+        'GungSeo Regular': false,
+        'Gungseouche': false,
+        'Gungsuh': false,
+        'GungsuhChe': false,
+        'Gurmukhi': false,
+        'Gurmukhi MN': false,
+        'Gurmukhi MN Bold': false,
+        'Gurmukhi MT': false,
+        'Gurmukhi Sangam MN': false,
+        'Gurmukhi Sangam MN Bold': false,
+        'Haettenschweiler': false,
+        'Hand Me Down S (BRK)': false,
+        'Hansen': false,
+        'Harlow Solid Italic': false,
+        'Harrington': false,
+        'Harvest': false,
+        'HarvestItal': false,
+        'Haxton Logos TT': false,
+        'HeadLineA Regular': false,
+        'HeadlineA': false,
+        'Heavy Heap': false,
+        'Hei': false,
+        'Hei Regular': false,
+        'Heiti SC': false,
+        'Heiti SC Light': false,
+        'Heiti SC Medium': false,
+        'Heiti TC': false,
+        'Heiti TC Light': false,
+        'Heiti TC Medium': false,
+        'Helvetica': true,
+        'Helvetica Bold': false,
+        'Helvetica CY Bold': false,
+        'Helvetica CY Plain': false,
+        'Helvetica LT Std': false,
+        'Helvetica Light': false,
+        'Helvetica Neue': false,
+        'Helvetica Neue Bold': false,
+        'Helvetica Neue Medium': false,
+        'Helvetica Oblique': false,
+        'HelveticaCY': false,
+        'HelveticaNeueLT Com 107 XBlkCn': false,
+        'Herculanum': false,
+        'High Tower Text': false,
+        'Highboot': false,
+        'Hiragino Kaku Gothic Pro W3': false,
+        'Hiragino Kaku Gothic Pro W6': false,
+        'Hiragino Kaku Gothic ProN W3': false,
+        'Hiragino Kaku Gothic ProN W6': false,
+        'Hiragino Kaku Gothic Std W8': false,
+        'Hiragino Kaku Gothic StdN W8': false,
+        'Hiragino Maru Gothic Pro W4': false,
+        'Hiragino Maru Gothic ProN W4': false,
+        'Hiragino Mincho Pro W3': false,
+        'Hiragino Mincho Pro W6': false,
+        'Hiragino Mincho ProN W3': false,
+        'Hiragino Mincho ProN W6': false,
+        'Hiragino Sans GB W3': false,
+        'Hiragino Sans GB W6': false,
+        'Hiragino Sans W0': false,
+        'Hiragino Sans W1': false,
+        'Hiragino Sans W2': false,
+        'Hiragino Sans W3': false,
+        'Hiragino Sans W4': false,
+        'Hiragino Sans W5': false,
+        'Hiragino Sans W6': false,
+        'Hiragino Sans W7': false,
+        'Hiragino Sans W8': false,
+        'Hiragino Sans W9': false,
+        'Hobo Std': false,
+        'Hoefler Text': false,
+        'Hoefler Text Black': false,
+        'Hoefler Text Ornaments': false,
+        'Hollywood Hills': false,
+        'Hombre': false,
+        'Huxley Titling': false,
+        'ITC Stone Serif': false,
+        'ITF Devanagari': false,
+        'ITF Devanagari Marathi': false,
+        'ITF Devanagari Medium': false,
+        'Impact': true,
+        'Imprint MT Shadow': false,
+        'InaiMathi': false,
+        'Induction': false,
+        'Informal Roman': false,
+        'Ink Free': true,
+        'IrisUPC': false,
+        'Iskoola Pota': false,
+        'Italianate': false,
+        'Jamrul': false,
+        'JasmineUPC': false,
+        'Javanese Text': true,
+        'Jokerman': false,
+        'Juice ITC': false,
+        'KacstArt': false,
+        'KacstBook': false,
+        'KacstDecorative': false,
+        'KacstDigital': false,
+        'KacstFarsi': false,
+        'KacstLetter': false,
+        'KacstNaskh': false,
+        'KacstOffice': false,
+        'KacstOne': false,
+        'KacstPen': false,
+        'KacstPoster': false,
+        'KacstQurn': false,
+        'KacstScreen': false,
+        'KacstTitle': false,
+        'KacstTitleL': false,
+        'Kai': false,
+        'Kai Regular': false,
+        'KaiTi': false,
+        'Kailasa': false,
+        'Kailasa Regular': false,
+        'Kaiti SC': false,
+        'Kaiti SC Black': false,
+        'Kalapi': false,
+        'Kalimati': false,
+        'Kalinga': false,
+        'Kannada MN': false,
+        'Kannada MN Bold': false,
+        'Kannada Sangam MN': false,
+        'Kannada Sangam MN Bold': false,
+        'Kartika': false,
+        'Karumbi': false,
+        'Kedage': false,
+        'Kefa': false,
+        'Kefa Bold': false,
+        'Keraleeyam': false,
+        'Keyboard': false,
+        'Khmer MN': false,
+        'Khmer MN Bold': false,
+        'Khmer OS': false,
+        'Khmer OS System': false,
+        'Khmer Sangam MN': false,
+        'Khmer UI': false,
+        'Kinnari': false,
+        'Kino MT': false,
+        'KodchiangUPC': false,
+        'Kohinoor Bangla': false,
+        'Kohinoor Devanagari': false,
+        'Kohinoor Telugu': false,
+        'Kokila': false,
+        'Kokonor': false,
+        'Kokonor Regular': false,
+        'Kozuka Gothic Pr6N B': false,
+        'Kristen ITC': false,
+        'Krungthep': false,
+        'KufiStandardGK': false,
+        'KufiStandardGK Regular': false,
+        'Kunstler Script': false,
+        'Laksaman': false,
+        'Lao MN': false,
+        'Lao Sangam MN': false,
+        'Lao UI': false,
+        'LastResort': false,
+        'Latha': false,
+        'Leelawadee': false,
+        'Letter Gothic Std': false,
+        'LetterOMatic!': false,
+        'Levenim MT': false,
+        'LiHei Pro': false,
+        'LiSong Pro': false,
+        'Liberation Mono': false,
+        'Liberation Sans': false,
+        'Liberation Sans Narrow': false,
+        'Liberation Serif': false,
+        'Likhan': false,
+        'LilyUPC': false,
+        'Limousine': false,
+        'Lithos Pro Regular': false,
+        'LittleLordFontleroy': false,
+        'Lohit Assamese': false,
+        'Lohit Bengali': false,
+        'Lohit Devanagari': false,
+        'Lohit Gujarati': false,
+        'Lohit Gurmukhi': false,
+        'Lohit Hindi': false,
+        'Lohit Kannada': false,
+        'Lohit Malayalam': false,
+        'Lohit Odia': false,
+        'Lohit Punjabi': false,
+        'Lohit Tamil': false,
+        'Lohit Tamil Classical': false,
+        'Lohit Telugu': false,
+        'Loma': false,
+        'Lucida Blackletter': false,
+        'Lucida Bright': false,
+        'Lucida Bright Demibold': false,
+        'Lucida Bright Demibold Italic': false,
+        'Lucida Bright Italic': false,
+        'Lucida Calligraphy': false,
+        'Lucida Calligraphy Italic': false,
+        'Lucida Console': true,
+        'Lucida Fax': false,
+        'Lucida Fax Demibold': false,
+        'Lucida Fax Regular': false,
+        'Lucida Grande': false,
+        'Lucida Grande Bold': false,
+        'Lucida Handwriting': false,
+        'Lucida Handwriting Italic': false,
+        'Lucida Sans': false,
+        'Lucida Sans Demibold Italic': false,
+        'Lucida Sans Typewriter': false,
+        'Lucida Sans Typewriter Bold': false,
+        'Lucida Sans Unicode': true,
+        'Luminari': false,
+        'Luxi Mono': false,
+        'MS Gothic': true,
+        'MS Mincho': false,
+        'MS Outlook': false,
+        'MS PGothic': true,
+        'MS PMincho': false,
+        'MS Reference Sans Serif': false,
+        'MS Reference Specialty': false,
+        'MS Sans Serif': true,
+        'MS Serif': true,
+        'MS UI Gothic': true,
+        'MT Extra': false,
+        'MV Boli': true,
+        'Mael': false,
+        'Magneto': false,
+        'Maiandra GD': false,
+        'Malayalam MN': false,
+        'Malayalam MN Bold': false,
+        'Malayalam Sangam MN': false,
+        'Malayalam Sangam MN Bold': false,
+        'Malgun Gothic': true,
+        'Mallige': false,
+        'Mangal': false,
+        'Manorly': false,
+        'Marion': false,
+        'Marion Bold': false,
+        'Marker Felt': false,
+        'Marker Felt Thin': false,
+        'Marlett': true,
+        'Martina': false,
+        'Matura MT Script Capitals': false,
+        'Meera': false,
+        'Meiryo': false,
+        'Meiryo Bold': false,
+        'Meiryo UI': false,
+        'MelodBold': false,
+        'Menlo': false,
+        'Menlo Bold': false,
+        'Mesquite Std': false,
+        'Microsoft': false,
+        'Microsoft Himalaya': true,
+        'Microsoft JhengHei': true,
+        'Microsoft JhengHei UI': true,
+        'Microsoft New Tai Lue': true,
+        'Microsoft PhagsPa': true,
+        'Microsoft Sans Serif': true,
+        'Microsoft Tai Le': true,
+        'Microsoft Tai Le Bold': false,
+        'Microsoft Uighur': false,
+        'Microsoft YaHei': true,
+        'Microsoft YaHei UI': true,
+        'Microsoft Yi Baiti': true,
+        'Minerva': false,
+        'MingLiU': false,
+        'MingLiU-ExtB': true,
+        'MingLiU_HKSCS': false,
+        'Minion Pro': false,
+        'Miriam': false,
+        'Mishafi': false,
+        'Mishafi Gold': false,
+        'Mistral': false,
+        'Modern': false,
+        'Modern No. 20': false,
+        'Monaco': false,
+        'Mongolian Baiti': true,
+        'Monospace': false,
+        'Monotype Corsiva': false,
+        'Monotype Sorts': false,
+        'MoolBoran': false,
+        'Moonbeam': false,
+        'MotoyaLMaru': false,
+        'Mshtakan': false,
+        'Mshtakan Bold': false,
+        'Mukti Narrow': false,
+        'Muna': false,
+        'Myanmar MN': false,
+        'Myanmar MN Bold': false,
+        'Myanmar Sangam MN': false,
+        'Myanmar Text': true,
+        'Mycalc': false,
+        'Myriad Arabic': false,
+        'Myriad Hebrew': false,
+        'Myriad Pro': false,
+        'NISC18030': false,
+        'NSimSun': true,
+        'Nadeem': false,
+        'Nadeem Regular': false,
+        'Nakula': false,
+        'Nanum Barun Gothic': false,
+        'Nanum Gothic': false,
+        'Nanum Myeongjo': false,
+        'NanumBarunGothic': false,
+        'NanumGothic': false,
+        'NanumGothic Bold': false,
+        'NanumGothicCoding': false,
+        'NanumMyeongjo': false,
+        'NanumMyeongjo Bold': false,
+        'Narkisim': false,
+        'Nasalization': false,
+        'Navilu': false,
+        'Neon Lights': false,
+        'New Peninim MT': false,
+        'New Peninim MT Bold': false,
+        'News Gothic MT': false,
+        'News Gothic MT Bold': false,
+        'Niagara Engraved': false,
+        'Niagara Solid': false,
+        'Nimbus Mono L': false,
+        'Nimbus Roman No9 L': false,
+        'Nimbus Sans L': false,
+        'Nimbus Sans L Condensed': false,
+        'Nina': false,
+        'Nirmala UI': true,
+        'Nirmala.ttf': false,
+        'Norasi': false,
+        'Noteworthy': false,
+        'Noteworthy Bold': false,
+        'Noto Color Emoji': false,
+        'Noto Emoji': false,
+        'Noto Mono': false,
+        'Noto Naskh Arabic': false,
+        'Noto Nastaliq Urdu': false,
+        'Noto Sans': false,
+        'Noto Sans Armenian': false,
+        'Noto Sans Bengali': false,
+        'Noto Sans CJK': false,
+        'Noto Sans Canadian Aboriginal': false,
+        'Noto Sans Cherokee': false,
+        'Noto Sans Devanagari': false,
+        'Noto Sans Ethiopic': false,
+        'Noto Sans Georgian': false,
+        'Noto Sans Gujarati': false,
+        'Noto Sans Gurmukhi': false,
+        'Noto Sans Hebrew': false,
+        'Noto Sans JP': false,
+        'Noto Sans KR': false,
+        'Noto Sans Kannada': false,
+        'Noto Sans Khmer': false,
+        'Noto Sans Lao': false,
+        'Noto Sans Malayalam': false,
+        'Noto Sans Myanmar': false,
+        'Noto Sans Oriya': false,
+        'Noto Sans SC': false,
+        'Noto Sans Sinhala': false,
+        'Noto Sans Symbols': false,
+        'Noto Sans TC': false,
+        'Noto Sans Tamil': false,
+        'Noto Sans Telugu': false,
+        'Noto Sans Thai': false,
+        'Noto Sans Yi': false,
+        'Noto Serif': false,
+        'Notram': false,
+        'November': false,
+        'Nueva Std': false,
+        'Nueva Std Cond': false,
+        'Nyala': false,
+        'OCR A Extended': false,
+        'OCR A Std': false,
+        'Old English Text MT': false,
+        'OldeEnglish': false,
+        'Onyx': false,
+        'OpenSymbol': false,
+        'OpineHeavy': false,
+        'Optima': false,
+        'Optima Bold': false,
+        'Optima Regular': false,
+        'Orator Std': false,
+        'Oriya MN': false,
+        'Oriya MN Bold': false,
+        'Oriya Sangam MN': false,
+        'Oriya Sangam MN Bold': false,
+        'Osaka': false,
+        'Osaka-Mono': false,
+        'OsakaMono': false,
+        'PCMyungjo Regular': false,
+        'PCmyoungjo': false,
+        'PMingLiU': false,
+        'PMingLiU-ExtB': true,
+        'PR Celtic Narrow': false,
+        'PT Mono': false,
+        'PT Sans': false,
+        'PT Sans Bold': false,
+        'PT Sans Caption Bold': false,
+        'PT Sans Narrow Bold': false,
+        'PT Serif': false,
+        'Padauk': false,
+        'Padauk Book': false,
+        'Padmaa': false,
+        'Pagul': false,
+        'Palace Script MT': false,
+        'Palatino': false,
+        'Palatino Bold': false,
+        'Palatino Linotype': true,
+        'Palatino Linotype Bold': false,
+        'Papyrus': false,
+        'Papyrus Condensed': false,
+        'Parchment': false,
+        'Parry Hotter': false,
+        'PenultimateLight': false,
+        'Perpetua': false,
+        'Perpetua Bold': false,
+        'Perpetua Titling MT': false,
+        'Perpetua Titling MT Bold': false,
+        'Phetsarath OT': false,
+        'Phosphate': false,
+        'Phosphate Inline': false,
+        'Phosphate Solid': false,
+        'PhrasticMedium': false,
+        'PilGi Regular': false,
+        'Pilgiche': false,
+        'PingFang HK': false,
+        'PingFang SC': false,
+        'PingFang TC': false,
+        'Pirate': false,
+        'Plantagenet Cherokee': false,
+        'Playbill': false,
+        'Poor Richard': false,
+        'Poplar Std': false,
+        'Pothana2000': false,
+        'Prestige Elite Std': false,
+        'Pristina': false,
+        'Purisa': false,
+        'QuiverItal': false,
+        'Raanana': false,
+        'Raanana Bold': false,
+        'Raavi': false,
+        'Rachana': false,
+        'Rage Italic': false,
+        'RaghuMalayalam': false,
+        'Ravie': false,
+        'Rekha': false,
+        'Roboto': false,
+        'Rockwell': false,
+        'Rockwell Bold': false,
+        'Rockwell Condensed': false,
+        'Rockwell Extra Bold': false,
+        'Rockwell Italic': false,
+        'Rod': false,
+        'Roland': false,
+        'Rondalo': false,
+        'Rosewood Std Regular': false,
+        'RowdyHeavy': false,
+        'Russel Write TT': false,
+        'SF Movie Poster': false,
+        'STFangsong': false,
+        'STHeiti': false,
+        'STIXGeneral': false,
+        'STIXGeneral-Bold': false,
+        'STIXGeneral-Regular': false,
+        'STIXIntegralsD': false,
+        'STIXIntegralsD-Bold': false,
+        'STIXIntegralsSm': false,
+        'STIXIntegralsSm-Bold': false,
+        'STIXIntegralsUp': false,
+        'STIXIntegralsUp-Bold': false,
+        'STIXIntegralsUp-Regular': false,
+        'STIXIntegralsUpD': false,
+        'STIXIntegralsUpD-Bold': false,
+        'STIXIntegralsUpD-Regular': false,
+        'STIXIntegralsUpSm': false,
+        'STIXIntegralsUpSm-Bold': false,
+        'STIXNonUnicode': false,
+        'STIXNonUnicode-Bold': false,
+        'STIXSizeFiveSym': false,
+        'STIXSizeFiveSym-Regular': false,
+        'STIXSizeFourSym': false,
+        'STIXSizeFourSym-Bold': false,
+        'STIXSizeOneSym': false,
+        'STIXSizeOneSym-Bold': false,
+        'STIXSizeThreeSym': false,
+        'STIXSizeThreeSym-Bold': false,
+        'STIXSizeTwoSym': false,
+        'STIXSizeTwoSym-Bold': false,
+        'STIXVariants': false,
+        'STIXVariants-Bold': false,
+        'STKaiti': false,
+        'STSong': false,
+        'STXihei': false,
+        'SWGamekeys MT': false,
+        'Saab': false,
+        'Sahadeva': false,
+        'Sakkal Majalla': false,
+        'Salina': false,
+        'Samanata': false,
+        'Samyak Devanagari': false,
+        'Samyak Gujarati': false,
+        'Samyak Malayalam': false,
+        'Samyak Tamil': false,
+        'Sana': false,
+        'Sana Regular': false,
+        'Sans': false,
+        'Sarai': false,
+        'Sathu': false,
+        'Savoye LET Plain:1.0': false,
+        'Sawasdee': false,
+        'Script': false,
+        'Script MT Bold': false,
+        'Segoe MDL2 Assets': true,
+        'Segoe Print': true,
+        'Segoe Pseudo': false,
+        'Segoe Script': true,
+        'Segoe UI': true,
+        'Segoe UI Emoji': true,
+        'Segoe UI Historic': true,
+        'Segoe UI Semilight': false,
+        'Segoe UI Symbol': true,
+        'Serif': false,
+        'Shonar Bangla': false,
+        'Showcard Gothic': false,
+        'Shree Devanagari 714': false,
+        'Shruti': false,
+        'SignPainter-HouseScript': false,
+        'Silom': false,
+        'SimHei': false,
+        'SimSun': true,
+        'SimSun-ExtB': true,
+        'Simplified Arabic': false,
+        'Simplified Arabic Fixed': false,
+        'Sinhala MN': false,
+        'Sinhala MN Bold': false,
+        'Sinhala Sangam MN': false,
+        'Sinhala Sangam MN Bold': false,
+        'Sitka': false,
+        'Skia': false,
+        'Skia Regular': false,
+        'Skinny': false,
+        'Small Fonts': false,
+        'Snap ITC': false,
+        'Snell Roundhand': false,
+        'Snowdrift': false,
+        'Songti SC': false,
+        'Songti SC Black': false,
+        'Songti TC': false,
+        'Source Code Pro': false,
+        'Splash': false,
+        'Standard Symbols L': false,
+        'Stencil': false,
+        'Stencil Std': false,
+        'Stephen': false,
+        'Sukhumvit Set': false,
+        'Suruma': false,
+        'Sylfaen': true,
+        'Symbol': true,
+        'Symbole': false,
+        'System': false,
+        'System Font': false,
+        'TAMu_Kadambri': false,
+        'TAMu_Kalyani': false,
+        'TAMu_Maduram': false,
+        'TSCu_Comic': false,
+        'TSCu_Paranar': false,
+        'TSCu_Times': false,
+        'Tahoma': true,
+        'Tahoma Negreta': false,
+        'TakaoExGothic': false,
+        'TakaoExMincho': false,
+        'TakaoGothic': false,
+        'TakaoMincho': false,
+        'TakaoPGothic': false,
+        'TakaoPMincho': false,
+        'Tamil MN': false,
+        'Tamil MN Bold': false,
+        'Tamil Sangam MN': false,
+        'Tamil Sangam MN Bold': false,
+        'Tarzan': false,
+        'Tekton Pro': false,
+        'Tekton Pro Cond': false,
+        'Tekton Pro Ext': false,
+        'Telugu MN': false,
+        'Telugu MN Bold': false,
+        'Telugu Sangam MN': false,
+        'Telugu Sangam MN Bold': false,
+        'Tempus Sans ITC': false,
+        'Terminal': false,
+        'Terminator Two': false,
+        'Thonburi': false,
+        'Thonburi Bold': false,
+        'Tibetan Machine Uni': false,
+        'Times': true,
+        'Times Bold': false,
+        'Times New Roman': true,
+        'Times New Roman Baltic': false,
+        'Times New Roman Bold': false,
+        'Times New Roman Italic': false,
+        'Times Roman': false,
+        'Tlwg Mono': false,
+        'Tlwg Typewriter': false,
+        'Tlwg Typist': false,
+        'Tlwg Typo': false,
+        'TlwgMono': false,
+        'TlwgTypewriter': false,
+        'Toledo': false,
+        'Traditional Arabic': false,
+        'Trajan Pro': false,
+        'Trattatello': false,
+        'Trebuchet MS': true,
+        'Trebuchet MS Bold': false,
+        'Tunga': false,
+        'Tw Cen MT': false,
+        'Tw Cen MT Bold': false,
+        'Tw Cen MT Italic': false,
+        'URW Bookman L': false,
+        'URW Chancery L': false,
+        'URW Gothic L': false,
+        'URW Palladio L': false,
+        'Ubuntu': false,
+        'Ubuntu Condensed': false,
+        'Ubuntu Mono': false,
+        'Ukai': false,
+        'Ume Gothic': false,
+        'Ume Mincho': false,
+        'Ume P Gothic': false,
+        'Ume P Mincho': false,
+        'Ume UI Gothic': false,
+        'Uming': false,
+        'Umpush': false,
+        'UnBatang': false,
+        'UnDinaru': false,
+        'UnDotum': false,
+        'UnGraphic': false,
+        'UnGungseo': false,
+        'UnPilgi': false,
+        'Untitled1': false,
+        'Urdu Typesetting': false,
+        'Uroob': false,
+        'Utkal': false,
+        'Utopia': false,
+        'Utsaah': false,
+        'Valken': false,
+        'Vani': false,
+        'Vemana2000': false,
+        'Verdana': true,
+        'Verdana Bold': false,
+        'Vijaya': false,
+        'Viner Hand ITC': false,
+        'Vivaldi': false,
+        'Vivian': false,
+        'Vladimir Script': false,
+        'Vrinda': false,
+        'Waree': false,
+        'Waseem': false,
+        'Waverly': false,
+        'Webdings': true,
+        'WenQuanYi Bitmap Song': false,
+        'WenQuanYi Micro Hei': false,
+        'WenQuanYi Micro Hei Mono': false,
+        'WenQuanYi Zen Hei': false,
+        'Whimsy TT': false,
+        'Wide Latin': false,
+        'Wingdings': true,
+        'Wingdings 2': false,
+        'Wingdings 3': false,
+        'Woodcut': false,
+        'X-Files': false,
+        'Year supply of fairy cakes': false,
+        'Yu Gothic': true,
+        'Yu Mincho': false,
+        'Yuppy SC': false,
+        'Yuppy SC Regular': false,
+        'Yuppy TC': false,
+        'Yuppy TC Regular': false,
+        'Zapf Dingbats': false,
+        'Zapfino': false,
+        'Zawgyi-One': false,
+        'gargi': false,
+        'lklug': false,
+        'mry_KacstQurn': false,
+        'ori1Uni': false
+    });
+const a0_0x182687 = () => {
+    try {
+        const offlineAudioCtxClass = window['OfflineAudioContext'] || window['webkitOfflineAudioContext'];
+        if (!offlineAudioCtxClass) return -2;
+        const _0x41d32d = 4500,
+            _0x193449 = 5000,
+            offlineAudioCtx = new offlineAudioCtxClass(1, _0x193449, 0xac44),
+            oscillator = offlineAudioCtx['createOscillator']();
+        oscillator['type'] = 'triangle',
+        oscillator['frequency']['value'] = 10000;
+        const compressor = offlineAudioCtx['createDynamicsCompressor']();
+        compressor['threshold']['value'] = -0x32,
+        compressor['knee']['value'] = 40,
+        compressor['ratio']['value'] = 12,
+        compressor['attack']['value'] = 0,
+        compressor['release']['value'] = 0.25,
+        oscillator['connect'](compressor),
+        compressor['connect'](offlineAudioCtx['destination']),
+        oscillator['start'](0);
+        const [_0xe5334b, _0x5a7f02] = a0_0x27c8e4(offlineAudioCtx),
+        _0xc0f674 = _0xe5334b['then'](_0x49fc29 => a0_0x2e3f1d(_0x49fc29['getChannelData'](0)['subarray'](_0x41d32d)), _0x16b95d => {
+            if (_0x16b95d['name'] === 'timeout' || _0x16b95d['name'] === 'suspended') return 'timeout';
+            throw _0x16b95d;
+        });
+        return _0xc0f674['catch'](() => undefined), _0x5a7f02(), _0xc0f674;
+    } catch (e) {
+        return -1;
+    }
+};
 
 function a0_0x27c8e4(_0x24f1a9) {
-        const _0x3b4ef3 = 0x3,
-            _0x4c5ea6 = 0x1f4,
-            _0x4da1da = 0x1f4,
-            _0x384dae = 0x1388;
-        let _0x5d654a = () => undefined;
-        const _0x54264f = new Promise((_0x5a9d0b, _0x5cc822) => {
-                const _0xf2a5c8 = a0_0x4c8d;
-                let _0x45539e = ![],
-                    _0x3e10e8 = 0x0,
-                    _0x3e5d9c = 0x0;
-                _0x24f1a9['oncomplete'] = _0xa5e9ba => _0x5a9d0b(_0xa5e9ba[_0xf2a5c8(0x203)]);
-                const _0x2a7c3c = () => {
-                            const _0x1cde40 = _0xf2a5c8;
-                            setTimeout(() => _0x5cc822(a0_0x5c64fb(_0x1cde40(0x295))), Math[_0x1cde40(0x1c0)](_0x4da1da, _0x3e5d9c + _0x384dae - Date[_0x1cde40(0x268)]()));
-                    },
-                    _0x2cb726 = () => {
-                            const _0xf9c9d5 = _0xf2a5c8;
-                            try {
-                                    _0x24f1a9[_0xf9c9d5(0x22e)]();
-                                    switch (_0x24f1a9[_0xf9c9d5(0x1d9)]) {
-                                            case 'running':
-                                                    _0x3e5d9c = Date[_0xf9c9d5(0x268)]();
-                                                    _0x45539e && _0x2a7c3c();
-                                                    break;
-                                            case _0xf9c9d5(0x29a):
-                                                    !document[_0xf9c9d5(0x274)] && _0x3e10e8++;
-                                                    _0x45539e && _0x3e10e8 >= _0x3b4ef3 ? _0x5cc822(a0_0x5c64fb(_0xf9c9d5(0x29a))) : setTimeout(_0x2cb726, _0x4c5ea6);
-                                                    break;
-                                    }
-                            } catch (_0x4b2470) {
-                                    _0x5cc822(_0x4b2470);
-                            }
-                    };
-                _0x2cb726(), _0x5d654a = () => {
-                        !_0x45539e && (_0x45539e = !![], _0x3e5d9c > 0x0 && _0x2a7c3c());
-                };
-        });
-        return [_0x54264f, _0x5d654a];
+    const _0x3b4ef3 = 0x3,
+        _0x4c5ea6 = 0x1f4,
+        _0x4da1da = 0x1f4,
+        _0x384dae = 0x1388;
+    let _0x5d654a = () => undefined;
+    const _0x54264f = new Promise((_0x5a9d0b, _0x5cc822) => {
+        let _0x45539e = false,
+            _0x3e10e8 = 0x0,
+            _0x3e5d9c = 0x0;
+        _0x24f1a9['oncomplete'] = _0xa5e9ba => _0x5a9d0b(_0xa5e9ba['renderedBuffer']);
+        const _0x2a7c3c = () => {
+                setTimeout(() => _0x5cc822(a0_0x5c64fb('timeout')), Math['min'](_0x4da1da, _0x3e5d9c + _0x384dae - Date['now']()));
+            },
+            _0x2cb726 = () => {
+                try {
+                    _0x24f1a9['startRendering']();
+                    switch (_0x24f1a9['state']) {
+                        case 'running':
+                            _0x3e5d9c = Date['now']();
+                            _0x45539e && _0x2a7c3c();
+                            break;
+                        case 'suspended':
+                            !document['hidden'] && _0x3e10e8++;
+                            _0x45539e && _0x3e10e8 >= _0x3b4ef3 ? _0x5cc822(a0_0x5c64fb('suspended')) : setTimeout(_0x2cb726, _0x4c5ea6);
+                            break;
+                    }
+                } catch (_0x4b2470) {
+                    _0x5cc822(_0x4b2470);
+                }
+            };
+        _0x2cb726(), _0x5d654a = () => {
+            !_0x45539e && (_0x45539e = true, _0x3e5d9c > 0x0 && _0x2a7c3c());
+        };
+    });
+    return [_0x54264f, _0x5d654a];
 }
 
-function a0_0x2e3f1d(_0x58be29) {
-        const _0x47330b = a0_0x27d44e;
-        let _0xfc244f = 0x0;
-        for (let _0x590d66 = 0x0; _0x590d66 < _0x58be29[_0x47330b(0x1d4)]; ++_0x590d66) {
-                _0xfc244f += Math['abs'](_0x58be29[_0x590d66]);
-        }
-        return _0xfc244f;
+function a0_0x2e3f1d(arg1) {
+    let out = 0;
+    for (let i = 0; i < arg1.length; ++i) {
+        out += Math.abs(arg1[i]);
+    }
+    return out;
 }
 
 function a0_0x5c64fb(_0x595897) {
-        const _0x467ea1 = new Error(_0x595897);
-        return _0x467ea1['name'] = _0x595897, _0x467ea1;
+    const _0x467ea1 = new Error(_0x595897);
+    return _0x467ea1['name'] = _0x595897, _0x467ea1;
 }
-const a0_0x408719 = _0x296769 => {
-            const _0x119c2a = a0_0x27d44e;
-            try {
-                    const _0x222145 = {
-                            'Chrome': 'Blink',
-                            'Opera': _0x119c2a(0x280),
-                            'Mozilla': _0x119c2a(0x205),
-                            'Edge': _0x119c2a(0x280),
-                            'Safari': 'WebKit',
-                            'Firefox': _0x119c2a(0x205),
-                            'Internet\\x20Explorer': 'Trident'
-                    };
-                    return _0x222145[_0x296769] || _0x119c2a(0x1af);
-            } catch (_0x16dd2e) {
-                    return _0x119c2a(0x1af);
-            }
-    },
-    a0_0x5c162a = () => {
-            const _0x10437b = a0_0x27d44e;
-            try {
-                    const _0x21db71 = [{
-                            's': 'Windows\\x2010',
-                            'r': /(Windows 10.0|Windows NT 10.0)/
-                    }, {
-                            's': _0x10437b(0x262),
-                            'r': /(Windows 8.1|Windows NT 6.3)/
-                    }, {
-                            's': _0x10437b(0x228),
-                            'r': /(Windows 8|Windows NT 6.2)/
-                    }, {
-                            's': _0x10437b(0x1e4),
-                            'r': /(Windows 7|Windows NT 6.1)/
-                    }, {
-                            's': _0x10437b(0x217),
-                            'r': /Windows NT 6.0/
-                    }, {
-                            's': 'Windows\\x20Server\\x202003',
-                            'r': /Windows NT 5.2/
-                    }, {
-                            's': _0x10437b(0x1f3),
-                            'r': /(Windows NT 5.1|Windows XP)/
-                    }, {
-                            's': _0x10437b(0x249),
-                            'r': /(Windows NT 5.0|Windows 2000)/
-                    }, {
-                            's': _0x10437b(0x24c),
-                            'r': /(Win 9x 4.90|Windows ME)/
-                    }, {
-                            's': _0x10437b(0x2a1),
-                            'r': /(Windows 98|Win98)/
-                    }, {
-                            's': _0x10437b(0x199),
-                            'r': /(Windows 95|Win95|Windows_95)/
-                    }, {
-                            's': _0x10437b(0x1ee),
-                            'r': /(Windows NT 4.0|WinNT4.0|WinNT|Windows NT)/
-                    }, {
-                            's': _0x10437b(0x212),
-                            'r': /Windows CE/
-                    }, {
-                            's': _0x10437b(0x293),
-                            'r': /Win16/
-                    }, {
-                            's': _0x10437b(0x1dc),
-                            'r': /Android/
-                    }, {
-                            's': _0x10437b(0x1a2),
-                            'r': /OpenBSD/
-                    }, {
-                            's': _0x10437b(0x267),
-                            'r': /SunOS/
-                    }, {
-                            's': _0x10437b(0x1a1),
-                            'r': /CrOS/
-                    }, {
-                            's': 'Linux',
-                            'r': /(Linux|X11(?!.*CrOS))/
-                    }, {
-                            's': _0x10437b(0x213),
-                            'r': /(iPhone|iPad|iPod)/
-                    }, {
-                            's': _0x10437b(0x1bb),
-                            'r': /Mac OS X/
-                    }, {
-                            's': 'Mac\\x20OS',
-                            'r': /(Mac OS|MacPPC|MacIntel|Mac_PowerPC|Macintosh)/
-                    }, {
-                            's': _0x10437b(0x1fa),
-                            'r': /QNX/
-                    }, {
-                            's': 'UNIX',
-                            'r': /UNIX/
-                    }, {
-                            's': _0x10437b(0x1ef),
-                            'r': /BeOS/
-                    }, {
-                            's': _0x10437b(0x1fb),
-                            'r': /OS\\/
-                            2 /
-            }, {
-                            's': _0x10437b(0x1d1),
-                                'r': /(nuhk|Googlebot|Yammybot|Openbot|Slurp|MSNBot|Ask Jeeves\\/Teoma | ia_archiver) /
-                    }];
-                    let _0x120cdc, _0x5e8ac4 = _0x21db71[_0x10437b(0x275)](_0x473d5e => _0x473d5e['r'][_0x10437b(0x232)](navigator['userAgent']))[0x0]['s'];
-                    /Windows/ [_0x10437b(0x232)](_0x5e8ac4) && (_0x120cdc = /Windows (.*)/ [_0x10437b(0x1a9)](_0x5e8ac4)[0x1], _0x5e8ac4 = 'Windows');
-                    switch (_0x5e8ac4) {
-                            case _0x10437b(0x1a4):
-                            case _0x10437b(0x1bb):
-                            case _0x10437b(0x1dc):
-                                    _0x120cdc = /(?:Android|Mac OS|Mac OS X|MacPPC|MacIntel|Mac_PowerPC|Macintosh) ([._\\d]+)/ ['exec'](navigator[_0x10437b(0x26c)])[0x1];
-                                    break;
-                            case _0x10437b(0x213):
-                                    _0x120cdc = /OS (\\d+)_(\\d+)_?(\\d+)?/ [_0x10437b(0x1a9)](navigator[_0x10437b(0x19f)]), _0x120cdc = _0x120cdc[0x1] + '.' + _0x120cdc[0x2] + '.' + (_0x120cdc[0x3] | 0x0);
-                                    break;
-                    }
-                    return {
-                            'name': _0x5e8ac4,
-                            'version': _0x120cdc
-                    };
-            } catch (_0x4d0942) {
-                    return {
-                            'name': _0x10437b(0x23b),
-                            'version': _0x10437b(0x23b)
-                    };
-            }
-    }, a0_0x17d8f4 = () => {
-            const _0x30401e = a0_0x27d44e;
-            try {
-                    const _0x30e686 = navigator[_0x30401e(0x26c)],
-                        _0x335f1f = [{
-                                'name': _0x30401e(0x28e),
-                                'getInfo': _0x5bad2b => {
-                                        const _0x1ed64c = _0x30401e;
-                                        if (_0x30e686['indexOf']('Version') !== -0x1) return {
-                                                'name': 'Opera',
-                                                'version': _0x30e686[_0x1ed64c(0x257)](_0x5bad2b + 0x8)
-                                        };
-                                        return {
-                                                'name': 'Opera',
-                                                'version': _0x30e686[_0x1ed64c(0x257)](_0x5bad2b + 0x6)
-                                        };
-                                }
-                        }, {
-                                'name': _0x30401e(0x1ce),
-                                'getInfo': _0x596663 => {
-                                        const _0x5c443c = _0x30401e;
-                                        return {
-                                                'name': _0x5c443c(0x28e),
-                                                'version': _0x30e686['substring'](_0x596663 + 0x4)
-                                        };
-                                }
-                        }, {
-                                'name': _0x30401e(0x19a),
-                                'getInfo': _0x31f12a => {
-                                        const _0x2cb23d = _0x30401e;
-                                        return {
-                                                'name': _0x2cb23d(0x19a),
-                                                'version': _0x30e686[_0x2cb23d(0x257)](_0x31f12a + 0x5)
-                                        };
-                                }
-                        }, {
-                                'name': _0x30401e(0x20a),
-                                'getInfo': _0x1c7989 => {
-                                        const _0x6fb892 = _0x30401e;
-                                        return {
-                                                'name': _0x6fb892(0x19a),
-                                                'version': _0x30e686[_0x6fb892(0x257)](_0x1c7989 + 0x4)
-                                        };
-                                }
-                        }, {
-                                'name': _0x30401e(0x22b),
-                                'getInfo': _0xbeabcf => {
-                                        const _0x51d2e0 = _0x30401e;
-                                        return {
-                                                'name': _0x51d2e0(0x276),
-                                                'version': _0x30e686[_0x51d2e0(0x257)](_0xbeabcf + 0x5)
-                                        };
-                                }
-                        }, {
-                                'name': 'Chrome',
-                                'getInfo': _0x12e251 => {
-                                        const _0x4e4c69 = _0x30401e;
-                                        return {
-                                                'name': 'Chrome',
-                                                'version': _0x30e686[_0x4e4c69(0x257)](_0x12e251 + 0x7)
-                                        };
-                                }
-                        }, {
-                                'name': _0x30401e(0x230),
-                                'getInfo': _0x26b427 => {
-                                        const _0x32f067 = _0x30401e,
-                                            _0x281dce = _0x30e686[_0x32f067(0x2a0)](_0x32f067(0x19c));
-                                        if (_0x281dce !== -0x1) return {
-                                                'name': 'Safari',
-                                                'version': _0x30e686[_0x32f067(0x257)](_0x26b427 + 0x8)
-                                        };
-                                        return {
-                                                'name': _0x32f067(0x230),
-                                                'version': _0x30e686[_0x32f067(0x257)](_0x26b427 + 0x7)
-                                        };
-                                }
-                        }, {
-                                'name': 'Firefox',
-                                'getInfo': _0x33e327 => {
-                                        const _0x3074ad = _0x30401e;
-                                        return {
-                                                'name': _0x3074ad(0x20f),
-                                                'version': _0x30e686[_0x3074ad(0x257)](_0x33e327 + 0x8)
-                                        };
-                                }
-                        }, {
-                                'name': _0x30401e(0x26a),
-                                'getInfo': () => {
-                                        const _0x514398 = _0x30401e;
-                                        return {
-                                                'name': _0x514398(0x276),
-                                                'version': _0x30e686[_0x514398(0x257)](_0x30e686['indexOf'](_0x514398(0x1b8)) + 0x3)
-                                        };
-                                }
-                        }];
-                    return _0x335f1f['filter'](({
-                                                        name: _0x57d66a
-                                                }) => _0x30e686['indexOf'](_0x57d66a) !== -0x1)['map'](({
-                                                                                                                getInfo: _0x376925,
-                                                                                                                name: _0x1d7da5
-                                                                                                        }) => _0x376925(_0x30e686[_0x30401e(0x2a0)](_0x1d7da5)))[0x0];
-            } catch (_0x5d7fd7) {
-                    return {
-                            'name': _0x30401e(0x23b),
-                            'version': _0x30401e(0x23b)
-                    };
-            }
-    }, a0_0x1cf60c = () => {
-            const _0x526cac = a0_0x27d44e;
-            try {
-                    const _0x575f4a = document[_0x526cac(0x21a)](_0x526cac(0x25d)),
-                        _0x292ed7 = _0x575f4a['getContext']('2d'),
-                        _0x3cc90b = _0x526cac(0x252);
-                    _0x292ed7[_0x526cac(0x23c)] = _0x526cac(0x1b0), _0x292ed7[_0x526cac(0x272)] = _0x526cac(0x246), _0x292ed7[_0x526cac(0x23c)] = 'alphabetic', _0x292ed7[_0x526cac(0x1c6)](0.05), _0x292ed7[_0x526cac(0x25b)] = _0x526cac(0x292), _0x292ed7[_0x526cac(0x27e)](0x7d, 0x1, 0x3e, 0x14), _0x292ed7[_0x526cac(0x25b)] = _0x526cac(0x22f), _0x292ed7[_0x526cac(0x225)](_0x3cc90b, 0x2, 0xf), _0x292ed7['fillStyle'] = _0x526cac(0x1ec), _0x292ed7[_0x526cac(0x225)](_0x3cc90b, 0x4, 0x11), _0x292ed7[_0x526cac(0x20d)] = 0xa, _0x292ed7[_0x526cac(0x243)] = _0x526cac(0x27d), _0x292ed7[_0x526cac(0x27e)](-0x14, 0xa, 0xea, 0x5);
-                    const _0x5be3c6 = _0x575f4a[_0x526cac(0x1c9)]();
-                    let _0x5ac1b8 = 0x0;
-                    if (_0x5be3c6[_0x526cac(0x1d4)] === 0x0) return _0x526cac(0x238);
-                    for (let _0x183619 = 0x0; _0x183619 < _0x5be3c6[_0x526cac(0x1d4)]; _0x183619++) {
-                            const _0x73b98b = _0x5be3c6[_0x526cac(0x259)](_0x183619);
-                            _0x5ac1b8 = (_0x5ac1b8 << 0x5) - _0x5ac1b8 + _0x73b98b, _0x5ac1b8 = _0x5ac1b8 & _0x5ac1b8;
-                    }
-                    return _0x5ac1b8;
-            } catch (_0x7d74da) {
-                    return -0x1;
-            }
-    }, a0_0xf4e1f8 = () => {
-            const _0x536b10 = a0_0x27d44e;
-            try {
-                    const _0x31dbd0 = 0x100,
-                        _0x39f996 = 0x80,
-                        _0x2c72be = document['createElement'](_0x536b10(0x25d));
-                    _0x2c72be['width'] = _0x31dbd0, _0x2c72be[_0x536b10(0x21b)] = _0x39f996;
-                    const _0x4ac33e = _0x2c72be[_0x536b10(0x1e7)](_0x536b10(0x1c3)) || _0x2c72be[_0x536b10(0x1e7)](_0x536b10(0x299)) || _0x2c72be['getContext'](_0x536b10(0x25f)) || _0x2c72be[_0x536b10(0x1e7)](_0x536b10(0x206)) || _0x2c72be[_0x536b10(0x1e7)](_0x536b10(0x21c));
-                    try {
-                            const _0x2c811d = _0x536b10(0x1e3),
-                                _0x54b439 = _0x536b10(0x28f),
-                                _0x19fa6c = _0x4ac33e['createBuffer']();
-                            _0x4ac33e[_0x536b10(0x1b1)](_0x4ac33e[_0x536b10(0x251)], _0x19fa6c);
-                            const _0x59fb83 = new Float32Array([-0.2, -0.9, 0x0, 0.4, -0.26, 0x0, 0x0, 0.7321, 0x0]);
-                            _0x4ac33e['bufferData'](_0x4ac33e[_0x536b10(0x251)], _0x59fb83, _0x4ac33e[_0x536b10(0x258)]), _0x19fa6c['itemSize'] = 0x3, _0x19fa6c[_0x536b10(0x289)] = 0x3;
-                            const _0x14227f = _0x4ac33e[_0x536b10(0x1fd)](),
-                                _0x34b211 = _0x4ac33e[_0x536b10(0x237)](_0x4ac33e[_0x536b10(0x1b9)]);
-                            _0x4ac33e['shaderSource'](_0x34b211, _0x2c811d), _0x4ac33e['compileShader'](_0x34b211);
-                            const _0xfec41d = _0x4ac33e[_0x536b10(0x237)](_0x4ac33e[_0x536b10(0x29e)]);
-                            _0x4ac33e[_0x536b10(0x28b)](_0xfec41d, _0x54b439), _0x4ac33e[_0x536b10(0x25a)](_0xfec41d), _0x4ac33e[_0x536b10(0x1da)](_0x14227f, _0x34b211), _0x4ac33e['attachShader'](_0x14227f, _0xfec41d), _0x4ac33e[_0x536b10(0x1db)](_0x14227f), _0x4ac33e['useProgram'](_0x14227f), _0x14227f[_0x536b10(0x278)] = _0x4ac33e[_0x536b10(0x1fc)](_0x14227f, _0x536b10(0x1fe)), _0x14227f[_0x536b10(0x1c5)] = _0x4ac33e['getUniformLocation'](_0x14227f, _0x536b10(0x1e1)), _0x4ac33e[_0x536b10(0x28a)](_0x14227f[_0x536b10(0x296)]), _0x4ac33e['vertexAttribPointer'](_0x14227f[_0x536b10(0x278)], _0x19fa6c[_0x536b10(0x23d)], _0x4ac33e[_0x536b10(0x23f)], !0x1, 0x0, 0x0), _0x4ac33e[_0x536b10(0x19b)](_0x14227f[_0x536b10(0x1c5)], 0x1, 0x1), _0x4ac33e[_0x536b10(0x1c7)](_0x4ac33e[_0x536b10(0x29f)], 0x0, _0x19fa6c[_0x536b10(0x289)]);
-                    } catch (_0x3682bd) {}
-                    const _0x3b32d0 = new Uint8Array(_0x31dbd0 * _0x39f996 * 0x4);
-                    _0x4ac33e['readPixels'](0x0, 0x0, _0x31dbd0, _0x39f996, _0x4ac33e[_0x536b10(0x20b)], _0x4ac33e['UNSIGNED_BYTE'], _0x3b32d0);
-                    let _0x32a32a = JSON[_0x536b10(0x240)](_0x3b32d0)[_0x536b10(0x1b4)](/,?\"[0-9]+\":/g, '');
-                    return a0_0x19fec7(_0x32a32a);
-            } catch (_0x551c67) {
-                    return '-1';
-            }
-    }, a0_0x19fec7 = (function() {
-            let _0x1adc9f = 0x1,
-                _0xb523a6, _0x5d4a33 = [],
-                _0x3b5e92 = [];
-            while (++_0x1adc9f < 0x12) {
-                    for (_0xb523a6 = _0x1adc9f * _0x1adc9f; _0xb523a6 < 0x138; _0xb523a6 += _0x1adc9f) {
-                            _0x5d4a33[_0xb523a6] = 0x1;
-                    }
-            }
-
-            function _0x2fb1c7(_0x46354c, _0x4f6270) {
-                    const _0x252df0 = a0_0x4c8d;
-                    return Math[_0x252df0(0x1f0)](_0x46354c, 0x1 / _0x4f6270) % 0x1 * 0x100000000 | 0x0;
-            }
-            for (_0x1adc9f = 0x1, _0xb523a6 = 0x0; _0x1adc9f < 0x139;) {
-                    !_0x5d4a33[++_0x1adc9f] && (_0x3b5e92[_0xb523a6] = _0x2fb1c7(_0x1adc9f, 0x2), _0x5d4a33[_0xb523a6++] = _0x2fb1c7(_0x1adc9f, 0x3));
-            }
-
-            function _0x18082b(_0x193972, _0x1240f5) {
-                    return _0x193972 >>> _0x1240f5 | _0x193972 << 0x20 - _0x1240f5;
-            }
-
-            function _0x16f142(_0x421863) {
-                    const _0x116462 = a0_0x4c8d;
-                    let _0xb8c1fb = _0x3b5e92[_0x116462(0x277)](_0x1adc9f = 0x0),
-                        _0x31d2b5 = unescape(encodeURI(_0x421863)),
-                        _0x5ec952 = [],
-                        _0x56ff9e = _0x31d2b5[_0x116462(0x1d4)],
-                        _0x22e175 = [],
-                        _0x1558fb, _0x2e7183, _0x487300;
-                    for (; _0x1adc9f < _0x56ff9e;) _0x22e175[_0x1adc9f >> 0x2] |= (_0x31d2b5[_0x116462(0x259)](_0x1adc9f) & 0xff) << 0x8 * (0x3 - _0x1adc9f++ % 0x4);
-                    _0x56ff9e *= 0x8, _0x22e175[_0x56ff9e >> 0x5] |= 0x80 << 0x18 - _0x56ff9e % 0x20, _0x22e175[_0x487300 = _0x56ff9e + 0x40 >> 0x5 | 0xf] = _0x56ff9e;
-                    for (_0x1adc9f = 0x0; _0x1adc9f < _0x487300; _0x1adc9f += 0x10) {
-                            _0x1558fb = _0xb8c1fb[_0x116462(0x277)](_0xb523a6 = 0x0, 0x8);
-                            for (; _0xb523a6 < 0x40; _0x1558fb[0x4] += _0x2e7183) {
-                                    _0xb523a6 < 0x10 ? _0x5ec952[_0xb523a6] = _0x22e175[_0xb523a6 + _0x1adc9f] : _0x5ec952[_0xb523a6] = (_0x18082b(_0x2e7183 = _0x5ec952[_0xb523a6 - 0x2], 0x11) ^ _0x18082b(_0x2e7183, 0x13) ^ _0x2e7183 >>> 0xa) + (_0x5ec952[_0xb523a6 - 0x7] | 0x0) + (_0x18082b(_0x2e7183 = _0x5ec952[_0xb523a6 - 0xf], 0x7) ^ _0x18082b(_0x2e7183, 0x12) ^ _0x2e7183 >>> 0x3) + (_0x5ec952[_0xb523a6 - 0x10] | 0x0), _0x1558fb[_0x116462(0x24d)]((_0x2e7183 = (_0x1558fb[_0x116462(0x1de)]() + (_0x18082b(_0x421863 = _0x1558fb[0x4], 0x6) ^ _0x18082b(_0x421863, 0xb) ^ _0x18082b(_0x421863, 0x19)) + ((_0x421863 & _0x1558fb[0x5] ^ ~_0x421863 & _0x1558fb[0x6]) + _0x5d4a33[_0xb523a6]) | 0x0) + (_0x5ec952[_0xb523a6++] | 0x0)) + (_0x18082b(_0x56ff9e = _0x1558fb[0x0], 0x2) ^ _0x18082b(_0x56ff9e, 0xd) ^ _0x18082b(_0x56ff9e, 0x16)) + (_0x56ff9e & _0x1558fb[0x1] ^ _0x1558fb[0x1] & _0x1558fb[0x2] ^ _0x1558fb[0x2] & _0x56ff9e));
-                            }
-                            for (_0xb523a6 = 0x8; _0xb523a6--;) _0xb8c1fb[_0xb523a6] = _0x1558fb[_0xb523a6] + _0xb8c1fb[_0xb523a6];
-                    }
-                    for (_0x31d2b5 = ''; _0xb523a6 < 0x3f;) _0x31d2b5 += (_0xb8c1fb[++_0xb523a6 >> 0x3] >> 0x4 * (0x7 - _0xb523a6 % 0x8) & 0xf)[_0x116462(0x211)](0x10);
-                    return _0x31d2b5;
-            }
-            return _0x16f142;
-    }()), a0_0x4bbe90 = _0x170a97 => a0_0x19fec7(JSON['stringify'](_0x170a97)), a0_0x27688f = async () => {
-            const _0x165fd0 = a0_0x27d44e;
-            try {
-                    const _0x37383f = await navigator['mediaDevices'][_0x165fd0(0x202)]();
-                    return _0x37383f[_0x165fd0(0x24f)](_0x3ebb39 => _0x3ebb39[_0x165fd0(0x279)])[_0x165fd0(0x1b2)]();
-            } catch (_0x23b1a5) {
-                    return [];
-            }
-    }, a0_0x40e245 = () => {
-            const _0x4a9f36 = a0_0x27d44e,
-                _0x50bef1 = [_0x4a9f36(0x29b), _0x4a9f36(0x1d0), _0x4a9f36(0x24e), _0x4a9f36(0x253), 'audio/ogg;\\x20codecs=\\x22flac\\x22', _0x4a9f36(0x23a), _0x4a9f36(0x260), _0x4a9f36(0x1f8), _0x4a9f36(0x247), 'audio/webm;\\x20codecs=\\x22opus\\x22'];
-            try {
-                    const _0x160bba = document[_0x4a9f36(0x21a)]('audio');
-                    return _0x50bef1['map'](_0x3a4da4 => {
-                            return {
-                                    'type': _0x3a4da4,
-                                    'canPlay': _0x160bba['canPlayType'](_0x3a4da4)
-                            };
-                    });
-            } catch (_0x3f673a) {
-                    return _0x50bef1[_0x4a9f36(0x24f)](_0x34886a => {
-                            const _0x3bf463 = _0x4a9f36;
-                            return {
-                                    'type': _0x34886a,
-                                    'canPlay': _0x3bf463(0x1a0)
-                            };
-                    });
-            }
-    }, a0_0x1697cd = () => {
-            const _0x463f24 = a0_0x27d44e,
-                _0x504a38 = ['video/ogg;\\x20codecs=\\x22theora\\x22', 'video/ogg;\\x20codecs=\\x22opus\\x22', _0x463f24(0x26b), _0x463f24(0x1a8), _0x463f24(0x227), _0x463f24(0x239), _0x463f24(0x290)];
-            try {
-                    const _0x4361ca = document[_0x463f24(0x21a)](_0x463f24(0x28d));
-                    return _0x504a38['map'](_0xf0b706 => {
-                            return {
-                                    'type': _0xf0b706,
-                                    'canPlay': _0x4361ca['canPlayType'](_0xf0b706)
-                            };
-                    });
-            } catch (_0x3d36e5) {
-                    return _0x504a38['map'](_0x1adec6 => {
-                            const _0x16ff33 = _0x463f24;
-                            return {
-                                    'type': _0x1adec6,
-                                    'canPlay': _0x16ff33(0x1a0)
-                            };
-                    });
-            }
-    }, a0_0xf3d535 = async () => {
-            const _0x27b5dc = a0_0x27d44e;
-            try {
-                    const _0x134b6c = ['accelerometer', 'camera', _0x27b5dc(0x21d), _0x27b5dc(0x1e6), _0x27b5dc(0x1b7), _0x27b5dc(0x1ad), 'magnetometer', _0x27b5dc(0x231), _0x27b5dc(0x1bc), 'notifications', _0x27b5dc(0x1d2), _0x27b5dc(0x1ba)],
-                        _0x164c13 = {};
-                    return await Promise['all'](_0x134b6c[_0x27b5dc(0x24f)](async _0x122e4c => {
-                            const _0x422074 = _0x27b5dc;
-                            try {
-                                    const {
-                                            state: _0x2d84c8
-                                    } = await navigator[_0x422074(0x286)][_0x422074(0x1a5)]({
-                                            'name': _0x122e4c
-                                    });
-                                    _0x164c13[_0x122e4c] = _0x2d84c8;
-                            } catch (_0x141013) {}
-                    })), _0x164c13;
-            } catch (_0x514bf0) {
-                    return {};
-            }
-    }, a0_0x11e6e5 = () => {
-            const _0x450c03 = a0_0x27d44e;
-            try {
-                    const _0x5425b5 = document[_0x450c03(0x21a)]('canvas'),
-                        _0x3dcb6d = _0x5425b5['getContext'](_0x450c03(0x25f)) || _0x5425b5['getContext'](_0x450c03(0x206)),
-                        _0x2be897 = _0x3dcb6d[_0x450c03(0x223)](_0x450c03(0x209));
-                    return {
-                            'vendor': _0x3dcb6d['getParameter'](_0x2be897[_0x450c03(0x1ac)]),
-                            'renderer': _0x3dcb6d['getParameter'](_0x2be897[_0x450c03(0x294)]),
-                            'extensions': _0x3dcb6d[_0x450c03(0x1ae)]()
-                    };
-            } catch (_0x1d34ca) {
-                    return {
-                            'vendor': _0x450c03(0x23b),
-                            'renderer': _0x450c03(0x23b),
-                            'extensions': []
-                    };
-            }
-    }, a0_0x376658 = () => {
-            const _0x3503c9 = a0_0x27d44e;
-            try {
-                    const _0x2ddf58 = new AudioContext();
-                    return {
-                            'state': _0x2ddf58['state'],
-                            'sampleRate': _0x2ddf58['sampleRate'],
-                            'channelCount': _0x2ddf58[_0x3503c9(0x23e)][_0x3503c9(0x1cd)],
-                            'channelCountMode': _0x2ddf58[_0x3503c9(0x23e)][_0x3503c9(0x20e)],
-                            'channelInterpretation': _0x2ddf58[_0x3503c9(0x23e)][_0x3503c9(0x1f1)],
-                            'maxChannelCount': _0x2ddf58[_0x3503c9(0x23e)][_0x3503c9(0x1eb)],
-                            'numberOfInputs': _0x2ddf58[_0x3503c9(0x23e)][_0x3503c9(0x214)],
-                            'numberOfOutputs': _0x2ddf58[_0x3503c9(0x23e)]['numberOfOutputs']
-                    };
-            } catch (_0x1ec813) {
-                    return {};
-            }
-    }, a0_0x2633dc = () => {
-            const _0x56c27b = a0_0x27d44e,
-                _0x15af5b = document[_0x56c27b(0x1ab)]('body')[0x0],
-                _0x520fa7 = document[_0x56c27b(0x21a)](_0x56c27b(0x265));
-            let _0x2c24c2 = document['createDocumentFragment']();
-            const _0xf0c000 = ['monospace', 'sans-serif', _0x56c27b(0x1df)],
-                _0x3e88b7 = {
-                        'monospace': {},
-                        'sans-serif': {},
-                        'serif': {}
-                },
-                _0x2a5d87 = 'fp-check-runtime-0.0.1',
-                _0x1ad6fd = 'fp-div-check-runtime-0.0.1',
-                _0x5d64a6 = {},
-                _0x1c982a = {};
-            _0x520fa7['id'] = _0x1ad6fd, _0x15af5b[_0x56c27b(0x29d)](_0x520fa7), _0xf0c000[_0x56c27b(0x1be)]((_0x2080a7, _0xa6ebb4) => {
-                    const _0x55929f = _0x56c27b,
-                        _0x2ab923 = document[_0x55929f(0x21a)](_0x55929f(0x234));
-                    _0x2ab923[_0x55929f(0x1b5)][_0x55929f(0x19d)] = '72px', _0x2ab923[_0x55929f(0x284)] = _0x55929f(0x1ea), _0x2ab923[_0x55929f(0x1b5)]['fontFamily'] = _0xf0c000[_0xa6ebb4], _0x2ab923[_0x55929f(0x1b5)]['position'] = 'fixed', _0x2ab923['style'][_0x55929f(0x222)] = 'hidden', _0x2ab923[_0x55929f(0x1d5)][_0x55929f(0x241)](_0x2a5d87), _0x2c24c2[_0x55929f(0x29d)](_0x2ab923);
-            }), a0_0x5b052d[_0x56c27b(0x1be)](_0x177b70 => {
-                    _0xf0c000['forEach'](_0x5a65a1 => {
-                            const _0x249a1f = a0_0x4c8d,
-                                _0x2a4f32 = document[_0x249a1f(0x21a)](_0x249a1f(0x234));
-                            _0x2a4f32['style'][_0x249a1f(0x19d)] = _0x249a1f(0x291), _0x2a4f32[_0x249a1f(0x284)] = _0x249a1f(0x1ea), _0x2a4f32['style'][_0x249a1f(0x285)] = _0x177b70 + ',' + _0x5a65a1, _0x2a4f32['style'][_0x249a1f(0x256)] = 'fixed', _0x2a4f32['style'][_0x249a1f(0x222)] = _0x249a1f(0x274), _0x2a4f32['id'] = _0x177b70 + '&' + _0x5a65a1, _0x2a4f32[_0x249a1f(0x1d5)][_0x249a1f(0x241)](_0x2a5d87), _0x2c24c2[_0x249a1f(0x29d)](_0x2a4f32);
-                    });
-            }), _0x520fa7['appendChild'](_0x2c24c2);
-            const _0x2ac2b1 = _0x520fa7[_0x56c27b(0x1cf)];
-            _0xf0c000[_0x56c27b(0x1be)]((_0x162338, _0x26eb42) => {
-                    const _0x33c7b3 = _0x56c27b;
-                    _0x5d64a6[_0xf0c000[_0x26eb42]] = _0x2ac2b1[_0x26eb42]['offsetWidth'], _0x1c982a[_0xf0c000[_0x26eb42]] = _0x2ac2b1[_0x26eb42][_0x33c7b3(0x1c2)];
-            });
-            for (let _0x49ba29 = 0x0; _0x49ba29 < _0x2ac2b1[_0x56c27b(0x1d4)]; _0x49ba29++) {
-                    const [_0xe7ee07, _0x548333] = _0x2ac2b1[_0x49ba29]['id'][_0x56c27b(0x27b)]('&');
-                    _0x548333 && (_0x3e88b7[_0x548333][_0xe7ee07] = _0x2ac2b1[_0x49ba29]);
-            }
-            const _0x20d0b1 = [];
-            for (let _0x4a6631 = 0x0; _0x4a6631 < a0_0x5b052d['length']; _0x4a6631++) {
-                    for (let _0x47d981 = 0x0; _0x47d981 < _0xf0c000[_0x56c27b(0x1d4)]; _0x47d981++) {
-                            let _0x3898ee = ![],
-                                _0x28e2cc = _0x3e88b7[_0xf0c000[_0x47d981]][a0_0x5b052d[_0x4a6631]];
-                            const _0x3262a3 = _0x28e2cc[_0x56c27b(0x1c4)] !== _0x5d64a6[_0xf0c000[_0x47d981]] || _0x28e2cc[_0x56c27b(0x1c2)] !== _0x1c982a[_0xf0c000[_0x47d981]];
-                            _0x3898ee = _0x3898ee || _0x3262a3;
-                            if (_0x3898ee) {
-                                    _0x20d0b1[_0x56c27b(0x266)](a0_0x5b052d[_0x4a6631]);
-                                    break;
-                            }
-                    }
-            }
-            return document[_0x56c27b(0x1ca)](_0x1ad6fd)['remove'](), _0x20d0b1;
-    }, a0_0x29781f = () => {
-            const _0x1fe056 = a0_0x27d44e;
-            try {
-                    const _0x276de7 = [];
-                    for (let _0x2e9d4f = 0x0; _0x2e9d4f < navigator['plugins'][_0x1fe056(0x1d4)]; _0x2e9d4f++) {
-                            _0x276de7['push'](navigator['plugins'][_0x2e9d4f][_0x1fe056(0x1b6)]);
-                    }
-                    return _0x276de7;
-            } catch (_0x105030) {
-                    return [];
-            }
-    }, a0_0x726591 = _0x620549 => {
-            const _0x2041ad = a0_0x27d44e;
-            return new Array(_0x620549)[_0x2041ad(0x242)](0x0)[_0x2041ad(0x24f)](() => Math['random']()[_0x2041ad(0x211)](0x24)[_0x2041ad(0x26e)](0x2, 0x9))[_0x2041ad(0x219)]((_0x1581ed, _0xa47c3c) => _0x1581ed + _0xa47c3c, '');
-    }, a0_0x40b8a4 = () => Math[a0_0x27d44e(0x1cb)](Math['random']() * 0x2710) + 0x1, a0_0x11d0ec = async () => {
-            const _0x1435e2 = a0_0x27d44e,
-                _0x5ef0ae = a0_0x17d8f4(),
-                _0xf1605e = a0_0x5c162a(),
-                _0x31da76 = a0_0x11e6e5(),
-                _0x1b6ad4 = await Promise[_0x1435e2(0x255)]([a0_0xf3d535(), a0_0x27688f(), a0_0x182687()]),
-                _0x148ecb = a0_0x4bbe90(a0_0x2633dc()),
-                _0x58b06c = a0_0xf4e1f8(),
-                _0x2e9aee = a0_0x1cf60c();
-            return {
-                    'dg': a0_0x4cc609,
-                    'dO4': Intl[_0x1435e2(0x1f6)]()[_0x1435e2(0x1e9)]()[_0x1435e2(0x220)],
-                    'ZNJG': navigator['doNotTrack'] || ![],
-                    'cOJRtSqNAQ': a0_0x408719(_0x5ef0ae[_0x1435e2(0x1b6)]),
-                    'b-I2rx-E': _0xf1605e['name'],
-                    'YdFB': _0x5ef0ae[_0x1435e2(0x1b6)],
-                    'dttJrRyO': navigator[_0x1435e2(0x1b3)],
-                    'bdI_': navigator[_0x1435e2(0x208)] || 0x0,
-                    'Y9JA': navigator[_0x1435e2(0x19e)] || 0x0,
-                    'bM07og': navigator[_0x1435e2(0x1ed)][_0x1435e2(0x1d6)](','),
-                    'cNxRuCGPAg': a0_0x4bbe90(a0_0x29781f()),
-                    'Z9dM': _0x31da76[_0x1435e2(0x1b3)] + ',' + _0x31da76[_0x1435e2(0x1bd)],
-                    'ZtVDtyo': _0x148ecb,
-                    'YdY6oxJV': a0_0x4bbe90(a0_0x376658()),
-                    'b-I4nQ-C61rI': _0xf1605e[_0x1435e2(0x25c)],
-                    'd-BEuCA': window[_0x1435e2(0x235)]['availWidth'],
-                    'aM02nQV5': window[_0x1435e2(0x235)]['availHeight'],
-                    'ZMk5rRU': window['screen'][_0x1435e2(0x1e0)],
-                    'bL8zohR5': Boolean(localStorage),
-                    'c8Y6qRuA': Boolean(sessionStorage),
-                    'dt9DqBc': a0_0x4bbe90(a0_0x1697cd()),
-                    'YdY6oxI': a0_0x4bbe90(a0_0x40e245()),
-                    'bdI2nwA': a0_0x4bbe90(_0x1b6ad4[0x1]),
-                    'cNVHtB2QA2zbSbw': a0_0x4bbe90(_0x1b6ad4[0x0]),
-                    'YdY6oxJYqA': _0x1b6ad4[0x2],
-                    'd9w-pRFXpw': _0x58b06c,
-                    'Y8QyqAl8whI': _0x2e9aee
+const getBrowserRenderingEngine = uaName => {
+        try {
+            const engineMap = {
+                'Chrome': 'Blink',
+                'Opera': 'Blink',
+                'Mozilla': 'Gecko',
+                'Edge': 'Blink',
+                'Safari': 'WebKit',
+                'Firefox': 'Gecko',
+                'Internet Explorer': 'Trident'
             };
+            return engineMap[uaName] || 'Other';
+        } catch (e) {
+            return 'Other';
+        }
     };
 
-function a0_0x584910(_0x1d7a67) {
-        let _0x597dfc = [];
-        return a0_0x5dc8ba['forEach'](_0x319d90 => {
-                const _0x3a633e = a0_0x4c8d;
-                _0x597dfc[_0x3a633e(0x266)](_0x1d7a67[_0x319d90]), delete _0x1d7a67[_0x319d90];
-        }), _0x597dfc;
-}
-
-function a0_0x3730f9(_0x2484ee) {
-        const _0x52c3f3 = a0_0x27d44e,
-            _0x428ddf = _0x52c3f3(0x1aa)[_0x52c3f3(0x27b)](''),
-            _0x55b9ce = function(_0x57b69a) {
-                    const _0x323ac0 = _0x52c3f3;
-                    let _0x4795b7 = '';
-                    const _0x59907a = _0x57b69a['length'] % 0x3;
-                    for (let _0x19c59e = 0x0; _0x19c59e < _0x57b69a[_0x323ac0(0x1d4)];) {
-                            const _0x3dfd9a = _0x57b69a['charCodeAt'](_0x19c59e++),
-                                _0x19e973 = _0x57b69a['charCodeAt'](_0x19c59e++),
-                                _0x2380cc = _0x57b69a[_0x323ac0(0x259)](_0x19c59e++);
-                            if (_0x3dfd9a > 0xff || _0x19e973 > 0xff || _0x2380cc > 0xff) throw new Error('Input\\x20not\\x20valid');
-                            const _0x27e8b7 = _0x3dfd9a << 0x10 | _0x19e973 << 0x8 | _0x2380cc;
-                            _0x4795b7 += _0x428ddf[_0x27e8b7 >> 0x12 & 0x3f] + _0x428ddf[_0x27e8b7 >> 0xc & 0x3f] + _0x428ddf[_0x27e8b7 >> 0x6 & 0x3f] + _0x428ddf[_0x27e8b7 & 0x3f];
-                    }
-                    return _0x59907a > 0x0 ? _0x4795b7['slice'](0x0, _0x59907a - 0x3) : _0x4795b7;
-            };
-        _0x2484ee = encodeURIComponent(_0x2484ee);
-        let _0x31f200 = _0x2484ee[0x0];
-        for (let _0x39c987 = 0x1; _0x39c987 < _0x2484ee[_0x52c3f3(0x1d4)]; ++_0x39c987) {
-                _0x31f200 += String[_0x52c3f3(0x22d)]((_0x31f200[_0x52c3f3(0x259)](_0x39c987 - 0x1) + _0x2484ee['charCodeAt'](_0x39c987)) % 0x100);
+const a0_0x5c162a = () => {
+        try {
+            const _0x21db71 = [{
+                    's': 'Windows 10',
+                    'r': /(Windows 10.0|Windows NT 10.0)/
+                }, {
+                    's': 'Windows 8.1',
+                    'r': /(Windows 8.1|Windows NT 6.3)/
+                }, {
+                    's': 'Windows 8',
+                    'r': /(Windows 8|Windows NT 6.2)/
+                }, {
+                    's': 'Windows 7',
+                    'r': /(Windows 7|Windows NT 6.1)/
+                }, {
+                    's': 'Windows Vista',
+                    'r': /Windows NT 6.0/
+                }, {
+                    's': 'Windows Server 2003',
+                    'r': /Windows NT 5.2/
+                }, {
+                    's': 'Windows XP',
+                    'r': /(Windows NT 5.1|Windows XP)/
+                }, {
+                    's': 'Windows 2000',
+                    'r': /(Windows NT 5.0|Windows 2000)/
+                }, {
+                    's': 'Windows ME',
+                    'r': /(Win 9x 4.90|Windows ME)/
+                }, {
+                    's': 'Windows 98',
+                    'r': /(Windows 98|Win98)/
+                }, {
+                    's': 'Windows 95',
+                    'r': /(Windows 95|Win95|Windows_95)/
+                }, {
+                    's': 'Windows NT 4.0',
+                    'r': /(Windows NT 4.0|WinNT4.0|WinNT|Windows NT)/
+                }, {
+                    's': 'Windows CE',
+                    'r': /Windows CE/
+                }, {
+                    's': 'Windows 3.11',
+                    'r': /Win16/
+                }, {
+                    's': 'Android',
+                    'r': /Android/
+                }, {
+                    's':'Open BSD',
+                    'r': /OpenBSD/
+                }, {
+                    's': 'Sun OS',
+                    'r': /SunOS/
+                }, {
+                    's': 'Chrome OS',
+                    'r': /CrOS/
+                }, {
+                    's': 'Linux',
+                    'r': /(Linux|X11(?!.*CrOS))/
+                }, {
+                    's': 'iOS',
+                    'r': /(iPhone|iPad|iPod)/
+                }, {
+                    's': 'Mac OS X',
+                    'r': /Mac OS X/
+                }, {
+                    's': 'Mac OS',
+                    'r': /(Mac OS|MacPPC|MacIntel|Mac_PowerPC|Macintosh)/
+                }, {
+                    's': 'QNX',
+                    'r': /QNX/
+                }, {
+                    's': 'UNIX',
+                    'r': /UNIX/
+                }, {
+                    's': 'BeOS',
+                    'r': /BeOS/
+                }, {
+                    's': 'OS/2',
+                    'r': /OS\/2/
+                }, {
+                    's': 'Search Bot',
+                    'r': /(nuhk|Googlebot|Yammybot|Openbot|Slurp|MSNBot|Ask Jeeves\/Teoma | ia_archiver) /
+            }];
+        let _0x120cdc, _0x5e8ac4 = _0x21db71['filter'](_0x473d5e => _0x473d5e['r']['test'](navigator['userAgent']))[0x0]['s'];
+        /Windows/ ['test'](_0x5e8ac4) && (_0x120cdc = /Windows (.*)/ ['exec'](_0x5e8ac4)[0x1], _0x5e8ac4 = 'Windows');
+        switch (_0x5e8ac4) {
+            case 'Mac OS':
+            case 'Mac OS X':
+            case 'Android':
+                _0x120cdc = /(?:Android|Mac OS|Mac OS X|MacPPC|MacIntel|Mac_PowerPC|Macintosh) ([._\d]+)/ ['exec'](navigator['userAgent'])[0x1];
+                break;
+            case 'iOS':
+                _0x120cdc = /OS (\d+)_(\d+)_?(\d+)?/ ['exec'](navigator['appVersion']), _0x120cdc = _0x120cdc[0x1] + '.' + _0x120cdc[0x2] + '.' + (_0x120cdc[0x3] | 0x0);
+                break;
         }
-        return _0x55b9ce(_0x31f200);
-}
-
-function a0_0x35e9() {
-        const _0x39c98f = ['channelInterpretation', 'release', 'Windows\\x20XP', 'bdI_', '21MMmVmG', 'DateTimeFormat', 'Y9JA', 'audio/wav;\\x20codecs=\\x221\\x22', 'depTtw', 'QNX', 'OS/2', 'getAttribLocation', 'createProgram', 'attrVertex', 'toISOString', 'createDynamicsCompressor', 'Y8QyqAl8whI', 'enumerateDevices', 'renderedBuffer', 'getDate', 'Gecko', 'experimental-webgl', '4196043qXqhtH', 'deviceMemory', 'WEBGL_debug_renderer_info', 'Edg', 'RGBA', 'cOJRtSqNAQ', 'shadowBlur', 'channelCountMode', 'Firefox', '4092kyqblB', 'toString', 'Windows\\x20CE', 'iOS', 'numberOfInputs', 'getResponseHeader', 'attack', 'Windows\\x20Vista', 'cNVHtB2QA2zbSbw', 'reduce', 'createElement', 'height', 'moz-webgl', 'clipboard-read', 'catch', 'cNxRuCGPAg', 'timeZone', 'dehNvwBnzDqu', 'visibility', 'getExtension', 'subarray', 'fillText', '451572MdwDxM', 'video/webm;\\x20codecs=\\x22vp8,\\x20vorbis\\x22', 'Windows\\x208', 'frequency', '6807xUvfcV', 'MSIE', 'open', 'fromCharCode', 'startRendering', '#069', 'Safari', 'microphone', 'test', 'ZMk5rRU', 'span', 'screen', 'x-vec', 'createShader', 'nothing!', 'video/webm;\\x20codecs=\\x22vp9\\x22', 'audio/ogg;\\x20codecs=\\x22vorbis\\x22', 'Unknown', 'textBaseline', 'itemSize', 'destination', 'FLOAT', 'stringify', 'add', 'fill', 'shadowColor', '458gMTEJH', '5660UiYsWK', '16px\\x20\\x27Arial\\x27', 'audio/webm;\\x20codecs=\\x22vorbis\\x22', '1905432ugzowY', 'Windows\\x202000', 'date', 'from', 'Windows\\x20ME', 'unshift', 'audio/mpeg', 'map', 'dO4', 'ARRAY_BUFFER', 'i9asdm..$#po((^@KbXrww!~cz', 'audio/mp4;\\x20codecs=\\x22mp4a.40.2\\x22', 'YdY6oxJV', 'all', 'position', 'substring', 'STATIC_DRAW', 'charCodeAt', 'compileShader', 'fillStyle', 'version', 'canvas', 'x-game', 'webgl', 'audio/ogg;\\x20codecs=\\x22opus\\x22', 'dts-siGT', 'Windows\\x208.1', 'https://gameforge.com/tra/game1.js', 'bL8zohR5', 'div', 'push', 'Sun\\x20OS', 'now', 'YdY6oxI', 'Trident/', 'video/mp4;\\x20codecs=\\x22avc1.42E01E\\x22', 'userAgent', 'ZNJG', 'substr', 'ratio', 'send', 'knee', 'font', 'Z9dM', 'hidden', 'filter', 'Internet\\x20Explorer', 'slice', 'vertexPosAttrib', 'kind', 'setItem', 'split', 'Y9U6mw9451U', 'blue', 'fillRect', 'bM07og', 'Blink', 'connect', 'ctdIvSKVCQ', 'keys', 'innerHTML', 'fontFamily', 'permissions', '1067025jCgLXl', 'webkitOfflineAudioContext', 'numItems', 'enableVertexAttribArray', 'shaderSource', '11wTmKOi', 'video', 'Opera', 'precision\\x20mediump\\x20float;varying\\x20vec2\\x20varyinTexCoordinate;void\\x20main()\\x20{gl_FragColor=vec4(varyinTexCoordinate,0,1);}', 'application/x-mpegURL;\\x20codecs=\\x22avc1.42E01E\\x22', '72px', '#f60', 'Windows\\x203.11', 'UNMASKED_RENDERER_WEBGL', 'timeout', 'vertexPosArray', 'c9hKwCWX61TBJm_dKn0', 'getItem', 'experimental-webgl2', 'suspended', 'audio/aac', 'type', 'appendChild', 'FRAGMENT_SHADER', 'TRIANGLE_STRIP', 'indexOf', 'Windows\\x2098', 'Windows\\x2095', 'Edge', 'uniform2f', 'Version', 'fontSize', 'hardwareConcurrency', 'appVersion', 'no\\x20info', 'Chrome\\x20OS', 'Open\\x20BSD', 'YdFB', 'Mac\\x20OS', 'query', 'createOscillator', 'getTime', 'video/mp4;\\x20codecs=\\x22flac\\x22', 'exec', 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_=', 'getElementsByTagName', 'UNMASKED_VENDOR_WEBGL', 'background-sync', 'getSupportedExtensions', 'Other', 'top', 'bindBuffer', 'sort', 'vendor', 'replace', 'style', 'name', 'geolocation', 'rv:', 'VERTEX_SHADER', 'persistent-storage', 'Mac\\x20OS\\x20X', 'midi', 'renderer', 'forEach', 'd9w-pRFXpw', 'min', 'threshold', 'offsetHeight', 'webgl2', 'offsetWidth', 'offsetUniform', 'rotate', 'drawArrays', 'GET', 'toDataURL', 'getElementById', 'floor', 'value', 'channelCount', 'OPR', 'children', 'audio/flac', 'Search\\x20Bot', 'payment-handler', 'start', 'length', 'classList', 'join', 'ZtVDtyo', 'c8Y6qRuA', 'state', 'attachShader', 'linkProgram', 'Android', 'dt9DqBc', 'pop', 'serif', 'colorDepth', 'uniformOffset', '9038790FTtovn', 'attribute\\x20vec2\\x20attrVertex;varying\\x20vec2\\x20varyinTexCoordinate;uniform\\x20vec2\\x20uniformOffset;void\\x20main(){varyinTexCoordinate=attrVertex+uniformOffset;gl_Position=vec4(attrVertex,0,1);}', 'Windows\\x207', 'triangle', 'clipboard-write', 'getContext', 'setDate', 'resolvedOptions', 'mmmmmmmmmmlli', 'maxChannelCount', 'rgba(102,\\x20200,\\x200,\\x200.7)', 'languages', 'Windows\\x20NT\\x204.0', 'BeOS', 'pow'];
-        a0_0x35e9 = function() {
-                return _0x39c98f;
+        return {
+            'name': _0x5e8ac4,
+            'version': _0x120cdc
         };
-        return a0_0x35e9();
+    } catch (_0x4d0942) {
+        return {
+            'name': 'Unknown',
+            'version': 'Unknown'
+        };
+    }
+};
+const a0_0x17d8f4 = () => {
+    try {
+        const userAgent = navigator['userAgent'],
+            infoArr = [{
+                'name': 'Opera',
+                'getInfo': arg1 => {
+                    if (userAgent['indexOf']('Version') !== -1) return {
+                        'name': 'Opera',
+                        'version': userAgent['substring'](arg1 + 8)
+                    };
+                    return {
+                        'name': 'Opera',
+                        'version': userAgent['substring'](arg1 + 6)
+                    };
+                }
+            }, {
+                'name': 'OPR',
+                'getInfo': arg1 => {
+                    return {
+                        'name': 'Opera',
+                        'version': userAgent['substring'](arg1 + 4)
+                    };
+                }
+            }, {
+                'name': 'Edge',
+                'getInfo': arg1 => {
+                    return {
+                        'name':'Edge',
+                        'version': userAgent['substring'](arg1 + 5)
+                    };
+                }
+            }, {
+                'name': 'Edg',
+                'getInfo': arg1 => {
+                    return {
+                        'name': 'Edge',
+                        'version': userAgent['substring'](arg1 + 4)
+                    };
+                }
+            }, {
+                'name': 'MSIE',
+                'getInfo': arg1 => {
+                    return {
+                        'name': 'Internet Explorer',
+                        'version': userAgent['substring'](arg1 + 5)
+                    };
+                }
+            }, {
+                'name': 'Chrome',
+                'getInfo': arg1 => {
+                    return {
+                        'name': 'Chrome',
+                        'version': userAgent['substring'](arg1 + 7)
+                    };
+                }
+            }, {
+                'name': 'Safari',
+                'getInfo': arg1 => {
+                        _0x281dce = userAgent['indexOf']('Version');
+                    if (_0x281dce !== -0x1) return {
+                        'name': 'Safari',
+                        'version': userAgent['substring'](arg1 + 8)
+                    };
+                    return {
+                        'name': 'Safari',
+                        'version': userAgent['substring'](arg1 + 7)
+                    };
+                }
+            }, {
+                'name': 'Firefox',
+                'getInfo': arg1 => {
+                    return {
+                        'name': 'Firefox',
+                        'version': userAgent['substring'](arg1 + 8)
+                    };
+                }
+            }, {
+                'name': 'Trident/',
+                'getInfo': () => {
+                    return {
+                        'name': 'Internet Explorer',
+                        'version': userAgent['substring'](userAgent['indexOf']('rv:') + 3)
+                    };
+                }
+            }];
+        return infoArr['filter'](({
+            name: _0x57d66a
+        }) => userAgent['indexOf'](_0x57d66a) !== -1)['map'](({
+            getInfo: _0x376925,
+            name: _0x1d7da5
+        }) => _0x376925(userAgent['indexOf'](_0x1d7da5)))[0];
+    } catch (e) {
+        return {
+            'name': 'Unknown',
+            'version': 'Unknown'
+        };
+    }
+};
+const a0_0x1cf60c = () => {
+    try {
+        const canvas = document['createElement']('canvas'),
+            ctx = canvas['getContext']('2d'),
+            txt = 'i9asdm..$#po((^@KbXrww!~cz';
+        ctx['textBaseline'] = 'top',
+        ctx['font'] = "16px 'Arial'",
+        ctx['textBaseline'] = 'alphabetic',
+        ctx['rotate'](0.05),
+        ctx['fillStyle'] = '#f60',
+        ctx['fillRect'](0x7d, 0x1, 0x3e, 0x14),
+        ctx['fillStyle'] = '#069',
+        ctx['fillText'](txt, 0x2, 0xf),
+        ctx['fillStyle'] = 'rgba(102, 200, 0, 0.7)',
+        ctx['fillText'](txt, 0x4, 0x11),
+        ctx['shadowBlur'] = 0xa,
+        ctx['shadowColor'] = 'blue',
+        ctx['fillRect'](-0x14, 0xa, 0xea, 0x5);
+        const canvasDataURL = canvas['toDataURL']();
+        let out = 0;
+        if (canvasDataURL['length'] === 0) return 'nothing!';
+        for (let i = 0; i < canvasDataURL['length']; i++) {
+            const chr = canvasDataURL['charCodeAt'](i);
+            out = (out << 0x5) - out + chr, out = out & out;
+        }
+        return out;
+    } catch(e) {
+        return -1;
+    }
+};
+const a0_0xf4e1f8 = () => {
+    try {
+        const canvasWidth = 256,
+            canvasHeight = 128,
+            canvas = document['createElement']('canvas');
+        canvas['width'] = canvasWidth,
+        canvas['height'] = canvasHeight;
+        const webglCtx = canvas['getContext']('webgl2') ||
+        	canvas['getContext']('experimental-webgl2') ||
+        	canvas['getContext']('webgl') ||
+        	canvas['getContext']('experimental-webgl') ||
+        	canvas['getContext']('moz-webgl');
+        try {
+            const attrStr = 'attribute vec2 attrVertex;varying vec2 varyinTexCoordinate;uniform vec2 uniformOffset;void main(){varyinTexCoordinate=attrVertex+uniformOffset;gl_Position=vec4(attrVertex,0,1);}',
+                precisionStr = 'precision mediump float;varying vec2 varyinTexCoordinate;void main() {gl_FragColor=vec4(varyinTexCoordinate,0,1);}',
+                glBuf = webglCtx['createBuffer']();
+            webglCtx['bindBuffer'](webglCtx['ARRAY_BUFFER'], glBuf);
+            const floatsArr = new Float32Array([-0.2, -0.9, 0x0, 0.4, -0.26, 0x0, 0x0, 0.7321, 0x0]);
+            webglCtx['bufferData'](webglCtx['ARRAY_BUFFER'], floatsArr, webglCtx['STATIC_DRAW']),
+            glBuf['itemSize'] = 3,
+            glBuf['numItems'] = 3;
+            const prog = webglCtx['createProgram'](),
+                vertexShader = webglCtx['createShader'](webglCtx['VERTEX_SHADER']);
+            webglCtx['shaderSource'](vertexShader, attrStr), webglCtx['compileShader'](vertexShader);
+            const fragmentShader = webglCtx['createShader'](webglCtx['FRAGMENT_SHADER']);
+            webglCtx['shaderSource'](fragmentShader, precisionStr),
+            webglCtx['compileShader'](fragmentShader),
+            webglCtx['attachShader'](prog, vertexShader),
+            webglCtx['attachShader'](prog, fragmentShader),
+            webglCtx['linkProgram'](prog),
+            webglCtx['useProgram'](prog),
+            prog['vertexPosAttrib'] = webglCtx['getAttribLocation'](prog, 'attrVertex'),
+            prog['offsetUniform'] = webglCtx['getUniformLocation'](prog, 'uniformOffset'),
+            webglCtx['enableVertexAttribArray'](prog['vertexPosArray']),
+            webglCtx['vertexAttribPointer'](prog['vertexPosAttrib'], glBuf['itemSize'], webglCtx['FLOAT'], !0x1, 0x0, 0x0),
+            webglCtx['uniform2f'](prog['offsetUniform'], 0x1, 0x1),
+            webglCtx['drawArrays'](webglCtx['TRIANGLE_STRIP'], 0x0, glBuf['numItems']);
+        } catch (_0x3682bd) {}
+        const _0x3b32d0 = new Uint8Array(canvasWidth * canvasHeight * 4);
+        webglCtx['readPixels'](0x0, 0x0, canvasWidth, canvasHeight, webglCtx['RGBA'], webglCtx['UNSIGNED_BYTE'], _0x3b32d0);
+        let jsonStr = JSON['stringify'](_0x3b32d0)['replace'](/,?\"[0-9]+\":/g, '');
+        return a0_0x19fec7(jsonStr);
+    } catch (e) {
+        return '-1';
+    }
+};
+const a0_0x19fec7 = (function() {
+    let a = 1,
+        i,
+        _0x5d4a33 = [],
+        _0x3b5e92 = [];
+    while (++a < 18) {
+        for (i = a * a; i < 312; i += a) {
+            _0x5d4a33[i] = 1;
+        }
+    }
+
+    function _0x2fb1c7(_0x46354c, _0x4f6270) {
+        return Math['pow'](_0x46354c, 1 / _0x4f6270) % 1 * 0x100000000 | 0;
+    }
+    for (a = 1, i = 0; a < 313;) {
+        !_0x5d4a33[++a] && (_0x3b5e92[i] = _0x2fb1c7(a, 2), _0x5d4a33[i++] = _0x2fb1c7(a, 3));
+    }
+
+    function _0x18082b(_0x193972, _0x1240f5) {
+        return _0x193972 >>> _0x1240f5 | _0x193972 << 32 - _0x1240f5;
+    }
+
+    function _0x16f142(_0x421863) {
+        let _0xb8c1fb = _0x3b5e92['slice'](a = 0),
+            _0x31d2b5 = unescape(encodeURI(_0x421863)),
+            _0x5ec952 = [],
+            _0x56ff9e = _0x31d2b5['length'],
+            _0x22e175 = [],
+            _0x1558fb, _0x2e7183, _0x487300;
+        for (; a < _0x56ff9e;) _0x22e175[a >> 2] |= (_0x31d2b5['charCodeAt'](a) & 255) << 8 * (3 - a++ % 4);
+        _0x56ff9e *= 8, _0x22e175[_0x56ff9e >> 5] |= 0x80 << 24 - _0x56ff9e % 32, _0x22e175[_0x487300 = _0x56ff9e + 64 >> 5 | 15] = _0x56ff9e;
+        for (a = 0; a < _0x487300; a += 16) {
+            _0x1558fb = _0xb8c1fb['slice'](i = 0, 8);
+            for (; i < 64; _0x1558fb[4] += _0x2e7183) {
+                i < 16 ? _0x5ec952[i] = _0x22e175[i + a] : _0x5ec952[i] = (_0x18082b(_0x2e7183 = _0x5ec952[i - 2], 0x11) ^ _0x18082b(_0x2e7183, 19) ^ _0x2e7183 >>> 10) +
+                (_0x5ec952[i - 7] | 0) + (_0x18082b(_0x2e7183 = _0x5ec952[i - 15], 7) ^ _0x18082b(_0x2e7183, 18) ^ _0x2e7183 >>> 3) +
+                (_0x5ec952[i - 16] | 0), _0x1558fb['unshift']((_0x2e7183 = (_0x1558fb['pop']() + (_0x18082b(_0x421863 = _0x1558fb[4], 6) ^
+                _0x18082b(_0x421863, 11) ^ _0x18082b(_0x421863, 25)) + ((_0x421863 & _0x1558fb[5] ^ ~_0x421863 & _0x1558fb[6]) + _0x5d4a33[i]) | 0) +
+                (_0x5ec952[i++] | 0)) + (_0x18082b(_0x56ff9e = _0x1558fb[0], 2) ^ _0x18082b(_0x56ff9e, 0xd) ^ _0x18082b(_0x56ff9e, 0x16)) + (_0x56ff9e & _0x1558fb[0x1] ^
+                _0x1558fb[0x1] & _0x1558fb[2] ^ _0x1558fb[2] & _0x56ff9e));
+            }
+            for (i = 8; i--;) _0xb8c1fb[i] = _0x1558fb[i] + _0xb8c1fb[i];
+        }
+        for (_0x31d2b5 = ''; i < 63;) _0x31d2b5 += (_0xb8c1fb[++i >> 3] >> 4 * (7 - i % 8) & 15)['toString'](16);
+        return _0x31d2b5;
+    }
+    return _0x16f142;
+}());
+const a0_0x4bbe90 = _0x170a97 => a0_0x19fec7(JSON['stringify'](_0x170a97));
+const a0_0x27688f = async () => {
+    try {
+        const devices = await navigator['mediaDevices']['enumerateDevices']();
+        return devices['map'](device => device['kind'])['sort']();
+    } catch (e) {
+        return [];
+    }
+};
+const a0_0x40e245 = () => {
+    const audioStrs = ['audio/aac', 'audio/flac', 'audio/mpeg', 'audio/mp4; codecs="mp4a.40.2"',
+    	'audio/ogg; codecs="flac"', 'audio/ogg; codecs="vorbis"', 'audio/ogg; codecs="opus"',
+    	'audio/wav; codecs="1"', 'audio/webm; codecs="vorbis"', 'audio/webm; codecs="opus"'];
+    try {
+        const audioEl = document['createElement']('audio');
+        return audioStrs['map'](audioStr => {
+            return {
+                'type': audioStr,
+                'canPlay': audioEl['canPlayType'](audioStr)
+            };
+        });
+    } catch (e) {
+        return audioStrs['map'](audioStr => {
+            return {
+                'type': audioStr,
+                'canPlay': 'no info'
+            };
+        });
+    }
+};
+const a0_0x1697cd = () => {
+    const _0x504a38 = ['video/ogg; codecs="theora"', 'video/ogg; codecs="opus"', 'video/mp4; codecs="avc1.42E01E"', 'video/mp4; codecs="flac"',
+    	'video/webm; codecs="vp8, vorbis"', 'video/webm; codecs="vp9"', 'application/x-mpegURL; codecs="avc1.42E01E"'];
+    try {
+        const _0x4361ca = document['createElement']('video');
+        return _0x504a38['map'](_0xf0b706 => {
+            return {
+                'type': _0xf0b706,
+                'canPlay': _0x4361ca['canPlayType'](_0xf0b706)
+            };
+        });
+    } catch (_0x3d36e5) {
+        return _0x504a38['map'](_0x1adec6 => {
+            return {
+                'type': _0x1adec6,
+                'canPlay': 'no info'
+            };
+        });
+    }
+};
+const a0_0xf3d535 = async () => {
+    try {
+        const _0x134b6c = ['accelerometer', 'camera', 'clipboard-read', 'clipboard-write',
+        	'geolocation', 'background-sync', 'magnetometer', 'microphone', 'midi', 'notifications', 'payment-handler', 'persistent-storage'],
+            _0x164c13 = {};
+        return await Promise['all'](_0x134b6c['map'](async _0x122e4c => {
+            try {
+                const {
+                    state: _0x2d84c8
+                } = await navigator['permissions']['query']({
+                    'name': _0x122e4c
+                });
+                _0x164c13[_0x122e4c] = _0x2d84c8;
+            } catch (_0x141013) {}
+        })), _0x164c13;
+    } catch (e) {
+        return {};
+    }
+};
+const a0_0x11e6e5 = () => {
+    try {
+        const canvas = document['createElement']('canvas'),
+            ctx = canvas['getContext']('webgl') || canvas['getContext']('experimental-webgl'),
+            rendererInfo = ctx['getExtension']('WEBGL_debug_renderer_info');
+        return {
+            'vendor': ctx['getParameter'](rendererInfo['UNMASKED_VENDOR_WEBGL']),
+            'renderer': ctx['getParameter'](rendererInfo['UNMASKED_RENDERER_WEBGL']),
+            'extensions': ctx['getSupportedExtensions']()
+        };
+    } catch (e) {
+        return {
+            'vendor': 'Unknown',
+            'renderer': 'Unknown',
+            'extensions': []
+        };
+    }
+};
+const a0_0x376658 = () => {
+    try {
+        const _0x2ddf58 = new AudioContext();
+        return {
+            'state': _0x2ddf58['state'],
+            'sampleRate': _0x2ddf58['sampleRate'],
+            'channelCount': _0x2ddf58['destination']['channelCount'],
+            'channelCountMode': _0x2ddf58['destination']['channelCountMode'],
+            'channelInterpretation': _0x2ddf58['destination']['channelInterpretation'],
+            'maxChannelCount': _0x2ddf58['destination']['maxChannelCount'],
+            'numberOfInputs': _0x2ddf58['destination']['numberOfInputs'],
+            'numberOfOutputs': _0x2ddf58['destination']['numberOfOutputs']
+        };
+    } catch (_0x1ec813) {
+        return {};
+    }
+};
+const a0_0x2633dc = () => {
+    const _0x15af5b = document['getElementsByTagName']('body')[0x0],
+        _0x520fa7 = document['createElement']('div');
+    let _0x2c24c2 = document['createDocumentFragment']();
+    const _0xf0c000 = ['monospace', 'sans-serif', 'serif'],
+        _0x3e88b7 = {
+            'monospace': {},
+            'sans-serif': {},
+            'serif': {}
+        },
+        className = 'fp-check-runtime-0.0.1',
+        elId = 'fp-div-check-runtime-0.0.1',
+        _0x5d64a6 = {},
+        _0x1c982a = {};
+    _0x520fa7['id'] = elId,
+    _0x15af5b['appendChild'](_0x520fa7),
+    _0xf0c000['forEach']((_0x2080a7, _0xa6ebb4) => {
+        const _0x2ab923 = document['createElement']('span');
+        _0x2ab923['style']['fontSize'] = '72px', _0x2ab923['innerHTML'] = 'mmmmmmmmmmlli',
+        _0x2ab923['style']['fontFamily'] = _0xf0c000[_0xa6ebb4], _0x2ab923['style']['position'] = 'fixed',
+        _0x2ab923['style']['visibility'] = 'hidden',
+        _0x2ab923['classList']['add'](className),
+        _0x2c24c2['appendChild'](_0x2ab923);
+    }),
+    a0_0x5b052d['forEach'](_0x177b70 => {
+        _0xf0c000['forEach'](_0x5a65a1 => {
+            const
+            _0x2a4f32 = document['createElement']('span');
+            _0x2a4f32['style']['fontSize'] = '72px',
+            _0x2a4f32['innerHTML'] = 'mmmmmmmmmmlli',
+            _0x2a4f32['style']['fontFamily'] = _0x177b70 + ',' + _0x5a65a1,
+            _0x2a4f32['style']['position'] = 'fixed',
+            _0x2a4f32['style']['visibility'] = 'hidden',
+            _0x2a4f32['id'] = _0x177b70 + '&' + _0x5a65a1,
+            _0x2a4f32['classList']['add'](className),
+            _0x2c24c2['appendChild'](_0x2a4f32);
+        });
+    }),
+    _0x520fa7['appendChild'](_0x2c24c2);
+    const _0x2ac2b1 = _0x520fa7['children'];
+    _0xf0c000['forEach']((_0x162338, _0x26eb42) => {
+        _0x5d64a6[_0xf0c000[_0x26eb42]] = _0x2ac2b1[_0x26eb42]['offsetWidth'], _0x1c982a[_0xf0c000[_0x26eb42]] = _0x2ac2b1[_0x26eb42]['offsetHeight'];
+    });
+    for (let _0x49ba29 = 0; _0x49ba29 < _0x2ac2b1['length']; _0x49ba29++) {
+        const [_0xe7ee07, _0x548333] = _0x2ac2b1[_0x49ba29]['id']['split']('&');
+        _0x548333 && (_0x3e88b7[_0x548333][_0xe7ee07] = _0x2ac2b1[_0x49ba29]);
+    }
+    const _0x20d0b1 = [];
+    for (let i = 0; i < a0_0x5b052d['length']; i++) {
+        for (let j = 0; j < _0xf0c000['length']; j++) {
+            let _0x3898ee = false,
+                _0x28e2cc = _0x3e88b7[_0xf0c000[j]][a0_0x5b052d[i]];
+            const _0x3262a3 = _0x28e2cc['offsetWidth'] !== _0x5d64a6[_0xf0c000[j]] || _0x28e2cc['offsetHeight'] !== _0x1c982a[_0xf0c000[j]];
+            _0x3898ee = _0x3898ee || _0x3262a3;
+            if (_0x3898ee) {
+                _0x20d0b1['push'](a0_0x5b052d[i]);
+                break;
+            }
+        }
+    }
+    return document['getElementById'](elId)['remove'](), _0x20d0b1;
+};
+const a0_0x29781f = () => {
+    try {
+        const _0x276de7 = [];
+        for (let i = 0; i < navigator['plugins']['length']; i++) {
+            _0x276de7['push'](navigator['plugins'][i]['name']);
+        }
+        return _0x276de7;
+    } catch (_0x105030) {
+        return [];
+    }
+};
+const get27RandCharsFn = arg1 => {
+    return new Array(arg1)['fill'](0)['map'](() => Math['random']()['toString'](36)['substr'](2, 9))['reduce']((arg2, arg3) => arg2 + arg3, '');
+};
+const a0_0x40b8a4 = () => Math.floor(Math.random() * 10000) + 1;
+const a0_0x11d0ec = async () => {
+    const _0x5ef0ae = a0_0x17d8f4(),
+        _0xf1605e = a0_0x5c162a(),
+        _0x31da76 = a0_0x11e6e5(),
+        _0x1b6ad4 = await Promise['all']([a0_0xf3d535(), a0_0x27688f(), a0_0x182687()]),
+        _0x148ecb = a0_0x4bbe90(a0_0x2633dc()),
+        _0x58b06c = a0_0xf4e1f8(),
+        _0x2e9aee = a0_0x1cf60c();
+    return {
+        'dg': 8,
+        'dO4': Intl['DateTimeFormat']()['resolvedOptions']()['timeZone'],
+        'ZNJG': navigator['doNotTrack'] || false,
+        'cOJRtSqNAQ': getBrowserRenderingEngine(_0x5ef0ae['name']),
+        'b-I2rx-E': _0xf1605e['name'],
+        'YdFB': _0x5ef0ae['name'],
+        'dttJrRyO': navigator['vendor'],
+        'bdI_': navigator['deviceMemory'] || 0x0,
+        'Y9JA': navigator['hardwareConcurrency'] || 0x0,
+        'bM07og': navigator['languages']['join'](','),
+        'cNxRuCGPAg': a0_0x4bbe90(a0_0x29781f()),
+        'Z9dM': _0x31da76['vendor'] + ',' + _0x31da76['renderer'],
+        'ZtVDtyo': _0x148ecb,
+        'YdY6oxJV': a0_0x4bbe90(a0_0x376658()),
+        'b-I4nQ-C61rI': _0xf1605e['version'],
+        'd-BEuCA': window['screen']['availWidth'],
+        'aM02nQV5': window['screen']['availHeight'],
+        'ZMk5rRU': window['screen']['colorDepth'],
+        'bL8zohR5': Boolean(localStorage),
+        'c8Y6qRuA': Boolean(sessionStorage),
+        'dt9DqBc': a0_0x4bbe90(a0_0x1697cd()),
+        'YdY6oxI': a0_0x4bbe90(a0_0x40e245()),
+        'bdI2nwA': a0_0x4bbe90(_0x1b6ad4[0x1]),
+        'cNVHtB2QA2zbSbw': a0_0x4bbe90(_0x1b6ad4[0]),
+        'YdY6oxJYqA': _0x1b6ad4[0x2],
+        'd9w-pRFXpw': _0x58b06c,
+        'Y8QyqAl8whI': _0x2e9aee,
+    };
+};
+
+function dictToArr(arg1) {
+    const consts = ['dg', 'dO4', 'ZNJG', 'cOJRtSqNAQ', 'b-I2rx-E', 'YdFB', 'dttJrRyO', 'bdI_', 'Y9JA', 'bM07og',
+    	'cNxRuCGPAg', 'Z9dM', 'ZtVDtyo', 'YdY6oxJV', 'd-BEuCA', 'aM02nQV5', 'ZMk5rRU', 'bL8zohR5', 'c8Y6qRuA', 'dt9DqBc', 'YdY6oxI',
+    	'bdI2nwA','cNVHtB2QA2zbSbw', 'YdY6oxJYqA', 'd9w-pRFXpw', 'Y8QyqAl8whI', 'Y9U6mw9451U', 'depTtw', 'ZA', 'b-I4nQ-C61rI', 'dts-siGT',
+    	'dehNvwBnzDqu', 'c9hKwCWX61TBJm_dKn0', 'ctdIvSKVCQ'];
+    let out = [];
+    consts.forEach(el => {
+        out.push(arg1[el]);
+        delete arg1[el];
+    })
+    return out;
 }
-var game1 = async function(_0x3a4c79, _0xceb35c = null) {
-        const _0x598035 = a0_0x27d44e;
-        let _0x166e57 = new Date()[_0x598035(0x1a7)](),
-            _0x176494 = localStorage[_0x598035(0x298)]('x-game'),
-            _0x1f2eb3 = () => String[_0x598035(0x22d)](0x20 + Math['random']() * 0x5e | 0x0),
-            _0x157497, _0x1f20d6;
-        try {
-                let _0x4bfde5 = localStorage['getItem'](_0x598035(0x236)),
-                    _0x283124 = _0x4bfde5['lastIndexOf']('\\x20');
-                _0x157497 = _0x4bfde5[_0x598035(0x26e)](0x0, _0x283124)[_0x598035(0x27b)](''), _0x1f20d6 = parseInt(_0x4bfde5[_0x598035(0x26e)](_0x283124 + 0x1));
-        } catch (_0x59167e) {
-                _0x157497 = Array[_0x598035(0x24b)](Array(a0_0x1e16d8), _0x62855d => _0x1f2eb3()), _0x1f20d6 = _0x166e57;
+
+function encrypt(arg1) {
+    let retardPseudoB64Encoding = function(arg1) {
+        let chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_='['split']('');
+        let sb = '';
+        const lenMod3 = arg1.length % 3;
+        for (let i = 0; i < arg1.length;) {
+            const first = arg1.charCodeAt(i++),
+                second = arg1.charCodeAt(i++),
+                third = arg1.charCodeAt(i++);
+            if (first > 255 || second > 255 || third > 255) throw new Error('Input not valid');
+            const tmpRes = first << 16 | second << 8 | third;
+            sb += chars[tmpRes >> 18 & 63] + chars[tmpRes >> 12 & 63] + chars[tmpRes >> 6 & 63] + chars[tmpRes & 63];
         }
-        let _0xf3df08 = _0x157497[_0x598035(0x1d6)]('') + '\\x20' + _0x1f20d6;
-        localStorage[_0x598035(0x27a)]('x-vec', _0xf3df08);
-        _0x1f20d6 + 0x3e8 < _0x166e57 && (_0x157497['shift'](), _0x157497['push'](_0x1f2eb3()), _0xf3df08 = _0x157497[_0x598035(0x1d6)]('') + '\\x20' + _0x166e57, localStorage[_0x598035(0x27a)](_0x598035(0x236), _0xf3df08));
-        !_0x176494 && (_0x176494 = a0_0x726591(0x3), localStorage[_0x598035(0x27a)](_0x598035(0x25e), _0x176494));
-        let _0x3e9297 = await a0_0x11d0ec();
-        _0x3e9297[_0x598035(0x27c)] = new Date()['toISOString'](), _0x3e9297[_0x598035(0x1f9)] = _0x176494, _0x3e9297[_0x598035(0x261)] = window['btoa'](_0xf3df08), _0x3e9297['ZA'] = new Date()[_0x598035(0x1a7)]() - _0x166e57;
-        try {
-                const _0x126868 = new XMLHttpRequest();
-                _0x126868[_0x598035(0x22c)](_0x598035(0x1c8), a0_0x2a983b, ![]), _0x126868[_0x598035(0x270)](null), _0x3e9297[_0x598035(0x297)] = new Date(_0x126868[_0x598035(0x215)](_0x598035(0x24a)))[_0x598035(0x1ff)]();
-        } catch (_0x1830ff) {
-                const _0x5d6ac5 = new Date();
-                _0x5d6ac5[_0x598035(0x1e8)](_0x5d6ac5[_0x598035(0x204)]() - 0xe), _0x3e9297[_0x598035(0x297)] = _0x5d6ac5['toISOString']();
-        }
-        _0x3e9297[_0x598035(0x221)] = navigator['userAgent'], _0x3e9297[_0x598035(0x282)] = _0xceb35c, _0x3e9297 = a0_0x584910(_0x3e9297);
-        let _0x2befd3 = a0_0x3730f9(JSON[_0x598035(0x240)](_0x3e9297));
-        _0x3a4c79(_0x2befd3);
+        return lenMod3 > 0 ? sb.slice(0, lenMod3 - 3) : sb;
+    };
+
+    arg1 = encodeURIComponent(arg1);
+    let sb = arg1[0];
+    for (let i = 1; i < arg1.length; ++i) {
+        sb += String.fromCharCode((sb.charCodeAt(i - 1) + arg1.charCodeAt(i)) % 256);
+    }
+    return retardPseudoB64Encoding(sb);
+}
+
+let game1 = async function(clb, arg2 = null) {
+    let nowTimestamp = new Date()['getTime'](),
+        xGame = localStorage.getItem('x-game'),
+        randCharFn = () => String.fromCharCode(32 + Math.random() * 94 | 0),
+        part1CharsArr,
+        part2Int;
+    try {
+        let xVec = localStorage.getItem("x-vec");
+        let spaceIdx = xVec.lastIndexOf(' ');
+        part1CharsArr = xVec.substr(0, spaceIdx).split('');
+        part2Int = parseInt(xVec.substr(spaceIdx + 1));
+    } catch (e) {
+        part1CharsArr = Array.from(Array(100), () => randCharFn());
+        part2Int = nowTimestamp;
+    }
+
+    let newXVec = part1CharsArr['join']('') + ' ' + part2Int;
+    localStorage.setItem('x-vec', newXVec);
+    part2Int + 1000 < nowTimestamp &&
+        (
+            part1CharsArr.shift(),
+                part1CharsArr.push(randCharFn()),
+	            newXVec = part1CharsArr.join('') + ' ' + nowTimestamp,
+	            localStorage.setItem("x-vec", newXVec)
+        );
+    !xGame && (xGame = get27RandCharsFn(3), localStorage.setItem('x-game', xGame));
+    let objToEncrypt = await a0_0x11d0ec();
+    objToEncrypt['Y9U6mw9451U'] = new Date().toISOString();
+    objToEncrypt['depTtw'] = xGame;
+    objToEncrypt['dts-siGT'] = window.btoa(newXVec);
+    objToEncrypt['ZA'] = new Date().getTime() - nowTimestamp;
+    try {
+        const httpReq = new XMLHttpRequest();
+        httpReq.open('GET', 'https://gameforge.com/tra/game1.js', false);
+        httpReq.send(null);
+        objToEncrypt['c9hKwCWX61TBJm_dKn0'] = new Date(httpReq.getResponseHeader('date')).toISOString();
+    } catch (e) {
+        const now = new Date();
+        now.setDate(now.getDate() - 14);
+        objToEncrypt['c9hKwCWX61TBJm_dKn0'] = now.toISOString();
+    }
+    objToEncrypt['dehNvwBnzDqu'] = navigator.userAgent;
+    objToEncrypt['ctdIvSKVCQ'] = arg2;
+    let arrToEncrypt = dictToArr(objToEncrypt);
+    let jsonEncoded = JSON.stringify(arrToEncrypt);
+    let encrypted = encrypt(jsonEncoded);
+    clb(encrypted);
 };
