@@ -1756,7 +1756,7 @@ function decrypt(arg1) {
     return decodeURIComponent(sb);
 }
 
-let game1 = async function(clb, arg2 = null) {
+let game1_v8 = async function(clb, arg2 = null) {
     let nowTimestamp = new Date().getTime();
     let xGame = localStorage.getItem('x-game');
     let randCharFn = () => String.fromCharCode(32 + Math.random() * 94 | 0);
