@@ -87,11 +87,16 @@ func replaceDecodeStrRefs(in string) string {
 	// First line contains the function to decode a string
 	// const decodeStrRef = decodeStr;
 	scanner := bufio.NewScanner(strings.NewReader(in))
-	scanner.Scan()
 	rgx := regexp.MustCompile(`const (\w+) = (\w+);`)
-	m := rgx.FindStringSubmatch(scanner.Text())
-	in = strings.ReplaceAll(in, m[1], "decodeStrRef")
-	in = strings.ReplaceAll(in, m[2], "decodeStr")
+	for {
+		scanner.Scan()
+		m := rgx.FindStringSubmatch(scanner.Text())
+		if len(m) == 3 {
+			in = strings.ReplaceAll(in, m[1], "decodeStrRef")
+			in = strings.ReplaceAll(in, m[2], "decodeStr")
+			break
+		}
+	}
 
 	// Replace all references to the decodeStr function
 	for { // repeat until no more matches
